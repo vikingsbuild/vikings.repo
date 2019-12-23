@@ -1,0 +1,4 @@
+<?xml-stylesheet href="tube_arquivos/intl.css" type="text/css"?><parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">Erro no processamento de XML: tag sem correspondência. Esperada: &lt;/item&gt;.
+Posição: http://localhost:8080/tube.xml
+Número da linha 5, coluna 4:<sourcetext> &lt;/fanart&gt;&lt;/fanart&gt;
+---^</sourcetext></parsererror>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.conexao"
+       name="[B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"
+       version="3.0.3"
+       provider-name="[B][COLOR lime]Equipe:[/B] [B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]">
+ <requires>
+ 
+	<import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.python" version="2.25.0"/>
+	<import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+	<import addon="plugin.video.dailymotion_com"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/> 
+	<import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+    <import addon="script.module.livestreamer"/>
+    <import addon="script.module.pyamf"/>
+	<import addon="script.module.addon.common"/>
+	<import addon="script.module.addon.signals"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.unidecode"/>
+	
+	
+ </requires>
+  <extension point="xbmc.python.pluginsource" library="youtube.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.repository" name="Vikings Repository">
+		<info compressed="false">http://raw.github.com/Marciocn/repo.conexaoTV/master/addons.xml</info>
+		<checksum>http://raw.github.com/Marciocn/repo.conexaoTV/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.githubusercontent.com/Marciocn/repo.conexaoTV/master/ZipFiles/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR beige]Cone[COLOR red][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR aquamarine]Multi[COLOR blue]-[COLOR aqua]Addons[/COLOR][/B][COLOR aqua][B]  Feito Pra Você[/B][/COLOR]</summary>
+    <disclaimer lang="en">O autor não é responsável pelo uso deste addon. O autor não é responsável pelo conteúdo encontrado usando este addon. O autor não hospeda ou possui qualquer conteúdo encontrado dentro deste addon. O autor não é de forma alguma afiliado com Kodi, Team Kodi, ou a Fundação XBMC. Este é um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais. fins protegidos pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a seção 107, que promove a liberdade de expressão, ao permitir o uso não licenciado de obras protegidas por direitos autorais.</disclaimer>
+	<description lang="en">[COLOR lime]*TV*[COLOR red]*FILMES*[/COLOR][COLOR firebrick]*SERIES*[COLOR blue]*DESENHOS*[COLOR orange]*ANIMES*[COLOR cyan]*LANCAMENTOS*[COLOR lime]*HD*[COLOR yellow]*FHD*[/COLOR]</description>
+	<news>[COLOR lime] Atualização[COLOR red] v3.0.3:[/COLOR] 
+          [COLOR god][B]Melhorias de estabilidade[/B][/COLOR] 
+</news>
+    <platform>all</platform>
+  <assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+<screenshot>resources/screenshots/1.jpeg</screenshot>
+<screenshot>resources/screenshots/2.jpeg</screenshot>
+<screenshot>resources/screenshots/3.jpeg</screenshot>
+  </assets>
+  </extension>
+</addon>

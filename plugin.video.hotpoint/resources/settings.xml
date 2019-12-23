@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Players">
+	    <setting label="[B][COLOR blue]Selecione abaixo seu gerenciador de torrents[/B][/COLOR]" type="lsep" /> 
+	    <setting type="sep" />
+        <setting label="32054" type="labelenum" id="plugin" default="Quasar" values="Quasar|YATP"/>
+		<setting type="sep" />
+	    <setting label="32057" type="lsep"/>
+	    <setting label="32058" type="lsep"/>
+        <setting type="lsep" />
+    </category>
+    <category label="Login">
+	    <setting label="[B][COLOR blue]Coloque o Usuario e a Senha do Serviço IPTV[/B][/COLOR]" type="lsep" />	
+		<setting id="login" type="text" label="Usuario:"/>
+		<setting id="password" type="text" label="Senha:"/>
+    </category>
+		</settings>

@@ -1,0 +1,57 @@
+V7.5
+- New Repo
+
+V7.4
+- Usando novas melhorias XML Python
+
+V7.3
+- Compatibilidade Enigma2.
+- Colaborador: Airton Blau
+
+V7.2
+- Compatibilidade Atto i-smart.
+
+V7.1
+- Captura de link muito mais rápido
+- Resolve Bug varios
+
+V7.0
+- Resolve DNS
+- Compativilidad Addons: Smart, Xtrio, Core, Premium
+
+V6.9
+- Liberando tráfego das urls
+
+V6.8
+- Mudança de servidor.
+
+V6.7
+- Alteração na apresentação.
+
+V6.6
+- Mudança de servidor.
+
+V6.5 
+- Makeover + Inserção de listas IPTV.
+
+V6.4 
+- Testando novas funcionalidades em python. (Não funcionou, retorna à original).
+
+V6.3 
+- Atualização do link. 
+- Compatibilidade com f4mtester.
+- Mudança total em arquitetura atto.tv addon.
+
+V6.2 
+- Mudança m3u lista de hospedagem, para Atto.TV.
+
+V6.1 
+- Mudança na aparência do Add-On Atto.TV.
+
+V6.0 
+- Versão beta do Add-On Atto.TV
+
+
+
+
+

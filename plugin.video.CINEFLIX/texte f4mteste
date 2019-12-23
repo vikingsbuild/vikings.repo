@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<items>
+
+<!--sportsdevil iguide-->
+
+<item>
+<title>sportsdevil iguide</title>
+	<sportsdevil>http://www.iguide.to/embedplayer_new.php?channel=33454&autoplay=true</sportsdevil>
+	<referer>http://www.iguide.to</referer>
+</item>
+
+<!--sportsdevil Janjua-->
+
+<item>
+<title>sportsdevil janjua</title>
+<sportsdevil>http://aflam4you.tv/art-aflam-1-hd_23.html</sportsdevil>
+<referer>http://aflam4you.tv</referer>
+</item>
+
+<item><title>[COLOR lightblue]C+ Partidazo [/COLOR] [COLOR lightslategray][I]sportsdevil[/I][/COLOR] </title><sportsdevil>http://cinestrenostv.tv/canales/deportes/plus-partidazo.php</sportsdevil>
+<thumbnail>http://satcesc.com/web/wp-content/uploads/2015/08/canal-plus-partidazo.jpg</thumbnail>
+<info>canal plus partidazo  </info>
+<referer>http://cinestrenostv.tv</referer></item>
+
+
+<item><title>[COLOR lightblue]C+ Liga [/COLOR]  [COLOR lightslategray][I]sportsdevil[/I][/COLOR] </title>
+<sportsdevil>http://verdirectotv.com/tv/deportes2/plusliga.html</sportsdevil>
+<referer>http://verdirectotv.com</referer>
+<thumbnail>http://coditelcordoba.com/wp-content/uploads/2014/07/canal+liga.jpg</thumbnail>
+</item>
+
+
+
+<!--Listas m3u/rtmp link-->
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue] Lista M3U/RTMP[/COLOR] </title>
+<link>http://ignorame</link>
+<thumbnail>http://es.testsworld.net/files/2013/02/test-de-deporte.jpg</thumbnail>
+<fanart>http://7-themes.com/data_images/out/31/6874905-auto-wallpapers.jpg</fanart>
+<externallink>E:\CANALES.m3u</externallink>
+</item>
+
+<!--regex vimeo -->
+
+<item>
+<title>VIMEO  </title>        
+<link>https://player.vimeo.com/video/163874701?autoplay=1</link>
+</item>
+
+<!--F4m Archivos HLS -->
+
+<item>
+            <title>m3u8 HLS F4m Tester</title>
+			<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL919/PROFILE03.m3u8</link>
+			<thumbnail></thumbnail>
+			</item>
+
+<!--F4m Archivos TS -->
+			
+<item>
+            <title>F4m Archivos TS</title>
+			<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;url=http://ORBIT-IPTV.COM:2500/live/bank/bank/63.ts</link>
+			<thumbnail></thumbnail>
+			</item>
+
+<!--m3u8  -->
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR orangered][B] m3u8 ...[/B][/COLOR] </title>
+<link>http://iphone-streaming.ustream.tv/ustreamVideo/18868686/streams/live/playlist.m3u8</link>
+<thumbnail>http://es.testsworld.net/files/2013/02/test-de-deporte.jpg</thumbnail>
+</item>
+
+<!--Regex Ucaster-->
+
+		<item>
+<title>[COLOR lime]•[/COLOR][COLOR orangered][B] Regex Ucaster[/B][/COLOR] </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.pubucaster.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.embeducaster.com/membedplayer/foxveronika/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.embeducaster.com</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-1.gif</thumbnail></item>
+
+<!--Regex MIPS -->
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR orangered][B] Regex Mips[/B][/COLOR] </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.mips.tv/membedplayer/verliga2223/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.mips.tv</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/golden-hd.gif</thumbnail></item>
+
+
+
+
+<!--Lista Streamup-->
+
+<item>
+<title> [COLOR lime]Lista Streamup[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([makelist.param2])[/COLOR]</title> 
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link>
+<regex><name>get-response</name><expres>(.*)</expres>
+<page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex>
+<regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>http://streamup.com/[makelist.param1]</page></regex>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+<thumbnail>[makelist.param3]</thumbnail>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>https://streamup.com/search?q=entertainment</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<!--Filmon-->
+
+<item>
+  <title>Regex Filmon</title>
+  <link>$doregex[sxlink]</link>
+  <regex>
+    <name>sxlink</name>
+    <expres><![CDATA[high.stream.*?(http.*?)[",']\W]]></expres>
+    <page>http://www.filmon.com/api-v2/channel/$doregex[ch_id]</page>
+    <referer>http://www.filmon.com/tv/channel/export?channel_id=$doregex[ch_id]</referer>
+    <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36</agent>
+    <accept>*/*; q=0.01</accept>
+    <cookieJar></cookieJar>
+    </includeheaders>
+  </regex>
+  <regex>
+    <name>ch_id</name>
+    <expres><![CDATA[clicked_channel_id.*?[",'](.*?)[",']\W]]></expres>
+    <page>https://www.filmon.com/tv/rt-espanol</page>
+    <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36</agent>
+    <accept>*/*; q=0.01</accept>
+    <cookieJar></cookieJar>
+    </includeheaders>
+  </regex>
+</item>
+
+<!--Youtube-->
+
+<item>
+<title>Youtube</title>
+<link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=9fZDyRVB8ZE</link>
+</item>
+
+            <!-- Vaughsoft-->
+            
+			<item>
+			<title>[COLOR lime]•[/COLOR][COLOR orangered][B] Vaughsoft[/B][/COLOR]</title>
+			<link>rtmp://$doregex[getserver]/live?$doregex[clearCode] playpath=live_simpson_mania live=1 timeout=20</link>
+			<regex>
+			<name>clearCode</name>
+			<expres>$pyFunction:'$doregex[getencoded]'.replace("0m0","").replace("0n0","")</expres>
+			<page></page>
+			</regex>
+			<regex>
+			<name>getencoded</name>
+			<expres>:mvnkey-(.*)</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getserver</name>
+			<expres>(.*?);</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getUrl</name>
+			<expres>(.*)</expres>
+			<page>http://mvn.vaughnsoft.net/video/edge/live_simpson_mania$doregex[gettime]-$doregex[gettime].33434</page>
+			</regex>
+			<regex>
+			<name>gettime</name>
+			<expres>$pyFunction:str(int(round(time.time() * 1000)))</expres>
+			<page></page>
+			</regex>
+			<thumbnail>https://simpsonswiki.com/w/images/4/41/Simpmanialogosm.gif</thumbnail>
+			<fanart>http://4.bp.blogspot.com/-QnBB6FP4d18/UzI30Kzb36I/AAAAAAAABSc/0baKzgZVdPo/s1600/preview.png</fanart>
+			</item>
+
+  <!-- Zerocast-->
+			
+<item>
+<title>regex zerocast.tv</title>
+<link>$doregex[get-rtmp] app=$doregex[get-app] playpath=$doregex[get-path] swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf flashVer=WIN\2020,0,0,286 swfVfy=1 live=1 timeout=13 pageUrl=http://zerocast.tv/embed.php?a=1996&id=&width=728&height=400&autostart=true&strech=exactfit</link>
+
+<regex>
+<name>get-rtmp</name>
+<expres>file: unescape.*?'(.*)\/.*'</expres>
+<page>$doregex[clearCode]</page>
+<referer>http://zerocast.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36</agent>
+</regex>
+
+<regex>
+<name>get-app</name>
+<expres>unescape.*?(liveedge\/.*)\/.*'</expres>
+<page>$doregex[clearCode]</page>
+<referer>http://zerocast.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36</agent>
+</regex>
+
+<regex>
+<name>get-path</name>
+<expres>file: unescape.*\/(.*)'</expres>
+<page>$doregex[clearCode]</page>
+<referer>http://zerocast.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36</agent>
+</regex>
+
+<regex>
+<name>clearCode</name>
+<expres>$pyFunction:'$doregex[get-a=]'.replace("&","&amp;")</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-a=</name>
+<expres>var url = '(.*?)';</expres>
+<page>http://zerocast.tv/channel.php?a=1996&width=700&height=480&autostart=true</page>
+<referer>http://zerocast.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36</agent>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<!-- liveonlinetv-->
+
+<item>
+<title>liveonlinetv</title>
+<link>$doregex[get_sxstream]|User-Agent=iPhone</link>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+</item>

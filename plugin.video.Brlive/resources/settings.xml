@@ -1,0 +1,19 @@
+﻿<settings>
+<category label="Configuração">
+<setting id="msg1" value="true" type="bool" visible="false" default="true"/>
+<setting id="msg2" value="true" type="bool" visible="false" default="true"/>
+<setting id="msg3" value="true" type="bool" visible="false" default="true"/>
+<setting id="use_thumb" type="bool" label="Usar Thumbnails como Fanart" default="false" />
+<setting id="add_playlist" type="bool" label="Mostrar Janela de seleção de Links" default="true"/>
+<setting id="ask_playlist_items" type="bool" label="Escolher Opções do Menu de Contexto" default="true" />
+<setting id="debug" type="bool" label="Permitir depuração do Add-On" default="true"/>
+<setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Iniciar Torrents com:" visible="true" default="Genesis"/>
+<setting id="save_location" type="folder"  label="Selecione um local para download:" default=""/>
+<setting id="logo-folderPath" type="folder"  label="Selecione Diretório para os logos:" default=""/>
+<setting id="donotshowbychannels" type="bool" visible="false" default="false"/>
+</category>
+<category label="Controle dos Pais">
+<setting id="parentalblockedpin" label="Senha:" type="text"  option="hidden"  default=""/>
+<setting id="parentalblocked" label="Ativar Controle dos Pais" type="bool" default="false" enable="true"/>
+</category>
+</settings>

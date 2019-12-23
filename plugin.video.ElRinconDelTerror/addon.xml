@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ElRinconDelTerror"
+	name="[COLOR darkred]EL RINCON DEL TERROR[/COLOR]"
+	version="0.0.1"
+	provider-name="[COLOR darkred]EL RINCON DEL TERROR[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+	<extension point="xbmc.addon.repository" name="El Rincon De Lolo">
+        <info>https://raw.githubusercontent.com/djliptv/ElRinconDelLolo/master/RepoERDL/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/djliptv/ElRinconDelLolo/master/RepoERDL/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/djliptv/ElRinconDelLolo/master/RepoERDL/Repositorio/</datadir>
+    </extension>  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">EL RINCON DEL TERROR</summary>
+    <description lang="en">TODO CONTENIDO DEL GENERO TERROR.</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>

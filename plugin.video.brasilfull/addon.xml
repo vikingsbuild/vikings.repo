@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.brasilfull"
+       name="[COLOR green][B]Brasil [/B][/COLOR][COLOR yellow][B]Full[/B][/COLOR]"
+       version="3.2"
+       provider-name="[COLOR firebrick][B]MatheuZ[/B][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	  <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	  <import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="koding.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.repository" name="[COLOR green][B]Brasil [/B][/COLOR][COLOR yellow][B]Full[/B][/COLOR] REPO">
+    <info compressed="false">https://raw.githubusercontent.com/BrasilFullAddon/BRREPO/master/xml/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/BrasilFullAddon/BRREPO/master/xml/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/BrasilFullAddon/BRREPO/master/Plugins</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary>[COLOR green][B]Brasil [/B][/COLOR][COLOR yellow][B]Full[/B][/COLOR] - Saiu Dublado, Saiu Aqui</summary>
+    <description lang="en">[COLOR white][B]Add-on brasileiro com conteúdos dublados no idioma pt-BR, qualidade minima em 720p e máxima de 4K.[/B][/COLOR]</description>
+    <disclaimer lang="en">Todo o conteúdo encontrado neste addon esta em um servidor próprio e é armazenado e upado pela equipe Brasil Full, qualquer cópia de conteudo eu vou saber. O uso deste addon é PIRATARIA então caso não goste deste tipo de conteúdo recomendo que não instalem, tanto eu como você (usuário) podem ser punidos pela lei Anti-Pirataria então use por conta, risco e foda-se.</disclaimer>
+    <website>https://brfull.ml/</website>
+    <email>suporte.brasilfull@gmail.com</email>
+    <news>│Atualização v3.2:│
+
+Sistema de Pesquisa Filmes e Canais│
+                   │Melhorias de estabilidade
+                  Correções de bugs│
+                   │Temas
+              Melhoria na Segurança│
+                   │Melhorias nos Servidores de Canais
+
+          Brasil Full - Saiu Dublado Saiu Aqui
+     </news>
+     <platform>all</platform>
+     <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/01.jpg</screenshot>
+      <screenshot>resources/screenshots/02.jpg</screenshot>
+      <screenshot>resources/screenshots/03.jpg</screenshot>
+     </assets>
+  </extension>
+</addon>

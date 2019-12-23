@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.aod" name="Anime on Demand" version="0.6.5" provider-name="L0RE">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.pyxbmct" version="1.2.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Videos of "Anime on Demand"</summary>
+		<summary lang="de">Videos von "Anime on Demand"</summary>
+		<description lang="en">The official and legal platform for German animes with Dub and Sub! Cheap subscription with the best video quality.[CR]An Account is required !!![CR]Selected and compiled by Anime on Demand (https://www.anime-on-demand.de/).</description>
+		<description lang="de">Die offizielle und legale Plattform für deutsche Animes mit Dub und Sub! Günstig im Abo mit bester Videoqualität.[CR]Ein Account wird benötigt !!![CR]Ausgewählt und zusammengestellt von Anime on Demand (https://www.anime-on-demand.de/).</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<language>de</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.anime-on-demand.de/</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.aod</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 0.6.5  (22.09.2018)[/COLOR][/B] by realvito[CR]
+- fixed: Titel-Bilder werden nicht angezeigt (Thx an @Nerto aus dem kodinerds-forum für die Vorlage)
+- fixed: Einige Youtube-Trailer können nicht abgespielt werden
+- optimized: Textinfobox in der Rubrik: News - Größe, Text, Übersicht angepasst
+- optimized: Script und Übersetzung überarbeitet
+		</news>
+	</extension>
+</addon>

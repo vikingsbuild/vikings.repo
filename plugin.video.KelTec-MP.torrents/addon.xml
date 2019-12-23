@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.KelTec-MP.torrents" name="[B][COLOR dimgrey]KelTec-Media-Play[COLOR white] - [/COLOR][COLOR darkgreen]TORRENTS![/COLOR][/B]" version="1.7-P" provider-name="[COLOR crimson]Team - KelTec-Media-Play[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="ElementumKTMP.repository" optional="false" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="YaP.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.repository" name="[B]KelTe-Medi-Play Repositório[/B]">
+		<info compressed="false">https://raw.githubusercontent.com/Jhonny-lima/Reposit-rio-KelTec-MP/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Jhonny-lima/Reposit-rio-KelTec-MP/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Jhonny-lima/Reposit-rio-KelTec-MP/master/Plugins</datadir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR crimson]Filmes Torrent - Series Torrent - [COLOR gold] (Dual-Audio) 1080P - 720P[/COLOR] OBS: Necessario repositório Vikings instalado no seu Kodi!</summary>
+        <description lang="en">[COLOR gold][B]KelTec-Media-Play[COLOR white] - [/COLOR]TORRENTS![/B][/COLOR][COLOR crimson], oferece Filmes e Series, de qualidade 4K, H265 - 7.1, H264 - 5.1, 3D, 1080P e 720P e WEB-RIP, disponíveis para download via torrent, links totalmente funcionais e constantemente
+            atualizados.[/COLOR],</description>
+        <disclaimer lang="en">[COLOR darkgrey][B] KelTec-Media-Play[/B][/COLOR][COLOR crimson]O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Foundation. Este é um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a seção 107, que promove a liberdade de expressão, permitindo o uso não licenciado de obras protegidas por direitos autorais; nao tem nenhuma afiliação com o provedor de conteúdo.[COLOR darkgrey][B] KelTec-Media-Play[/B] [/COLOR]Os creditos para a pagina: http://www.megatorrentshd.com[/COLOR]</disclaimer>
+        <website>https://keltecmp.net/</website>
+        <forum></forum>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3.</license>
+        <platform>all</platform>
+    </extension>
+</addon>

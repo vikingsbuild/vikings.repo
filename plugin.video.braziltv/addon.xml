@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.2" provider-name="teamBrazilTV">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="plugin.video.f4mTester" version="3.0.0"/>
+    <import addon="plugin.video.youtube" version="6.5.2"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">IPTV livre para todos.</summary>
+    <description lang="en">[B]ATENÇÃO:[/B] Não hospedamos nem temos ligação com nenhum dos conteúdos deste addon, apenas reunimos links e conteúdos de terceiros. Não vendemos IPTV.</description>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <website>https://braziltv.yolasite.com</website>
+    <news>[COLOR lime]v1.2.2[/COLOR]
+- Corrigidos erros no EPG
+- Melhorias de estabilidade
+- Pequenas mudanças no design</news>
+  </extension>
+</addon>

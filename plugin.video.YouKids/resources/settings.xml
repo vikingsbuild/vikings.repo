@@ -1,0 +1,32 @@
+﻿<settings>		
+ 		
+  <category label="Configuración General">
+        <setting type="lsep" label="Haz un reset despues de instalarlo por primera vez" option="close" action="RunPlugin(plugin://plugin.video.YouKids/?mode=7)" />
+        <setting type="lsep" label="POR DEFECTO y luego en OK" option="close" action="RunPlugin(plugin://plugin.video.YouKids/?mode=7)" />
+		<setting id="ask_playlist_items" type="bool" label="Elegir Fuente de Video" default="true" visible="false"/>
+		<setting id="debug" type="bool" label="Enable Add-on Debugging" default="true" visible="false"/>
+        <setting id="1080pquality" label="[COLOR white]Mejorar calidad 1080p[/COLOR]" type="bool" default="true"/>
+        <setting id="add_playlist" type="bool" label="Activar Multilink" default="true" visible="false"/>
+        <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid with:" default="Genesis"visible="false"/>
+        <setting id="donotshowbychannels" label="Ocultar Canales" type="bool" default="false" visible="false"/>
+		<setting label="Autoplay" type="bool" id="autoplay" default="true"/>
+        <setting label="Usar Livestreamer" type="bool" id="livestreamer" default="true"/>
+  </category>
+  <category label="MPEG-DASH">
+		<setting id="kodion.video.quality.mpd" type="bool" label="Usar MPEG-DASH" default="true" enable="System.HasAddon(inputstream.adaptive)"/>
+		<setting label="Usar Inputstream Adaptive" type="bool" id="inputstream" default="true"/>
+        <setting id="kodion.video.quality.mpd.configure" type="action" label="Configurar InputStream Adaptive" enable="eq(-1,true)" visible="eq(-1,true)" option="close" action="RunPlugin(plugin://plugin.video.youtube/config/mpd/)"/>
+        <setting type="lsep" label="Para VODs mpeg-dash es necesario proxy" visible="eq(-2,true)"/>
+        <setting id="kodion.mpd.proxy" type="bool" label="Habilitar proxy mpeg-dash" default="true" enable="eq(-3,true)" visible="eq(-3,true)"/>
+        <setting type="sep" visible="eq(-4,true)"/>
+        <setting id="kodion.install.inputstreamhelper" type="action" label="Instalar InputStream Helper" action="RunPlugin(plugin://plugin.video.youtube/maintain/inputstreamhelper/install/)" enable="eq(-5,true)" visible="eq(-5,true)"/>
+    </category>
+	<category label="Configuracion de Video">
+        <setting id="kodion.subtitle.configure" type="action" label="Configurar subtítulos" enable="true" visible="true" option="close" action="RunPlugin(plugin://plugin.video.youtube/config/subtitles/)"/>
+        <setting id="kodion.subtitle.languages.num" type="number" value="0" visible="false"/>
+        <setting type="sep" />
+        <setting id="kodion.age.gate" type="bool" label="Activar restricciones por edad" default="false"/>
+    </category>
+  </settings>
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ntfplay"
+       name="[B][COLOR red]NETFREE[/COLOR] PLAY[/B]"
+       version="1.3"
+       provider-name="[B][COLOR red]NTFPLAY[/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<summary>[B][COLOR yellow]Filmes, Series, Programas de TV e Muito Mais...[/COLOR][B]</summary>
+<description lang="pt">[B][COLOR yellow]Assim como o Google [COLOR white]NETFREE PLAY[/COLOR] Apenas Hospeda Os Links E Os Organiza. Não Tendo Assim Responsábilidade Sobre Os Mesmo.[/COLOR][/B]</description>
+<disclaimer lang="en">[B][COLOR yellow]No Entanto [COLOR white]NETFREE PLAY[/COLOR] NÃO AUTORIZA A COPIA DE SEUS ARQUIVOS EXTERNOS HOSPEDADOS.[/COLOR][/B]</disclaimer>
+<platform>all</platform>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+<screenshot>ntfplay/screenshots/01.png</screenshot>
+<screenshot>ntfplay/screenshots/02.png</screenshot>
+<screenshot>ntfplay/screenshots/03.png</screenshot>
+</assets>
+</extension>
+</addon>

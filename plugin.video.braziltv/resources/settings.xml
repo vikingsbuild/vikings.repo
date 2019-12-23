@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="VIP">
+        <setting label="[COLOR lightblue]Credenciais da área VIP:[/COLOR]" type="lsep"/>
+        <setting label="E-mail" type="text" id="vipmail" default=""/>
+        <setting label="Senha" type="text" option="hidden" id="vippass" default=""/>
+        <setting label="[CR][B][COLOR yellow]Exclusivo para doadores![/COLOR][/B]" type="bool"/>
+        <setting label="[CR][B][COLOR pink]Faça uma doação em https://bit.ly/BrazilTVDoar[/COLOR][/B]" type="bool"/>
+    </category>
+    <category label="Servidores">
+        <setting label="[COLOR lightblue]Filtro de servidores de canais:[/COLOR]" type="lsep"/>
+        <setting label="Mostrar opções HD [COLOR gray](se disponível)[/COLOR]" type="bool" id="showhd" default="true"/>
+        <setting label="Mostrar opções SD [COLOR gray](se disponível)[/COLOR]" type="bool" id="showsd" default="true"/>
+        <setting label="Mostrar opções alternativas [COLOR gray](se disponível)[/COLOR]" type="bool" id="showalt" default="true"/>
+		<setting label="[COLOR lightblue]Configurações da transmissão:[/COLOR]" type="lsep"/>
+		<setting label="Protocolo" id="f4m" type="enum" values="[COLOR pink]F4mTester[/COLOR] [COLOR lime](mais estável, maior delay)[/COLOR]|[COLOR cyan]Padrão[/COLOR] [COLOR yellow](menos estável, menor delay)[/COLOR]" default="0" />
+    </category>
+    <category label="EPG">
+        <setting label="[COLOR lightblue]Opções do guia de programação:[/COLOR]" type="lsep"/>
+        <setting label="Habilitar guia de programação (beta)" type="bool" id="epg" default="false"/>
+        <setting label="Baixar dados a cada" id="epg_days" type="enum" values="1 dia|2 dias|3 dias|4 dias|5 dias|6 dias|7 dias" default="2" />
+        <setting label="Última atualização" type="text" id="epg_last" enable="false" default=""/>
+        <setting label="[COLOR red]Limpar dados existentes[/COLOR]" type="action" action="RunScript(plugin.video.braziltv, clearEPG)"/>
+		<setting label="[CR][COLOR yellow][B]Ativar o guia deixa o carregamento lento![/B][/COLOR]" type="bool"/>
+        <setting label="[CR][COLOR red][B]Use apenas se tiver um bom processador e +3GB de RAM.[/B][/COLOR]" type="bool"/>
+    </category>
+    <category label="Adultos">
+        <setting label="[COLOR lightblue]Ajustes de controle parental:[/COLOR]" type="lsep"/>
+        <setting label="Esconder conteúdo adulto" type="bool" id="hide" default="false"/>
+        <setting label="Senha" type="number" id="password" option="hidden" default="0000"/>
+    </category>
+    <category label="Créditos">
+        <setting label="[B][COLOR yellow]DESENVOLVIDO POR [COLOR lime]teamBrazilTV[/COLOR][/COLOR][/B]" type="bool"/>
+        <setting label="[B][COLOR white]NÃO ACEITE IMITAÇÕES!  [COLOR red]© 2019[/COLOR][/COLOR][/B]" type="bool"/>
+        <setting label="[B][COLOR lightgray]OFICIAL SÓ NO https://braziltv.yolasite.com[/COLOR][/B]" type="bool"/>
+        <setting label="[CR][B][COLOR lightblue]INCENTIVE O BRAZILTV A CONTINUAR![/COLOR][/B]" type="bool"/>
+        <setting label="[CR][B][COLOR pink]FAÇA UMA DOAÇÃO EM https://bit.ly/BrazilTVDoar[/COLOR][/B]" type="bool"/>
+    </category>
+</settings>

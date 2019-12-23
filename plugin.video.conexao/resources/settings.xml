@@ -1,0 +1,43 @@
+﻿<settings>
+ <category label="Geral">
+    <setting id="1080pquality" label="Abrir videos em 1080p" type="bool" default=""/>
+    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid com:" default="Genesis"/>
+    <setting id="donotshowbychannels" label="Não mostrar items por baixo do nome do canal" type="bool" default="false"/>
+    
+  </category>
+ <category label="Download">
+    <setting id="save_location" type="folder"  label="Escolher a pasta de download" default=""/>
+    <setting id="logo-folderPath" type="folder"  label="Escolher pasta para Logos" default=""/>
+    <setting id="debug" type="bool" label="Permitir debbugging do Add-on" default="true"/>/>
+  </category>
+
+ <category label="Visualização">
+    <setting id="use_thumb" type="bool" label="Usar Thumbnails como Fanart" default="true" />
+    <setting id="add_playlist" type="bool" label="Mostrar Janela de seleção de Links" default="true"/>
+    <setting id="ask_playlist_items" type="bool" label="Escolher items do Menu de Contexto" default="true" />
+  </category>
+
+ <category label="Outros">
+    <setting id="searchotherplugins" label="Procurar outros plugins" type="bool"  option="hidden"  default="false"/>
+  </category>
+  
+  <category label="Players">
+    <setting label="[B][COLOR lime]Selecione abaixo seu gerenciador de torrents[/B][/COLOR]" type="lsep" /> 
+	<setting type="sep" />
+    <setting label="32054" type="labelenum" id="plugin" default="Quasar" values="Pulsar|Quasar|YATP|KmediaTorrent|Torrenter|XBMCtorrent"/>
+    <setting type="sep" />
+	<setting label="32057" type="lsep"/>
+	<setting label="32058" type="lsep"/>
+    <setting type="lsep" />
+  </category>
+  
+  <category label="Idioma">
+	    <setting label="[B][COLOR lime]Selecione abaixo seu idioma[/B][/COLOR]" type="lsep" />	
+		<setting id="infoLang" type="select" label="30803" values="bg|cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|pt-BR|ru|sl|sv|tr|zh" default="pt-BR" />
+  </category>
+  
+   <category label="Controle dos Pais">
+    	<setting id="parentalblockedpin" label="Senha" type="text"  option="hidden" default="1234"/> 
+    <setting id="parentalblocked" label="Ativar?" type="bool"  default="false" enable="true"/>
+    </category>
+</settings>

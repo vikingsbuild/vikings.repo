@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+#------------------------------------------------------------
+# http://www.youtube.com/user/OMundo2osBrasileiros
+#------------------------------------------------------------
+# Licença: GPL (http://www.gnu.org/licenses/gpl-3.0.html)
+# Baseado no código do addon youtube
+#------------------------------------------------------------
+
+import xbmc, xbmcaddon, xbmcplugin, os, sys, plugintools
+
+from addon.common.addon import Addon
+
+addonID = 'plugin.video.espiritismo'
+addon   = Addon(addonID, sys.argv)
+local   = xbmcaddon.Addon(id=addonID)
+icon    = local.getAddonInfo('icon')
+base    = 'plugin://plugin.video.youtube/'
+
+icon1 = "https://yt3.ggpht.com/-Wn40S2a-C_M/AAAAAAAAAAI/AAAAAAAAAAA/UBHbhnJTLzc/s100-c-k-no/photo.jpg"
+icon2 = "https://yt3.ggpht.com/-VoPMl_fmjZk/AAAAAAAAAAI/AAAAAAAAAAA/qrdvNb7qPeI/s100-c-k-no/photo.jpg"
+icon3 = "https://yt3.ggpht.com/-T2FMRSsNMkQ/AAAAAAAAAAI/AAAAAAAAAAA/tHhx4SN4J3U/s100-c-k-no/photo.jpg"
+icon4 = "https://yt3.ggpht.com/-xKVGOSYb53A/AAAAAAAAAAI/AAAAAAAAAAA/4cNBCiQF2uE/s100-c-k-no/photo.jpg"
+
+def run():
+    plugintools.log("espiritismo.run")
+    
+    params = plugintools.get_params()
+    
+    if params.get("action") is None:
+        main_list(params)
+    else:
+        action = params.get("action")
+        exec action+"(params)"
+    
+    plugintools.close_item_list()
+
+def main_list(params):
+		plugintools.log("espiritismo ===> " + repr(params))
+
+
+                plugintools.add_item(title = "Programa Transição 1 temp"              , url = base + "playlist/PL5fdNclF-8A9Ck-pSCelBP-hgKiRiRJ8L/", thumbnail = icon, folder = True)
+      
+
+		plugintools.add_item(title = "Programa Transição 2 temp"              , url = base + "playlist/PL5fdNclF-8A_aYgztmrEeH6jcuIjUO4A-/", thumbnail = icon, folder = True)
+
+                plugintools.add_item(title = "Programa Transição 3 temp"              , url = base + "playlist/PL5fdNclF-8A9Ssr1d8LmyWEBPJOPXTM5O/", thumbnail = icon, folder = True)
+      
+                plugintools.add_item(title = "Programa Transição 4 temp"              , url = base + "playlist/PL5fdNclF-8A8mJaFmsJLLc-0bL6Rv2XDn/", thumbnail = icon, folder = True)
+
+                plugintools.add_item(title = "Espiritismo Esta na Biblia"              , url = base + "playlist/PL5fdNclF-8A-nL00dDFLQL3Ze5FE4FiAx/", thumbnail = icon, folder = True)
+
+		plugintools.add_item(title = "Espiritismo Agora"       		       , url = base + "playlist/PL5fdNclF-8A9fGY1h2K30v0pcaJPWl0iw/", thumbnail = icon, folder = True)
+
+		plugintools.add_item(title = "Deus Jesus e Caridade"       		, url = "plugin://plugin.video.youtube/user/samirjosebh/", thumbnail = icon, folder = True)
+
+		plugintools.add_item(title = "Canal Amigos da Luz"    		        , url = base + "channel/UCYatoBlRirWhMrgjTK0b6Pg/", thumbnail = icon3, folder = True)
+		
+		plugintools.add_item(title = "Tv Mundo Maior"    		        , url = base + "channel/UCkrcoalvMERq3ehh5gH5j0Q/", thumbnail = icon2, folder = True)
+		
+		plugintools.add_item(title = "Canal Yeah "       		       , url = "plugin://plugin.video.youtube/user/yeahjovem/", thumbnail = icon1, folder = True)
+		
+		plugintools.add_item(title = "Canal FEB tv Brasil "       	       , url = "plugin://plugin.video.youtube/user/FEBtvBrasil/", thumbnail = icon4, folder = True)
+
+                plugintools.add_item(title = "Filmes Espiritas"       		       , url = base + "playlist/PLu1z7jY6SMvsEwxBJrhF3vPQrvgt-livt/", thumbnail = icon, folder = True)
+
+                plugintools.add_item(title = "Filmes Espiritas 2"       		, url = base + "playlist/PLLrr0sDlN7GJKIh8IQsyB7nortnRjoNW/", thumbnail = icon, folder = True)
+      
+		
+		
+		xbmcplugin.setContent(int(sys.argv[1]), 'movies')
+		xbmc.executebuiltin('Container.SetViewMode(500)')
+		
+run()

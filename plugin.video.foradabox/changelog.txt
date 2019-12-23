@@ -1,0 +1,5 @@
+2.0 - Code changes
+
+1.1 - Added new categories and changed icons
+
+1.0 - First version

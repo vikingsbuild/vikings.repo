@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.atto.torrents" name="[B][COLOR black]_[COLOR aqua]ATTO[COLOR white] - [/COLOR][COLOR lime]TORRENTS![/COLOR][/B]" version="1.4" provider-name="[COLOR lime]Team - ATTO[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="repository.atto.team2.repository" optional="false" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR lime]Filmes Torrent - Series Torrent - [COLOR gold] (Dual-Audio) 1080P - 720P[/COLOR]</summary>
+        <description lang="en">[COLOR gold][B]ATTO[COLOR white] - [/COLOR]TORRENTS![/B][/COLOR][COLOR lime], oferece Filmes y Series, de qualidade 4K, H265 - 7.1, H264 - 5.1, 3D, 1080P e 720P y WEB-RIP, disponíveis para download via torrent, links totalmente funcionais e constantemente
+            atualizados.[/COLOR]
+        </description>
+        <disclaimer lang="en">[COLOR aqua]O autor não é responsável pelo conteúdo encontrado neste addon. O autor não hospeda qualquer conteúdo encontrado dentro deste addon. O autor não está vinculado ou relacionado de forma alguma a Kodi, Team Kodi ou XBMC Foundation.[COLOR]</disclaimer>
+        <website></website>
+        <forum></forum>
+        <license>http://www.gnu.org/licenses/</license>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
