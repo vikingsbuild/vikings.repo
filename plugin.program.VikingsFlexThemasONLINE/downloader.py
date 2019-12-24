@@ -1,4 +1,4 @@
-import xbmcgui,urllib,time,sys
+import xbmc,xbmcgui,urllib,time,sys,shutil,xbmcaddon,os
 from urllib import FancyURLopener
 
 class MyOpener(FancyURLopener):
@@ -7,9 +7,13 @@ class MyOpener(FancyURLopener):
 myopener = MyOpener()
 urlretrieve = MyOpener().retrieve
 urlopen = MyOpener().open
-AddonTitle="[COLOR orange]Vikings[/COLOR] [COLOR green]Flex Themas Offline[/COLOR]"
+AddonID = xbmcaddon.Addon().getAddonInfo('id')
+ADDON = xbmcaddon.Addon(id=AddonID) 
+AddonTitle = ADDON.getAddonInfo('name')
+Backgrounds = xbmc.translatePath('special://userdata/Backgrounds')
 
 def download(url, dest, dp = None):
+    if os.path.exists(Backgrounds): shutil.rmtree(Backgrounds)
     if not dp:
         dp = xbmcgui.DialogProgress()
         dp.create(' ',"Download em Progresso, por favor, aguarde...",' ', ' ')
