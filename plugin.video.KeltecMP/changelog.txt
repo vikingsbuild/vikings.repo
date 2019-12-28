@@ -3,3 +3,5 @@ Adicionado Boas Vindas
 V5.0
 Adicionado CHECAR ATUALAÇÕES
 UPDATE
+22.12.19
+Corrigido incompatibilidade com kodi 16.1
