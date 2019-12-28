@@ -1192,23 +1192,6 @@ O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Founda
   </extension>
 </addon>
 
-<addon id="plugin.video.f4mTester" version="3.0.0" name="F4mTester" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-
-
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 
 <addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="1.6" provider-name="TeamFaustinoTV">
 
@@ -3456,6 +3439,22 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
     <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
   </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+    </extension>
 </addon>
 
 <addon id="TeamKodiAddonsPT" name="Repositorio Team Milhano" version="1.00" provider-name="Team Milhano">
