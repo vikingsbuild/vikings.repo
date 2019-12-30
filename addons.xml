@@ -3246,7 +3246,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 </addon>
 
 <addon 	id="vikings.repo" name="[B][COLOR yellow]  Vikings  [COLOR orange]Repositorio Vikings Oficial, SEM BANIMENTO!![/B][/COLOR]"
-		version="1.53"
+		version="1.53.1"
 		provider-name="[B][COLOR gold]Vikings TEAM[/B][/COLOR]">
 
 	<requires>
