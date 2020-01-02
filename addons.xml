@@ -700,11 +700,11 @@ Sistema de Pesquisa Filmes e Canaisâ”‚
   </extension>
 </addon>
 
-<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.2" provider-name="teamBrazilTV">
+<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.3" provider-name="teamBrazilTV">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="plugin.video.f4mTester" version="3.0.0"/>
-    <import addon="plugin.video.youtube" version="6.5.2"/>
+    <import addon="plugin.video.f4mTester" version="2.7.9"/>
+    <import addon="plugin.video.youtube" version="6.5.2" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -717,10 +717,9 @@ Sistema de Pesquisa Filmes e Canaisâ”‚
         <fanart>fanart.jpg</fanart>
     </assets>
     <website>https://braziltv.yolasite.com</website>
-    <news>[COLOR lime]v1.2.2[/COLOR]
-- Corrigidos erros no EPG
-- Melhorias de estabilidade
-- Pequenas mudanÃ§as no design</news>
+    <news>[COLOR lime]v1.2.3[/COLOR]
+- Corrigidos problemas com dependÃªncias
+- Pequenos ajustes</news>
   </extension>
 </addon>
 
@@ -1628,6 +1627,32 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
     <summary>Play videos from different adult streaming sites</summary>
     <description>This addon plays videos from YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies and some other adult streaming sites. It contains explicit adult material. You may only view this addon if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content. If you do not meet these requirements, then you do not have permission to use this addon. </description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.maxtorrent"
+       name="[COLOR gold][B]MAX[COLOR lime]torrent[/B][/COLOR]"
+       version="1.0"
+       provider-name="POINT">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TV Online</summary>
+    <description lang="en">[B][COLOR white]Este addon e apenas um redirecionador de links, nao armazenamos conteudos adultos  multimidias, todo seu conteudo e de dominio publico facilmente encontrado na internet[/COLOR][/B]</description>
     <platform>all</platform>
   </extension>
 </addon>

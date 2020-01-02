@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.2" provider-name="teamBrazilTV">
+<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.3" provider-name="teamBrazilTV">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="plugin.video.f4mTester" version="3.0.0"/>
-    <import addon="plugin.video.youtube" version="6.5.2"/>
+    <import addon="plugin.video.f4mTester" version="2.7.9"/>
+    <import addon="plugin.video.youtube" version="6.5.2" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -16,9 +16,8 @@
         <fanart>fanart.jpg</fanart>
     </assets>
     <website>https://braziltv.yolasite.com</website>
-    <news>[COLOR lime]v1.2.2[/COLOR]
-- Corrigidos erros no EPG
-- Melhorias de estabilidade
-- Pequenas mudanças no design</news>
+    <news>[COLOR lime]v1.2.3[/COLOR]
+- Corrigidos problemas com dependências
+- Pequenos ajustes</news>
   </extension>
 </addon>
