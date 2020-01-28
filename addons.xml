@@ -916,6 +916,72 @@ O autor nÃ£o Ã© de forma alguma afiliado Ã  Kodi, Ã  Team Kodi ou Ã  X
   </extension>
 </addon>
 
+<addon id="plugin.video.crackle" name="Crackle" version="2019.10.2" provider-name="eracknaphobia">
+  <requires>
+      <import addon="xbmc.python" version="2.25.0"/>
+      <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
+    <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
+      <news>
+        Thanks to Sreekanth for the following updates
+        - set mediatype for movies, tvshows and episodes appropriately
+        - use addon_url variable
+        - little bit of cleanup
+        - set the correct content type for directory listing
+        - set fanart and poster for list items in directory. Now, it can displaâ€¦
+        - display tvshow title for episodes
+      </news>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <source>https://github.com/eracknaphobia/plugin.video.crackle</source>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.DejaVu"
+       name="[COLOR gold]DejaVu[/COLOR]"
+       version="1.1.5"
+       provider-name="The Wombles">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+    <import addon="script.module.web-pdb" version="1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The Wombles</summary>
+    <description lang="en">The Wombles</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.desenhosjr" name="[COLOR yellow] Desenhos.jr [/COLOR]" version="1.0.0" provider-name="kodi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1580,6 +1646,36 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
+<addon id="plugin.video.kratosreborn" version="1.0.1" name="kratos Reborn" provider-name="maybe">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.kratosreborn" />
+		<import addon="script.kratosreborn.artwork" />
+		<import addon="script.kratosreborn.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.openscrapers" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">kratos Reborn</summary>
+		<description lang="en">[B]kratos Reborn[/B][CR]!!!!OpenScrapers Edition!!!!!This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
 <addon id="plugin.video.loki" name="loki add-on" version="2.6" provider-name="loki god of mischief">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -1756,6 +1852,44 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
+<addon id="plugin.video.netfreeplay20"
+       name="[B][COLOR yellow]NETFREE[/COLOR] PLAY[/B]"
+       version="2.0"
+       provider-name="[B][COLOR yellow]NETFREE PLAY[/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<summary>[B][COLOR yellow]Filmes, Series, Programas de TV, Novelas e Muito Mais...[/COLOR] | [COLOR red]ATENÃ‡ÃƒO:[/COLOR] O ADMINISTRADOR DESTE ADD-ON NÃƒO FAZ PARTE DA ORGANIZAÃ‡ÃƒO KODI/XBMC | TODOS OS CONTEÃšDOS AQUI ENCONTRADOS PODEM SER ENCONTRADOS NA INTERNET. |  [COLOR yellow]ACESSE NOSSO SITE[/COLOR] [COLOR red]NETFREEPLAY.TK[/COLOR][B]</summary>
+<description lang="pt">[B][COLOR yellow]Assim como o Google [COLOR white]NETFREE PLAY[/COLOR] Apenas Hospeda Os Links E Os Organiza. NÃ£o Tendo Assim ResponsÃ¡bilidade Sobre Os Mesmo.[/COLOR][/B]</description>
+<platform>all</platform>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+<screenshot>ntfplay/screenshots/01.png</screenshot>
+<screenshot>ntfplay/screenshots/02.png</screenshot>
+<screenshot>ntfplay/screenshots/03.png</screenshot>
+</assets>
+</extension>
+</addon>
+
 <addon id="plugin.video.next"
 	name="[COLOR blue]NEXT[/COLOR]"
 	version="0.0.6"
@@ -1854,45 +1988,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
 </extension>
 </addon>
 
-<addon id="plugin.video.ntfplay"
-       name="[B][COLOR red]NETFREE[/COLOR] PLAY[/B]"
-       version="1.3"
-       provider-name="[B][COLOR red]NTFPLAY[/COLOR][/B]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-<summary>[B][COLOR yellow]Filmes, Series, Programas de TV e Muito Mais...[/COLOR][B]</summary>
-<description lang="pt">[B][COLOR yellow]Assim como o Google [COLOR white]NETFREE PLAY[/COLOR] Apenas Hospeda Os Links E Os Organiza. NÃ£o Tendo Assim ResponsÃ¡bilidade Sobre Os Mesmo.[/COLOR][/B]</description>
-<disclaimer lang="en">[B][COLOR yellow]No Entanto [COLOR white]NETFREE PLAY[/COLOR] NÃƒO AUTORIZA A COPIA DE SEUS ARQUIVOS EXTERNOS HOSPEDADOS.[/COLOR][/B]</disclaimer>
-<platform>all</platform>
-<assets>
-<icon>icon.png</icon>
-<fanart>fanart.jpg</fanart>
-<screenshot>ntfplay/screenshots/01.png</screenshot>
-<screenshot>ntfplay/screenshots/02.png</screenshot>
-<screenshot>ntfplay/screenshots/03.png</screenshot>
-</assets>
-</extension>
-</addon>
-
 <addon id="plugin.video.OnePlay" name="[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR]" version="3.0" provider-name="Equipe OnePlay">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1940,7 +2035,7 @@ Levando o lazer e o prazer para vocÃªs assistir e curtir cada momento com a fa
 
 <addon id="plugin.video.pikachu"
        name="[B][COLOR yellow][B]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
-       version="1.0.10"
+       version="11.0.0"
        provider-name="[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
