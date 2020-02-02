@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Nightwolf"
+       name="[COLOR white][B]Night[/B][/COLOR][COLOR gold][B]Wolf[/B][/COLOR]"
+       version="2.0"
+       provider-name="Team Night Wolf">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  
+  	
+  <extension point="xbmc.addon.metadata">
+    <summary>Nightwolf - Tudo de Filmes e Series, você vai encontrar aqui, então entre e fique a vontade, Versão 2.0 Voooandoo - Geet of Herreee</summary>
+    <description>
+        Team Nightwolf - Duvidas ou Sugestões acesse nosso Facebook: Felipe Knhight Wolf 
+             
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>

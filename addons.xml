@@ -181,6 +181,41 @@ provider-name="By Chalado">
 	</extension>
 </addon>
 
+<addon id="plugin.video..pikachu"
+       name="[B][COLOR yellow][B]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
+       version="1.11.0"
+       provider-name="[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]</summary>
+    <description>
+       [B]ATENCAO:[B] [COLOR yellow] Os conteudos diponibilizados neste [ ADDON ],sao conteudos retransmitidos de iternet e outras plataformas digitais;Nessecitando assim de uma periodica manutencao.Caso o conteudo que voce queira assistir esteja  [COLOR lime][ OFF ]  [COLOR firebrick] Por favor avise-nos : [ 85]  99738-1821 [COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.adulthideout" name="AdultHideout" version="0.8.6" provider-name="Vashiel">
     <requires>
     </requires>
@@ -1948,6 +1983,41 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
+<addon id="plugin.video.Nightwolf"
+       name="[COLOR white][B]Night[/B][/COLOR][COLOR gold][B]Wolf[/B][/COLOR]"
+       version="2.0"
+       provider-name="Team Night Wolf">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Nightwolf - Tudo de Filmes e Series, vocÃª vai encontrar aqui, entÃ£o entre e fique a vontade, VersÃ£o 2.0 Voooandoo - Geet of Herreee</summary>
+    <description>
+        Team Nightwolf - Duvidas ou SugestÃµes acesse nosso Facebook: Felipe Knhight Wolf
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.NordesTv" name="[COLOR blue][B]Nordes[/B][/COLOR][COLOR white][B]Tv[/B][/COLOR]" version="3.2.3" provider-name="Equipe NordesTv">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2031,41 +2101,6 @@ Levando o lazer e o prazer para vocÃªs assistir e curtir cada momento com a fa
 	<screenshot>resources/screenshots/3.jpg</screenshot>
 </assets>
 </extension>
-</addon>
-
-<addon id="plugin.video.pikachu"
-       name="[B][COLOR yellow][B]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
-       version="11.0.0"
-       provider-name="[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-	<import addon="plugin.video.SportsDevil" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]</summary>
-    <description>
-       [B]ATENCAO:[B] [COLOR yellow] Os conteudos diponibilizados neste [ ADDON ],sao conteudos retransmitidos de iternet e outras plataformas digitais;Nessecitando assim de uma periodica manutencao.Caso o conteudo que voce queira assistir esteja  [COLOR lime][ OFF ]  [COLOR firebrick] Por favor avise-nos : [ 85]  99738-1821 [COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]
-
-    </description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">
