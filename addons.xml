@@ -735,26 +735,28 @@ Sistema de Pesquisa Filmes e Canaisâ”‚
   </extension>
 </addon>
 
-<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.3" provider-name="teamBrazilTV">
+<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.4" provider-name="teamBrazilTV">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="plugin.video.f4mTester" version="2.7.9"/>
-    <import addon="plugin.video.youtube" version="6.5.2" optional="true"/>
+    <import addon="plugin.video.f4mTester" version="3.0.0"/>
+    <import addon="plugin.video.youtube" version="6.6.0" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">IPTV livre para todos.</summary>
-    <description lang="en">[B]ATENÃ‡ÃƒO:[/B] NÃ£o hospedamos nem temos ligaÃ§Ã£o com nenhum dos conteÃºdos deste addon, apenas reunimos links e conteÃºdos de terceiros. NÃ£o vendemos IPTV.</description>
+    <summary lang="en">[COLOR lightyellow]IPTV livre para todos.[/COLOR]</summary>
+    <description lang="en">[COLOR lightblue][B]ATENÃ‡ÃƒO:[/B] NÃ£o hospedamos nem temos ligaÃ§Ã£o com nenhum dos conteÃºdos deste addon, apenas reunimos links e conteÃºdos de terceiros. NÃ£o vendemos IPTV.[/COLOR]</description>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
     </assets>
     <website>https://braziltv.yolasite.com</website>
-    <news>[COLOR lime]v1.2.3[/COLOR]
-- Corrigidos problemas com dependÃªncias
-- Pequenos ajustes</news>
+    <news>[B][COLOR lime]v1.2.4[/COLOR][/B]
+- Ajustes na Ã¡rea de doadores
+- Melhorada visibilidade do status do sistema
+- AtualizaÃ§Ã£o de dependÃªncias
+- CorreÃ§Ã£o de bugs e pequenos ajustes</news>
   </extension>
 </addon>
 
@@ -2058,49 +2060,45 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
 </extension>
 </addon>
 
-<addon id="plugin.video.OnePlay" name="[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR]" version="3.0" provider-name="Equipe OnePlay">
-<requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common"/>
-    <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.common.plugin.cache"/>
-    <import addon="script.module.metahandler"/>
-</requires>
+<addon id="plugin.video.OnePlay" name="[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR]" version="3.0.2" provider-name="Equipe OnePlay">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" version="0.9.4"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+  </requires>
 
-<extension point="xbmc.python.pluginsource" library="basedem.py">
+  <extension point="xbmc.python.pluginsource" library="main.py">
     <provides>video</provides>
-</extension>
+  </extension>
 
-<extension point="xbmc.addon.repository" name="[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR]">
+  <extension point="xbmc.addon.repository" name="[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR]">
 	<info compressed="false">https://raw.githubusercontent.com/OnePlayHD/OneRepo/master/addons.xml</info>
 	<checksum>https://raw.githubusercontent.com/OnePlayHD/OneRepo/master/addons.xml.md5</checksum>
 	<datadir zip="true">https://raw.githubusercontent.com/OnePlayHD/OneRepo/master/ZipFiles/</datadir>
-</extension>
+  </extension>
 
-<extension point="xbmc.addon.metadata">
-<summary lang="en">[COLOR aquamarine]ONE[/COLOR]PLAY - It is a free video plugin for KODI that aggregates video playback links of various types.
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR] - [B]It is a free video plugin for KODI that aggregates video playback links of various types.
 Bringing pleasure and pleasure for you to watch and enjoy every moment with family and friends.</summary>
-<summary lang="pt">[COLOR aquamarine]ONE[/COLOR]PLAY - Ã‰ um plugin de vÃ­deo gratuito para o KODI que agrega links de reproduÃ§Ã£o de vÃ­deos de vÃ¡rios tipos.
+    <summary lang="pt">[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR] - [B]Ã‰ um plugin de vÃ­deo gratuito para o KODI que agrega links de reproduÃ§Ã£o de vÃ­deos de vÃ¡rios tipos.
 Levando o lazer e o prazer para vocÃªs assistir e curtir cada momento com a famÃ­lia e amigos.</summary>
-<description lang="en">[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR] - Install or upgrade the add-on without downloading the zip.</description>
-<description lang="pt">[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR] - Instale ou atualize o add-on sem a necessidade de baixar o zip.</description>
-<disclaimer lang="en">The author is in no way affiliated with the Kodi, Team Kodi or the XBMC Foundation. This is a non-profit resource organized solely for educational purposes and protected by the fair use doctrine of the Copyright Act, specifically section 107, which promotes freedom of expression by allowing unlicensed use of copyrighted works.</disclaimer>
-<disclaimer lang="pt">O autor nao e de forma alguma afiliado ao Kodi, Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
-<platform>all</platform>
-<assets>
-	<icon>icon.png</icon>
-	<fanart>fanart.jpg</fanart>
-	<screenshot>resources/screenshots/1.jpg</screenshot>
-	<screenshot>resources/screenshots/2.jpg</screenshot>
-	<screenshot>resources/screenshots/3.jpg</screenshot>
-</assets>
-</extension>
+    <description lang="en">[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR] - Install or upgrade the add-on without downloading the zip.</description>
+	<description lang="pt">[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR] - Instale ou atualize o add-on sem a necessidade de baixar o zip.</description>
+     <disclaimer lang="en">The author is in no way affiliated with the Kodi, Team Kodi or the XBMC Foundation. This is a non-profit resource organized solely for educational purposes and protected by the fair use doctrine of the Copyright Act, specifically section 107, which promotes freedom of expression by allowing unlicensed use of copyrighted works.</disclaimer>
+	 <disclaimer lang="pt">O autor nao e de forma alguma afiliado ao Kodi, Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
+    <platform>all</platform>
+	<assets>
+       <icon>icon.png</icon>
+       <fanart>fanart.jpg</fanart>
+       <screenshot>resources/screenshots/1.jpg</screenshot>
+       <screenshot>resources/screenshots/2.jpg</screenshot>
+       <screenshot>resources/screenshots/3.jpg</screenshot>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">

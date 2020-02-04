@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <category label="VIP">
-        <setting label="[COLOR lightblue]Credenciais da área VIP:[/COLOR]" type="lsep"/>
+    <category label="Bônus">
+        <setting label="[COLOR lightblue]Credenciais da área bônus:[/COLOR]" type="lsep"/>
         <setting label="E-mail" type="text" id="vipmail" default=""/>
         <setting label="Senha" type="text" option="hidden" id="vippass" default=""/>
-        <setting label="[CR][B][COLOR yellow]Exclusivo para doadores![/COLOR][/B]" type="bool"/>
-        <setting label="[CR][B][COLOR pink]Faça uma doação em https://bit.ly/BrazilTVDoar[/COLOR][/B]" type="bool"/>
+        <setting label="[CR][B][COLOR yellow]Receba sua senha colaborando com nosso projeto![/COLOR][/B]" type="bool"/>
+        <setting label="[CR][B][COLOR pink]Faça uma doação em: https://bit.ly/BrazilTVDoar[/COLOR][/B]" type="bool"/>
     </category>
     <category label="Servidores">
         <setting label="[COLOR lightblue]Filtro de servidores de canais:[/COLOR]" type="lsep"/>
@@ -30,10 +30,10 @@
         <setting label="Senha" type="number" id="password" option="hidden" default="0000"/>
     </category>
     <category label="Créditos">
-        <setting label="[B][COLOR yellow]DESENVOLVIDO POR [COLOR lime]teamBrazilTV[/COLOR][/COLOR][/B]" type="bool"/>
-        <setting label="[B][COLOR white]NÃO ACEITE IMITAÇÕES!  [COLOR red]© 2019[/COLOR][/COLOR][/B]" type="bool"/>
-        <setting label="[B][COLOR lightgray]OFICIAL SÓ NO https://braziltv.yolasite.com[/COLOR][/B]" type="bool"/>
-        <setting label="[CR][B][COLOR lightblue]INCENTIVE O BRAZILTV A CONTINUAR![/COLOR][/B]" type="bool"/>
-        <setting label="[CR][B][COLOR pink]FAÇA UMA DOAÇÃO EM https://bit.ly/BrazilTVDoar[/COLOR][/B]" type="bool"/>
+        <setting label="[B][COLOR yellow]Desenvolvido por [COLOR lime]teamBrazilTV[/COLOR][/COLOR][/B]" type="bool"/>
+        <setting label="[B][COLOR white]Não aceite imitações!  [COLOR red]© 2020[/COLOR][/COLOR][/B]" type="bool"/>
+        <setting label="[B][COLOR lightgray]Site oficial: https://braziltv.yolasite.com[/COLOR][/B]" type="bool"/>
+        <setting label="[CR][B][COLOR lightblue]Ajude o BrazilTV a continuar![/COLOR][/B]" type="bool"/>
+        <setting label="[CR][B][COLOR pink]Faça uma doação em: https://bit.ly/BrazilTVDoar[/COLOR][/B]" type="bool"/>
     </category>
 </settings>
