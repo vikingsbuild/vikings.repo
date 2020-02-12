@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<string id="30001">Add a new list</string>
+	<string id="30002">Select playlist source</string>
+	<string id="30003">Favorites</string>
+	<string id="30004">List name</string>
+	<string id="30005">List URL</string>
+	<string id="30006">Choose list</string>
+	<string id="30007">has the same address</string>
+	<string id="30008">Remove from Playlist Loader</string>
+	<string id="30009">Add to Playlist Loader favorites</string>
+	<string id="30010">Remove from Playlist Loader favorites</string>
+	<string id="30011">is already in favorites</string>
+	<string id="30012">added to favorites</string>
+	<string id="30013">Add a new channel</string>
+	<string id="30014">Channel name</string>
+	<string id="30015">Channel URL</string>
+	<string id="30016">Remote-list (URL)</string>
+	<string id="30017">Local-list (File)</string>
+	<string id="30018">Select channels logos source</string>
+	<string id="30019">Channels logos base URL</string>
+	<string id="30020">Channels logos Folder</string>
+	<string id="30021">None</string>
+	<string id="30022">Choose List logo</string>
+	<string id="30023">Choose channel logo</string>
+	<string id="30024">Logo from URL</string>
+	<string id="30025">Logo from file</string>
+	<string id="30026">Rename</string>
+	<string id="30027">Change source</string>
+	<string id="30028">Change logo</string>
+	<string id="30029">Change channels logos source</string>
+	<string id="30030">Move up</string>
+	<string id="30031">Move down</string>
+	<string id="30032">Move to</string>
+	<string id="30033">Select a new location</string>
+	<string id="30034">Select minutes for cache the list on disc</string>
+	<string id="30035">Change caching time of list</string>
+	<string id="30036">Show groups in channels lists</string>
+	<string id="30037">Yes</string>
+	<string id="30038">No</string>
+	<string id="30039">click to change</string>
+	<string id="30101">Delete Playlists file</string>
+	<string id="30102">Delete Favourites file</string>
+</strings>

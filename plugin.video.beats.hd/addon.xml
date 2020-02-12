@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.beats.hd"
+       name="[COLOR white][B]Beats[COLOR lime].[COLOR white]HD[/B][/COLOR]"
+       version="1.4"
+       provider-name="frenchdj">
+ <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.simplejson" />    
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[ 1st Edition ]</summary>
+    <description>Djs live performances and Electronic Music videos in HD quality. 
+Channels and Playlists organized by categories. Source: Youtube Website. 
+[B][COLOR lime]Advised the latest version of youtube 6.*.*[/B][/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>

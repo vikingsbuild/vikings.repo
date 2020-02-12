@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.pt.docs.hd"
+       name="PT.DocS.HD"
+       version="6.0"
+       provider-name="frenchdj, Demagorgon e bit.ly/[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">PT.DocS.HD</summary>
+    <description>Documentarios em [COLOR lime][PT][/COLOR] e [COLOR yellow][BR][/COLOR] com qualidade HD.
+Playlists organizadas por categorias com assuntos historicos e da actualidade.
+Toda a fonte  vem de utilizadores do Youtube.
+[B][COLOR lime][ Aconselhado a ultima versao do youtube 5.*.* ][/B][/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>

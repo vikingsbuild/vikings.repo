@@ -1,0 +1,36 @@
+﻿<settings>
+  <category label="General">
+
+        <setting type="lsep" label="           LAST UPDATE 20/10/2019" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=7)" />
+        <setting type="lsep" label="    [COLOR white][B]KODI EVOLUTION...BROUGHT TO YOU BY TEAM MILHANO[/B][/COLOR]" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=7)" />
+        
+  
+	    <setting id="Updatecommonresolvers" label="Update Commonresolver from Genesis" type="bool" default="true" visible="false"/>
+    	<setting id="ask_playlist_items" type="bool" label="Elegir Fuente de Video" default="true" visible="false"/>
+        <setting id="add_playlist" type="bool" label="Activar Multilink" default="true" visible="false"/>
+        <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid with:" default="Genesis" visible="false"/>
+        <setting id="donotshowbychannels" label="Ocultar Canales" type="bool" default="false" visible="false"/>
+		
+    <setting id="choose_source" type="enum" values="Choose File|Enter URL" label="Choose Source Type" default="" visible="false"/>
+    <setting id="new_file_source" type="file" source="files" label="Choose File" default="" visible="false"/>
+    <setting id="new_url_source" type="text" label="Add URL" default="" visible="false"/>
+    <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=7)" visible="false"/>
+    <setting id="searchotherplugins" label="Search Other plugins" type="bool" default="false" visible="false"/>
+
+    <setting id="browse_xml_database" type="bool" label="Browse and play from .xml Database" default="false" visible="false"/>
+    <setting type="action" label="Add .xml Database Sources" option="close" action="Container.Update(plugin://plugin.video.live.streamspro/?mode=14)" visible="false"/>
+
+    <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false" visible="false"/>
+    <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.live.streamspro/?mode=10)" visible="false"/>
+  
+  </category>
+    
+	
+<category label="[COLOR red]Control Parental [/COLOR]">
+    <setting id="parentalblockedpin" label="Parental Block Pin" type="text"  option="hidden"  enable="true" default="1234"/>
+    <setting id="parentalblocked" label="Is Parental Blocked Applied?" type="bool" default="true" enable="true" visible="false"/>
+</category>
+
+	
+	
+</settings>

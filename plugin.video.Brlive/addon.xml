@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Brlive" name="[COLOR white][B]Br[/B][/COLOR][COLOR red][B]Live[/B][/COLOR]" version="1.8.1" provider-name="Mattos">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" version="0.9.4"/>
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" /> 
+	<import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="script.module.livestreamer"/>
+    <import addon="script.module.pyamf"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.addon.signals" version="0.0.1"/>
+    <import addon="script.module.unidecode" version = "0.4.16" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  	<extension point="xbmc.addon.repository" name="Repositorio NordesTv">
+		<info compressed="false">https://raw.githubusercontent.com/luis45carlos/RepoNordesTv/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/luis45carlos/RepoNordesTv/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/luis45carlos/RepoNordesTv/master/ZipFiles/</datadir>
+    </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TV AO VIVO [COLOR yellow]l[/COLOR] IPTV [COLOR yellow]l[/COLOR]</summary>
+    <description lang="en">O autor não é responsável pelo uso deste addon. [B][COLOR white]Br'[/COLOR][/B][COLOR red]Live[/COLOR]
+	
+O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Foundation. Este é um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a seção 107, que promove a liberdade de expressão, permitindo o uso não licenciado de obras protegidas por direitos autorais.
+
+[B][COLOR white]Br'[/COLOR][/B][COLOR red]Live[/COLOR] DO MELHOR COM IPTV PARA A SUA CASA [COLOR yellow][B]l[/COLOR][/B]</description>
+    <platform>all</platform>
+  </extension>
+</addon>

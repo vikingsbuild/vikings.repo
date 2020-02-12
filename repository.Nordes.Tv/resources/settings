@@ -1,0 +1,9 @@
+﻿<settings>
+<category label="Minhas Listas">
+    <setting id="choose_source" type="enum" values="Enter URL" label="My Channels" default="Add URL" visible="eq(-1,0)"/>
+    <setting id="new_file_source" type="text" source="files" label="Digite a URL de sua lista" default="https://channelpear.com/assets/m3u/?userid=" visible="eq(-1,0)"/>
+    <setting type="sep" />
+    <setting type="action" label="Depois de digitar a URL, click aqui para confirmar..." option="close" action="RunPlugin(repository://.repository.fenix.evolution/?mode=7)" />
+    <setting type="sep" />
+</category>
+</settings>

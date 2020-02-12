@@ -1,0 +1,11 @@
+﻿<settings>
+<category label="INFORMAÇÕES">
+<setting id="msg1" label="[B][COLOR white]FÓRUM: [COLOR gold]BIT.LY/BRPLAYSITE[/COLOR][/COLOR][/B]" value="true" type="bool" default="true"/>
+<setting id="msg2" label="[B][COLOR white]DOWNLOADS: [COLOR gold]BIT.LY/BRPLAYREPODL[/COLOR][/COLOR][/B]" value="true" type="bool" default="true"/>
+<setting id="donotshowbychannels" label="" visible="false" type="bool" default="false"/>
+<setting id="add_playlist" type="bool" visible="false" label="Adicionar items com múltiplos links como playlists" default="true"/>
+<setting id="ask_playlist_items" type="bool" visible="false" label="Escolher items do Menu de Contexto" default="true" />
+<setting id="parentalblockedpin" label="Pin do Controle Parental" visible="false" type="text" option="hidden" default="1234"/> 
+<setting id="parentalblocked" label="Controle Parental ativado?" type="bool" visible="false" default="false" enable="false"/>
+</category>
+</settings>

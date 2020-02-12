@@ -1,0 +1,14 @@
+V1.4
+- Melhorias na arquitectura, maior compatibilidade com as versões do kodi.
+
+V1.3
+- Integração do novo método de conversão MD5 e pesquisa inversa.
+
+V1.2
+- Alteração na apresentação.
+
+V1.1
+- Mudança de servidor.
+
+V.1.0
+	-Versão inicial

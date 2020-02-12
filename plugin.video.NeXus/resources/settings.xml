@@ -1,0 +1,21 @@
+﻿<settings>
+ <category label="Geral">
+    <setting id="save_location" type="folder"  label="Escolher a pasta de download" default=""/>
+    <setting id="use_thumb" type="bool" label="Usar Thumbnails como Fanart" default="true" />
+    <setting id="logo-folderPath" type="folder"  label="Escolher pasta para Logos" default=""/>
+    <setting id="add_playlist" type="bool" label="Adicionar items com múltiplos links como playlists" default="true"/>
+    <setting id="ask_playlist_items" type="bool" label="Escolher items do Menu de Contexto" default="true" />
+    <setting id="debug" type="bool" label="Permitir debbugging do Add-on" default="true"/>
+    <setting id="1080pquality" label="Play 1080p video ON demand se disponivel" type="bool" default=""/>
+    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid com:" default="Genesis"/>
+    <setting id="donotshowbychannels" label="Não mostrar items por baixo do nome do canal" type="bool" default="false"/>
+	<setting id="searchotherplugins" label="Procurar outros plugins" type="bool"  option="hidden"  default="false"/>
+    
+  </category>
+   <category label="Controlo Parental">
+    	<setting id="parentalblockedpin" label="Pin do Controlo Parental" type="text"  option="hidden" default="1234"/> 
+    <setting id="parentalblocked" label="Controlo Parental ativado?" type="bool"  default="false" enable="true"/>
+    </category>
+
+	
+</settings>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Explora"
+       name="Explora"
+       version="1.3.0"
+       provider-name="Netai">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.f4mTester"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Documentales</summary>
+    <language>es</language>
+    <description lang="es">Todos los documentales en castellano, la videoteca que no deja de crecer ! ... Este addon requiere de plugin f4mTester de shani para funcionar.</description>
+     <platform>all</platform>
+  </extension>
+</addon>

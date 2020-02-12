@@ -1,0 +1,29 @@
+<settings>
+
+ 	<category label="Visualização">
+    	<setting id="use_thumb" type="bool" label="Usar Thumbnails como Fanart" default="true" />
+    	<setting id="add_playlist" type="bool" label="Mostrar Janela de seleção de Links" default="true"/>
+    	<setting id="ask_playlist_items" type="bool" label="Ativar Sub-Links" default="true" />
+ 	</category>
+
+    <category label="Temas">
+    	<setting label="[COLOR white][B]Escolha um Tema abaixo:[/B][/COLOR]" type="lsep" />
+        <setting label="Seleção de Tema -" type="select"
+               values="Padrao|Purple|Flash|DC|Marvel|Vingadores|PiratasDoCaribe|Transformers|Pokemon|GOT|Hellboy|StarWars"
+               id="server" default="Padrao" visible="true"/>
+    </category>
+
+	<category label="Login Premium">
+	    <setting label="[COLOR blue][B]Preencha com usuário e senha fornecidos logo abaixo:[/B][/COLOR]" type="lsep" /> 
+		<setting default="" label="[COLOR=white]Usuário[/COLOR]" type="text" id="userid" enable="!eq(-2,false)" option="hidden"/>
+		<setting default="" label="[COLOR=white]Senha[/COLOR]" type="text" id="passwordid" enable="!eq(-2,false)" option="hidden"/>
+	</category>
+
+    <category label="Info">
+ 		<setting label="[COLOR lime][B]Brasil[COLOR yellow]Full[/B][/COLOR]
+ 		[COLOR white][B]Site: www.brfull.ml[/B][/COLOR]
+ 		[COLOR white][B]Página Facebook: facebook.com/brasillfull[/B][/COLOR]" type="lsep" /> 
+    	<setting id="copiador" type="text" label="30060" option="hidden" default="C0P14N40C0M3D14" visible="false"/>
+  	</category>	
+
+</settings>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.cinemalivre" name="[COLOR white]Cinema[COLOR red] Livre[/COLOR]" version="1.0" provider-name="Lojink">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">[COLOR white]Cinema[COLOR red] Livre[/COLOR]</summary>
+	<description lang="en">O [COLOR white]Cinema[COLOR red] Livre[/COLOR] é um portal de vídeos dedicado a disponibilizar online filmes clássicos em versões completas e legendadas.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

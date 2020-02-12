@@ -1,0 +1,67 @@
+V2.9
+- New Repo
+
+V2.8
+- Usando novas melhorias XML Python
+
+V2.7
+- Compatibilidade Enigma2.
+- Colaborador: Airton Blau
+
+V2.6
+- Compatibilidade Atto i-smart.
+
+V2.5
+- Captura de link muito mais rápido
+- Resolve Bug varios
+
+V2.4
+- Resolve DNS
+- Compativilidad Addons: Smart, Xtrio, Core, Premium
+
+V2.3
+- Path resolved
+
+V2.2
+- Liberando tráfego das urls
+
+V2.1
+- Bug cache resolved.
+
+V2.1
+- Makeover.
+- Bug cache resolved.
+
+V2.0
+- Mudança de servidor.
+
+V1.0.9
+- Mudando o caminho do link.
+
+V1.0.8
+- Integração do novo método de conversão MD5 e pesquisa inversa.
+
+V1.0.7
+- Alteração na apresentação.
+
+V1.0.6
+- Mudança de servidor.
+
+V1.0.5 
+- Sem alterações, a atualização serve para limpar o cache.
+
+V1.0.4 
+- Makeover.
+
+V1.0.3 
+- Cambio de ruta de link principal.
+
+V1.0.2 
+- Cambio de alojamiento de nuestra lista M3U, para Atto.tv
+- Atualização do links.
+
+V1.0.1 
+- Cambio en la apariencia del Add-On.
+
+V1.0.0 
+- Versión beta del Add-On Atto.TV.Series

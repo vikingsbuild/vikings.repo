@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.foliver" name="[B][COLOR green].FOLIVER [COLOR blue]FOR [COLOR yellow]KODI [COLOR white]Repository[/B][/COLOR]" version="1.0.1" provider-name="FOLIVER FOR KODI">
+	<extension point="xbmc.addon.repository" name="Foliver For Kodi Repository">
+		<info compressed="false">http://raw.github.com/FoliverForKodi/repo/master/addons.xml</info>
+		<checksum>http://raw.github.com/FoliverForKodi/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/FoliverForKodi/repo/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>OS MEUS ADDONS</summary>
+		<description>FOLIVER FOR KODI ADDONS E BUILDS</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

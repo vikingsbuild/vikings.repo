@@ -1,0 +1,21 @@
+    <addon id="repositorio.attoplay" name="[B][COLOR green]|||[COLOR chartreuse]|||[COLOR gold]|||[COLOR blue] • [COLOR beige]REPOSITORIO ATTOPLAY[/COLOR] • [COLOR gold]|||[COLOR chartreuse]|||[COLOR green]|||[/COLOR][/B]" provider-name="[COLOR aqua]Team ATTO[/COLOR]" version="1.0">
+        <extension point="xbmc.addon.repository" name="Attoplay Repositorio">
+            <info compressed="true">https://raw.githubusercontent.com/attoflix/atto-repository-official/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/attoflix/atto-repository-official/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/attoflix/atto-repository-official/master/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">[COLOR aqua]Add-ons multimídia, compilação dos melhores Add-ons da internet[/COLOR]</summary>
+            <description lang="en">[COLOR aqua]Aqui pode encontrar os melhores Add-ons para Kodi.[COLOR yellow][COLOR blue]ATTO[/COLOR], Os créditos são para cada autor do Add-on, [COLOR blue]ATTO[/COLOR] apenas disponibiliza seu conteúdo.[/COLOR]</description>
+            <disclaimer lang="en">[COLOR aqua][COLOR blue]ATTO[/COLOR], apenas agrega e organiza os links externos. Não somos responsáveis pelos arquivos aqui encontrados. O autor não hospeda ou possui qualquer conteúdo encontrado dentro deste repositorio, Este é um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais.[/COLOR]</disclaimer>
+            <forum></forum>
+            <website></website>
+            <license>http://www.gnu.org/licenses/</license>
+            <platform>all</platform>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>

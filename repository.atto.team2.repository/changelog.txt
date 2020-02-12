@@ -1,0 +1,97 @@
+v2.9
+- Add-ons Atto atualizados.
+
+v2.8
+- Mudanca do servidor. Endereço Desbloqueado
+
+v2.7
+- Resolvendo Bug Addons ATTO
+
+v2.6
+- Liberando tráfego das urls.
+- Novos Addons Adicionados.
+- Addons Adults +18 adicionados.
+
+v2.5
+- Makeover
+
+v2.4
+- Addon Atto-Filmes, atualizado.
+
+v2.2.3
+- Addon AttoFlix, adicionado.
+
+v2.2
+- Addon Neptune Rising, adicionado.
+- Addon Elementum, adicionado.
+- Addon InovaTV, adicionado.
+- Addon Point242, adicionado.
+
+v2.1
+- No changes
+
+v2.0
+- No changes
+
+v1.9
+- Addon NetCineUS, adicionado.
+- Addon Torrent Player, adicionado..
+
+v1.9
+- Alteração na apresentação dos complementos do repositório.
+
+v1.8
+- Resolvendo Bug #404
+
+v1.7
+- Addon Atto-Torrents, atualizado.
+- Addon Atto-Series, atualizado.
+- Addon Atto-Filmes, atualizado.
+- Addon Atto-Canais-IPTV, atualizado.
+- Addon Atto-Help, atualizado.
+- Addon MegaBoxTV, adicionado.
+- Addon BrazucaPlay, adicionado.
+- Addon FlixPlay, adicionado.
+- Addon PixelCanais, adicionado.
+- Addon KCleaner, adicionado.
+
+v1.6
+- Addon Atto-Torrents, adicionado.
+- Addon FlixNet, adicionado.
+- Addon  XXX-O-DUS, adicionado.
+- Addon PlayList Loader, adicionado.
+- Addon Xnxx.com, removido.
+- Addon KF Media Center, removido.
+- Addon TorrentBR, removido.
+- Addon Watch TV Brasil, removido.
+- Addon Atto-Series, atualizado.
+- Addon Atto-Filmes, atualizado
+
+v1.5
+- Novo addon agregado:
+- ATTO-HELP! - 1.0.0
+- Atualizações de addons:
+- ATTO-SERIES!
+- ATTO-LATINOS!
+
+v1.4
+- Novos addons agregados:
+- Quasar - 0.9.78
+- TorrentBR - 1.0.12
+- Openload Movies - 1.4.9
+- BuzzFunny Videos - 0.0.2
+- Nova Dependencia agregada:
+- Quasar Burst - 0.5.10
+
+v1.3
+- Inserção de novos addons e alterações no addon "Atto-filme" [Se quito a Secção Filmes-Adulto]
+
+v1.2
+- Alteração na aparência e na estrutura do complemento
+
+v1.1
+- No Data Available
+
+v1.0
+- Initial Version.
+
