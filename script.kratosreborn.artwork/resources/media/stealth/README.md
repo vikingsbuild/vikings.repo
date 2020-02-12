@@ -1,0 +1,2 @@
+# kratosrebornTheme
+Theme
