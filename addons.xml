@@ -181,84 +181,6 @@ provider-name="By Chalado">
 	</extension>
 </addon>
 
-<addon id="plugin.video..conexao"
-       name="[B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"
-       version="3.0.3"
-       provider-name="[B][COLOR lime]Equipe:[/B] [B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]">
- <requires>
-
-	<import addon="xbmc.addon" version="12.0.0"/>
-    <import addon="xbmc.python" version="2.25.0"/>
-	<import addon="script.module.t0mm0.common"/>
-    <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.simple.downloader"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
-	<import addon="script.module.youtube.dl" optional="true"/>
-	<import addon="plugin.video.dailymotion_com"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson"/>
-	<import addon="script.common.plugin.cache"/>
-    <import addon="script.module.metahandler"/>
-    <import addon="script.module.livestreamer"/>
-    <import addon="script.module.pyamf"/>
-	<import addon="script.module.addon.common"/>
-	<import addon="script.module.addon.signals"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.unidecode"/>
-
-
- </requires>
-  <extension point="xbmc.python.pluginsource" library="youtube.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.repository" name="Vikings Repository">
-		<info compressed="false">http://raw.github.com/Marciocn/repo.conexaoTV/master/addons.xml</info>
-		<checksum>http://raw.github.com/Marciocn/repo.conexaoTV/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.githubusercontent.com/Marciocn/repo.conexaoTV/master/ZipFiles/</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[B][COLOR beige]Cone[COLOR red][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR blue]-[COLOR aquamarine]Multi[COLOR blue]-[COLOR aqua]Addons[/COLOR][/B][COLOR aqua][B]  Feito Pra VocÃª[/B][/COLOR]</summary>
-    <disclaimer lang="en">O autor nÃ£o Ã© responsÃ¡vel pelo uso deste addon. O autor nÃ£o Ã© responsÃ¡vel pelo conteÃºdo encontrado usando este addon. O autor nÃ£o hospeda ou possui qualquer conteÃºdo encontrado dentro deste addon. O autor nÃ£o Ã© de forma alguma afiliado com Kodi, Team Kodi, ou a FundaÃ§Ã£o XBMC. Este Ã© um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais. fins protegidos pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a seÃ§Ã£o 107, que promove a liberdade de expressÃ£o, ao permitir o uso nÃ£o licenciado de obras protegidas por direitos autorais.</disclaimer>
-	<description lang="en">[COLOR lime]*TV*[COLOR red]*FILMES*[/COLOR][COLOR firebrick]*SERIES*[COLOR blue]*DESENHOS*[COLOR orange]*ANIMES*[COLOR cyan]*LANCAMENTOS*[COLOR lime]*HD*[COLOR yellow]*FHD*[/COLOR]</description>
-	<news>[COLOR lime] AtualizaÃ§Ã£o[COLOR red] v3.0.3:[/COLOR]
-          [COLOR god][B]Melhorias de estabilidade[/B][/COLOR]
-</news>
-    <platform>all</platform>
-  <assets>
-<icon>icon.png</icon>
-<fanart>fanart.jpg</fanart>
-<screenshot>resources/screenshots/1.jpeg</screenshot>
-<screenshot>resources/screenshots/2.jpeg</screenshot>
-<screenshot>resources/screenshots/3.jpeg</screenshot>
-  </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video..ConexaoTorrents" name="[B][COLOR beige]Cone[B][COLOR beige][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR aqua] Torrents[/COLOR][/B]" version="1.0.2" provider-name="Conexao Play">
-  <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<!--import addon="script.module.urlresolver" version="2.10.0"/-->
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[B][COLOR beige]Cone[B][COLOR beige][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR aqua] Torrents[/COLOR][/B]</summary>
-    <description lang="en">ASSISTA FILMES E SÃ‰RIES EM TORRENTS DIRETO NO KODI.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
 <addon id="plugin.video..pikachu"
        name="[B][COLOR yellow][B]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
        version="1.12.0"
@@ -950,6 +872,84 @@ O autor nÃ£o Ã© de forma alguma afiliado Ã  Kodi, Ã  Team Kodi ou Ã  X
     <summary lang="en">[COLOR white]Cinema[COLOR red] Livre[/COLOR]</summary>
 	<description lang="en">O [COLOR white]Cinema[COLOR red] Livre[/COLOR] Ã© um portal de vÃ­deos dedicado a disponibilizar online filmes clÃ¡ssicos em versÃµes completas e legendadas.</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.conexao"
+       name="[B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"
+       version="3.0.3"
+       provider-name="[B][COLOR lime]Equipe:[/B] [B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]">
+ <requires>
+
+	<import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.python" version="2.25.0"/>
+	<import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+	<import addon="plugin.video.dailymotion_com"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/>
+	<import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+    <import addon="script.module.livestreamer"/>
+    <import addon="script.module.pyamf"/>
+	<import addon="script.module.addon.common"/>
+	<import addon="script.module.addon.signals"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.unidecode"/>
+
+
+ </requires>
+  <extension point="xbmc.python.pluginsource" library="youtube.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.repository" name="Vikings Repository">
+		<info compressed="false">http://raw.github.com/Marciocn/repo.conexaoTV/master/addons.xml</info>
+		<checksum>http://raw.github.com/Marciocn/repo.conexaoTV/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.githubusercontent.com/Marciocn/repo.conexaoTV/master/ZipFiles/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR beige]Cone[COLOR red][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR blue]-[COLOR aquamarine]Multi[COLOR blue]-[COLOR aqua]Addons[/COLOR][/B][COLOR aqua][B]  Feito Pra VocÃª[/B][/COLOR]</summary>
+    <disclaimer lang="en">O autor nÃ£o Ã© responsÃ¡vel pelo uso deste addon. O autor nÃ£o Ã© responsÃ¡vel pelo conteÃºdo encontrado usando este addon. O autor nÃ£o hospeda ou possui qualquer conteÃºdo encontrado dentro deste addon. O autor nÃ£o Ã© de forma alguma afiliado com Kodi, Team Kodi, ou a FundaÃ§Ã£o XBMC. Este Ã© um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais. fins protegidos pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a seÃ§Ã£o 107, que promove a liberdade de expressÃ£o, ao permitir o uso nÃ£o licenciado de obras protegidas por direitos autorais.</disclaimer>
+	<description lang="en">[COLOR lime]*TV*[COLOR red]*FILMES*[/COLOR][COLOR firebrick]*SERIES*[COLOR blue]*DESENHOS*[COLOR orange]*ANIMES*[COLOR cyan]*LANCAMENTOS*[COLOR lime]*HD*[COLOR yellow]*FHD*[/COLOR]</description>
+	<news>[COLOR lime] AtualizaÃ§Ã£o[COLOR red] v3.0.3:[/COLOR]
+          [COLOR god][B]Melhorias de estabilidade[/B][/COLOR]
+</news>
+    <platform>all</platform>
+  <assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+<screenshot>resources/screenshots/1.jpeg</screenshot>
+<screenshot>resources/screenshots/2.jpeg</screenshot>
+<screenshot>resources/screenshots/3.jpeg</screenshot>
+  </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ConexaoTorrents" name="[B][COLOR beige]Cone[B][COLOR beige][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR aqua] Torrents[/COLOR][/B]" version="1.0.2" provider-name="Conexao Play">
+  <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<!--import addon="script.module.urlresolver" version="2.10.0"/-->
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR beige]Cone[B][COLOR beige][B]x[/B][COLOR  beige][B]Ã£o[/COLOR][COLOR aqua] Torrents[/COLOR][/B]</summary>
+    <description lang="en">ASSISTA FILMES E SÃ‰RIES EM TORRENTS DIRETO NO KODI.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
   </extension>
 </addon>
 
@@ -3540,6 +3540,23 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     <license>MIT License, Academic Free License v. 2.1</license>
     <website>https://pypi.python.org/pypi/simplejson/</website>
     <source>https://pypi.python.org/pypi/simplejson/</source>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver"
+     name="URLResolver"
+     version="2.10.0"
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
   </extension>
 </addon>
 
