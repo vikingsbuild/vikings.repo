@@ -3376,7 +3376,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 </addon>
 
 <addon 	id="vikings.repo" name="[B][COLOR yellow]  Vikings  [COLOR orange]Repositorio Vikings Oficial, SEM BANIMENTO!![/B][/COLOR]"
-		version="1.53.1"
+		version="1.54"
 		provider-name="[B][COLOR gold]Vikings TEAM[/B][/COLOR]">
 
 	<requires>
@@ -3395,13 +3395,16 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 	<extension point="xbmc.addon.metadata">
 	<news>
 	[COLOR orange]LOG DE CORREÃ‡Ã”ES[/COLOR]
+	[COLOR red]*[/COLOR] V 1.53 - ajustes de dependencias...
 	[COLOR orange]*[/COLOR] V 1.15.1 - Excluido a instalaÃ§Ã£o do plugin Youtube que provocava erros em algumas box...
 	[COLOR gold]*[/COLOR]   V 1.17.1 - Corrigido dependÃªncias que provocava erros quando instalado o repositÃ³rio em Kodi PadrÃ£o.
 	</news>
 
 	<summary>Repositorio Vikings levando os melhores addons a sua familia e aos quatro cantos do Mundo!!!</summary>
 
-	<description>	[B][COLOR red]RepositÃ³rio oficial Vikings Build - Proibido reproduÃ§Ã£o total ou parcial sem prÃ©via autorizaÃ§Ã£o[/COLOR][/B]
+	<description>
+                    [B][COLOR orange]RepositÃ³rio Vikings, SEM BANIMENTO! SEM SCRIPT MALICIOSO!! PURO, LIMPO E SIMPLES!!![/COLOR][/B]
+					[B][COLOR red]RepositÃ³rio oficial Vikings Build - Proibido reproduÃ§Ã£o total ou parcial sem prÃ©via autorizaÃ§Ã£o[/COLOR][/B]
 					[B][COLOR white]Addons deste repositÃ³rio Ã© de uso gratuito!![/COLOR][/B]
 					[B][COLOR firebrick]Proibido a venda dos add-ons contidos neste repositÃ³rio[/COLOR][/B]
 	</description>
