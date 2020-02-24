@@ -469,37 +469,33 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<addon id="plugin.video.BlurayPlay"
-       name="[COLOR red][B]BLURAY[/B][/COLOR] [COLOR white][B]PLAY'S[/B][/COLOR]"
-       version="3.1.2"
-       provider-name="[B][COLOR yellow]TEAM[/COLOR] [COLOR red]BLURAY[/COLOR] [COLOR white]PLAY'S[/B][/COLOR]">
-  <requires>
+<addon id="plugin.video.BlurayPlay" name="[B][COLOR red]BLURAY[/COLOR][/B] [B][COLOR white]PLAY'S[/COLOR][/B]" version="3.1.3" provider-name="[B][COLOR yellow]TEAM[/COLOR] [COLOR white]BLURAY[/COLOR] [COLOR red]PLAY'S[/B][/COLOR]">
+<requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.repository" name="Bluray Plays REPO">
-    <info compressed="false">http://bluerayplay.com/kodi/repo/addons.xml</info>
-    <checksum>http://bluerayplay.com/kodi/repo/addons.xml.md5</checksum>
-    <datadir zip="true">http://bluerayplay.com/kodi/repo/addons</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>[B][COLOR gold]FILMES,SERIES EM [COLOR gold]FHD[/COLOR], [COLOR gold]HD[/COLOR], [COLOR gold]SD[/COLOR], [COLOR gold]NOVELAS[/COLOR], [COLOR gold]DOCUMENTARIOS[/COLOR], [COLOR gold]DESENHOS[/COLOR], [COLOR gold]ETC[/COLOR], [COLOR gold]DUBLADOS[/COLOR] e [COLOR gold]Legendados[/COLOR]. O MELHOR ADDON DE FILMES E SERIES PRO SEU KODI!, AQUI VOCÃŠ ENCONTRA TUDO, GARANTIDO!. SenÃ£o ACHA FALA COM NOSSO TEAM[/COLOR][/B]</summary>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+</requires>
+
+<extension point="xbmc.python.pluginsource" library="main.py">
+	<provides>video</provides>
+</extension>
+
+<extension point="xbmc.addon.repository" name="Bluray Plays REPO">
+	<info compressed="false">https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons.xml</info>
+	<checksum>https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons</datadir>
+</extension>
+
+<extension point="xbmc.addon.metadata">
+    <summary>[COLOR gold]FILMES, SERIES EM [COLOR gold]FHD[/COLOR], [COLOR gold]HD[/COLOR], [COLOR gold]SD[/COLOR], [COLOR gold]NOVELAS[/COLOR], [COLOR gold]DOCUMENTARIOS[/COLOR], [COLOR gold]DESENHOS[/COLOR], [COLOR gold]ETC[/COLOR], [COLOR gold]DUBLADOS[/COLOR] e [COLOR gold]Legendados[/COLOR][/B]. O MELHOR ADDON DE FILMES E SERIES PRO SEU KODI!, AQUI VOCÃŠ ENCONTRA TUDO, GARANTIDO!. Se NÃ£o ACHA FALA COM NOSSO TEAM.[/COLOR]</summary>
     <description lang="en">[B][COLOR gold]BLURAY PLAY'S Ã‰ Addon Do Kodi, Onde Organizamos Os Conteudos e Upamos Para Nosso Servidor Privado, EntÃ£o Se Quiser Copiar Deixa Os Creditos, Fela Da Puta... Ateciosamente Team BLURAY PLAY'S[/COLOR][/B]</description>
     <disclaimer lang="en">[B][COLOR white]O autor hospedar o conteÃºdo exibido por este complemento.[/COLOR][/B] [B][COLOR white]BLURAY PLAY'S[/COLOR][/B] [B][COLOR red]tem nenhuma afiliaÃ§Ã£o com o provedor de conteÃºdo[/COLOR][/B] [B][COLOR gold]somente Ã© responsÃ¡vel por coletar os melhores filmes da Internet, categorizaÃ§Ã£o e otimizÃ¡-los, de modo a que esta ao alcance de seus clientes. tÃ£o fÃ¡cil e descomplicada.[/COLOR][/B]</disclaimer>
 	<platform>all</platform>
@@ -510,7 +506,8 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     <screenshot>resources/screenshots/02.jpg</screenshot>
     <screenshot>resources/screenshots/03.jpg</screenshot>
 	</assets>
-  </extension>
+</extension>
+
 </addon>
 
 <addon id="plugin.video.brasilfull"
