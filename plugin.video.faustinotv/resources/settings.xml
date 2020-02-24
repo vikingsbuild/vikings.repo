@@ -1,7 +1,7 @@
 <settings>
    	<category label="Login">
         <setting id="username" type="text" label="Username" default="" visible="true"/>
-        <setting id="password" type="text" label="Password" option="hidden" default="" visible="true"/>
+        <setting id="password" type="text" label="Password" default="" visible="true" option="hidden"/>
     </category>
 
  <category label="General">

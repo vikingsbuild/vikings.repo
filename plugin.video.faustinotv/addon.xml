@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.1" provider-name="FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2" provider-name="Equipe FaustinoTV">
 
   <requires>
 
@@ -28,10 +28,10 @@
 	
 	<import addon="plugin.video.f4mTester" version="2.7.1"/>
 
-	<import addon="script.video.F4mProxy" version="2.8.7"/>
+	<import addon="script.video.F4mProxy" version="2.1.0"/>
 	
     <import addon="plugin.googledrive" version="1.3.3"/>
-
+ 
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -42,13 +42,8 @@
 
   <extension point="xbmc.addon.metadata">
     <summary lang="en">TV AO VIVO | FILMES | SERIES</summary>
-    <description lang="en">[B][COLOR yellow]FaustinoTV[/COLOR] [COLOR lime]//[/COLOR] [COLOR deepskyblue]Free4ALL[/COLOR][/B]</description>
+    <description lang="en">[B][COLOR deepskyblue]FaustinoTV[/COLOR] - [COLOR yellow]Free4ALLL[/COLOR][/B]</description>
     <platform>all</platform>
-			<news>
-v2.0 released Feb 24, 2020:
-- Adicionado Área VIP: Bônus para doadores
-		</news>
-
  </extension>
 
 </addon>
