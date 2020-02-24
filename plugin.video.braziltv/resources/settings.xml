@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <category label="Bônus">
-        <setting label="[COLOR lightblue]Credenciais da área bônus:[/COLOR]" type="lsep"/>
-        <setting label="E-mail" type="text" id="vipmail" default=""/>
-        <setting label="Senha" type="text" option="hidden" id="vippass" default=""/>
-        <setting label="[CR][B][COLOR yellow]Receba sua senha colaborando com nosso projeto![/COLOR][/B]" type="bool"/>
-        <setting label="[CR][B][COLOR pink]Faça uma doação em: https://bit.ly/BrazilTVDoar[/COLOR][/B]" type="bool"/>
-    </category>
     <category label="Servidores">
         <setting label="[COLOR lightblue]Filtro de servidores de canais:[/COLOR]" type="lsep"/>
         <setting label="Mostrar opções HD [COLOR gray](se disponível)[/COLOR]" type="bool" id="showhd" default="true"/>

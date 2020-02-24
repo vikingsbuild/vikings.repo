@@ -1,4 +1,9 @@
 <settings>
+   	<category label="Login">
+        <setting id="username" type="text" label="Username" default="" visible="true"/>
+        <setting id="password" type="text" label="Password" option="hidden" default="" visible="true"/>
+    </category>
+
  <category label="General">
     <setting id="save_location" type="folder"  label="Select a download location." default=""/>
     <setting id="use_thumb" type="bool" label="Use Thumbnails as Fanart" default="true" />

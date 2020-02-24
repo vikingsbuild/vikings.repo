@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="demagorgon.repository" name="Demagorgon repository" version="0.0.2" provider-name="Demagorgon">
+	<extension point="xbmc.addon.repository" name="Demagorgon Add-on Repository">
+		<info compressed="false">https://raw.githubusercontent.com/cmvac/demagorgon.repository/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/cmvac/demagorgon.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/cmvac/demagorgon.repository/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Demagorgon Addons</summary>
+		<description>The Demagorgon takes you to the next dimension of Kodi! ;)</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="One.repo" name="[B][COLOR white]Repositorio[/COLOR]: [COLOR aquamarine]OnePlay[/COLOR][/B]" version="1.03" provider-name="Team [COLOR aquamarine]OnePlay[/COLOR]">
 	<requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -181,41 +195,6 @@ provider-name="By Chalado">
 	</extension>
 </addon>
 
-<addon id="plugin.video..pikachu"
-       name="[B][COLOR yellow][B]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
-       version="1.12.0"
-       provider-name="[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-	<import addon="plugin.video.SportsDevil" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]</summary>
-    <description>
-       [B]ATENCAO:[B] [COLOR yellow] Os conteudos diponibilizados neste [ ADDON ],sao conteudos retransmitidos de iternet e outras plataformas digitais;Nessecitando assim de uma periodica manutencao.Caso o conteudo que voce queira assistir esteja  [COLOR lime][ OFF ]  [COLOR firebrick] Por favor avise-nos : [ 85]  99738-1821 [COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]
-
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.adulthideout" name="AdultHideout" version="0.8.6" provider-name="Vashiel">
     <requires>
     </requires>
@@ -390,178 +369,34 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 	</extension>
 </addon>
 
-<addon id="plugin.video.apollo"
-               name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]"
-       version="1.1.9"
-       provider-name="APOLLO">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" version="0.9.4"/>
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-	<import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="script.module.livestreamer"/>
-    <import addon="script.module.pyamf"/>
-	<import addon="script.module.addon.common" />
-	<import addon="script.module.addon.signals" version="0.0.1"/>
+<addon id="plugin.video.apollo" name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]" version="1.3.1" provider-name="[COLOR deepskyblue][B]TEAM[/COLOR][/B][COLOR orange][B] APOLLO[/COLOR][/B]">
+<requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.unidecode" version = "0.4.16" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="apollo.py">
-        <provides>video</provides>
-  </extension>
-    <extension point="xbmc.addon.repository" name="Repositorio [COLOR orange][B]APOLLO[/B][/COLOR][COLOR deepskyblue][B][/B][/COLOR]">
-		<info compressed="false">https://raw.githubusercontent.com/Tiagotj/REPOSITORIO-APOLLO/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Tiagotj/REPOSITORIO-APOLLO/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Tiagotj/REPOSITORIO-APOLLO/master/ZipFiles</datadir>
-	</extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR orange][B]FEITO PARA FAMILIA![/COLOR][/B]</summary>
-	<description lang="en">[COLOR deepskyblue][B]O AUTOR NAO E RESPONSAVEL POR QUALQUER CONTEUDOS ENCONTRADO NESSE[/COLOR][/B] [COLOR orange][B] ADDON[/COLOR][/B]</description>
-	<disclaimer lang="en">O AUTOR NAO E DE FORMA ALGUMA FILIADO O KODI OU TEAM KODI, ESSES CONTEUDOS OU RECURSOS SEM FIM LUCRATIVOS ORGANIZADO EXCLUSIVAMENTE PARA FINS EDUCA CIONAIS E PROTEGIDO PELA DOUTRINA DE USO DA LEI DE DIREITOS AUTORAIS ESPECIFICAMENTE A SECAO 107 QUE PROMOVE A LIBERDADE DE EXPRESSAO PERMITIDO O USO DE OBRAS PROTEGIDAS POR DIREITOS AUTORAIS.</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.atto" name="[B][COLOR black]_[COLOR aqua]ATTO[COLOR blue] - [COLOR gold]CANAIS[COLOR blue] - [COLOR white]IPTV.[/COLOR][/B]" version="7.5" provider-name="[COLOR aqua]Team ATTO[/COLOR]">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.t0mm0.common" version="2.1.1" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.simple.downloader" version="1.9.5" />
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.simple.downloader" version="1.9.5" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.httplib2" />
-        <import addon="script.module.youtube.dl" optional="true" />
-        <import addon="plugin.video.youtube" version="5.3.12" />
-        <import addon="script.module.urlresolver" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.common.plugin.cache" version="2.5.5" />
-        <import addon="script.module.metahandler" version="2.9.0" />
-        <import addon="repository.atto.team2.repository" optional="false" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="run.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR aqua]Canais IPTV, sem antenas pela internet.[/COLOR]</summary>
-        <description lang="en">[COLOR fuchsia]AttoCanais, Ã‰ um mecanismo de pesquisa e transmissÃ£o de links. NÃ£o navega em sites de Iptv, por razÃµes legais. No entanto, tem complementos especialmente projetados (chamados de provedores ou fornecedores) que sÃ£o instalados separadamente.[/COLOR]</description>
-        <disclaimer lang="en">[COLOR aqua]O autor nÃ£o Ã© responsÃ¡vel pelo conteÃºdo encontrado neste addon. O autor nÃ£o hospeda qualquer conteÃºdo encontrado dentro deste addon. O autor nÃ£o estÃ¡ vinculado ou relacionado de forma alguma a Kodi, Team Kodi ou XBMC Foundation.[COLOR]</disclaimer>
-        <website></website>
-        <forum></forum>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3.</license>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.atto.filmes" name="[B][COLOR black]_[COLOR aqua]ATTO[COLOR white] - [COLOR violet]FILMES![/COLOR][/B]" version="2.9" provider-name="[COLOR aqua]Team ATTO[/COLOR]">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.t0mm0.common" version="2.1.1" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.simple.downloader" version="1.9.5" />
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.simple.downloader" version="1.9.5" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.httplib2" />
-        <import addon="script.module.youtube.dl" optional="true" />
-        <import addon="plugin.video.youtube" version="5.3.12" />
-        <import addon="script.module.urlresolver" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.common.plugin.cache" version="2.5.5" />
-        <import addon="script.module.metahandler" version="2.9.0" />
-        <import addon="repository.atto.team2.repository" optional="false" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="run.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR aqua]AttoFilmes: ConteÃºdo VoD, disponÃ­vel na internet[/COLOR]</summary>
-        <description lang="en">[COLOR fuchsia]AttoFilmes, Ã‰ um mecanismo de pesquisa e transmissÃ£o de links. NÃ£o navega em sites de Filmes ou Series, por razÃµes legais. No entanto, tem complementos especialmente projetados (chamados de provedores ou fornecedores) que sÃ£o instalados separadamente.[/COLOR]</description>
-        <disclaimer lang="en">[COLOR aqua]O autor nÃ£o Ã© responsÃ¡vel pelo conteÃºdo encontrado neste addon. O autor nÃ£o hospeda qualquer conteÃºdo encontrado dentro deste addon. O autor nÃ£o estÃ¡ vinculado ou relacionado de forma alguma a Kodi, Team Kodi ou XBMC Foundation.[COLOR]</disclaimer>
-        <website></website>
-        <forum></forum>
-        <license>http://www.gnu.org/licenses/</license>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.atto.series" name="[B][COLOR black]_[COLOR aqua]ATTO[COLOR white] - [COLOR pink]SERIES!.[/COLOR][/B]" version="2.9" provider-name="[COLOR aqua]Team ATTO[/COLOR]">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.t0mm0.common" version="2.1.1" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.simple.downloader" version="1.9.5" />
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.simple.downloader" version="1.9.5" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.httplib2" />
-        <import addon="script.module.youtube.dl" optional="true" />
-        <import addon="plugin.video.youtube" version="5.3.12" />
-        <import addon="script.module.urlresolver" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.common.plugin.cache" version="2.5.5" />
-        <import addon="script.module.metahandler" version="2.9.0" />
-        <import addon="repository.atto.team2.repository" optional="false" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="run.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR aqua]AttoSeries: ConteÃºdo VoD, disponÃ­vel na internet[/COLOR]</summary>
-        <description lang="en">[COLOR fuchsia]AttoSeries, Ã‰ um mecanismo de pesquisa e transmissÃ£o de links. NÃ£o navega em sites de Filmes ou Series, por razÃµes legais. No entanto, tem complementos especialmente projetados (chamados de provedores ou fornecedores) que sÃ£o instalados separadamente.[/COLOR]</description>
-        <disclaimer lang="en">[COLOR aqua]O autor nÃ£o Ã© responsÃ¡vel pelo conteÃºdo encontrado neste addon. O autor nÃ£o hospeda qualquer conteÃºdo encontrado dentro deste addon. O autor nÃ£o estÃ¡ vinculado ou relacionado de forma alguma a Kodi, Team Kodi ou XBMC Foundation.[COLOR]</disclaimer>
-        <website></website>
-        <forum></forum>
-        <license>http://www.gnu.org/licenses/</license>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.atto.torrents" name="[B][COLOR black]_[COLOR aqua]ATTO[COLOR white] - [/COLOR][COLOR lime]TORRENTS![/COLOR][/B]" version="1.4" provider-name="[COLOR lime]Team - ATTO[/COLOR]">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="repository.atto.team2.repository" optional="false" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR lime]Filmes Torrent - Series Torrent - [COLOR gold] (Dual-Audio) 1080P - 720P[/COLOR]</summary>
-        <description lang="en">[COLOR gold][B]ATTO[COLOR white] - [/COLOR]TORRENTS![/B][/COLOR][COLOR lime], oferece Filmes y Series, de qualidade 4K, H265 - 7.1, H264 - 5.1, 3D, 1080P e 720P y WEB-RIP, disponÃ­veis para download via torrent, links totalmente funcionais e constantemente
-            atualizados.[/COLOR]
-        </description>
-        <disclaimer lang="en">[COLOR aqua]O autor nÃ£o Ã© responsÃ¡vel pelo conteÃºdo encontrado neste addon. O autor nÃ£o hospeda qualquer conteÃºdo encontrado dentro deste addon. O autor nÃ£o estÃ¡ vinculado ou relacionado de forma alguma a Kodi, Team Kodi ou XBMC Foundation.[COLOR]</disclaimer>
-        <website></website>
-        <forum></forum>
-        <license>http://www.gnu.org/licenses/</license>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="apollo.py">
+<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.repository" name="Repositorio [COLOR orange][B]APOLLO[/B][/COLOR][COLOR deepskyblue][B][/B][/COLOR]">
+<info compressed="false">https://raw.githubusercontent.com/Tiagotj/REPOSITORIO-APOLLO/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/Tiagotj/REPOSITORIO-APOLLO/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/Tiagotj/REPOSITORIO-APOLLO/master/ZipFiles</datadir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">[COLOR orange][B]FEITO PARA FAMILIA![/COLOR][/B]</summary>
+<description lang="en">[COLOR deepskyblue][B]O AUTOR NAO E RESPONSAVEL POR QUALQUER CONTEUDOS ENCONTRADO NESSE[/COLOR][/B] [COLOR orange][B] ADDON[/COLOR][/B]</description>
+<disclaimer lang="en">O AUTOR NAO E DE FORMA ALGUMA FILIADO O KODI OU TEAM KODI, ESSES CONTEUDOS OU RECURSOS SEM FIM LUCRATIVOS ORGANIZADO EXCLUSIVAMENTE PARA FINS EDUCA CIONAIS E PROTEGIDO PELA DOUTRINA DE USO DA LEI DE DIREITOS AUTORAIS ESPECIFICAMENTE A SECAO 107 QUE PROMOVE A LIBERDADE DE EXPRESSAO PERMITIDO O USO DE OBRAS PROTEGIDAS POR DIREITOS AUTORAIS.</disclaimer>
+<platform>all</platform>
+</extension>
 </addon>
 
 <addon id="plugin.video.bandmania"
@@ -735,11 +570,11 @@ Sistema de Pesquisa Filmes e Canaisâ”‚
   </extension>
 </addon>
 
-<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.4" provider-name="teamBrazilTV">
+<addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.5" provider-name="teamBrazilTV">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="plugin.video.f4mTester" version="3.0.0"/>
-    <import addon="plugin.video.youtube" version="6.6.0" optional="true"/>
+    <import addon="plugin.video.f4mTester" version="2.7.9"/>
+    <import addon="plugin.video.youtube" version="6.5.2" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -752,11 +587,12 @@ Sistema de Pesquisa Filmes e Canaisâ”‚
         <fanart>fanart.jpg</fanart>
     </assets>
     <website>https://braziltv.yolasite.com</website>
-    <news>[B][COLOR lime]v1.2.4[/COLOR][/B]
-- Ajustes na Ã¡rea de doadores
-- Melhorada visibilidade do status do sistema
-- AtualizaÃ§Ã£o de dependÃªncias
-- CorreÃ§Ã£o de bugs e pequenos ajustes</news>
+    <news>[B][COLOR lime]v1.2.5[/COLOR][/B]
+- Ajustes nos menus
+- CorreÃ§Ã£o de novas dependÃªncias
+- Adicionada notificaÃ§Ã£o de atualizaÃ§Ãµes
+- Removida "Ã¡rea VIP" / bÃ´nus para doadores
+(leia o artigo na nossa pÃ¡gina oficial do Facebook para saber o motivo)</news>
   </extension>
 </addon>
 
@@ -1176,53 +1012,6 @@ O autor nÃ£o Ã© de forma alguma afiliado Ã  Kodi, Ã  Team Kodi ou Ã  X
     </extension>
 </addon>
 
-
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="1.6" provider-name="TeamFaustinoTV">
-
-  <requires>
-
-    <import addon="xbmc.python" version="2.1.0"/>
-
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-
-    <import addon="script.module.beautifulsoup4"/>
-
-    <import addon="script.module.requests"/>
-
-    <import addon="script.module.httplib2"/>
-
-    <import addon="script.module.youtube.dl" optional="true"/>
-
-    <import addon="plugin.video.youtube"/>
-
-    <import addon="script.module.urlresolver" optional="true"/>
-
-    <import addon="script.module.simplejson"/>
-
-	<import addon="script.module.livestreamer" optional="true"/>
-
-	<import addon="plugin.video.f4mTester" version="2.7.1"/>
-
-	<import addon="script.video.F4mProxy" version="2.1.0"/>
-
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-
-        <provides>video</provides>
-
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">TV AO VIVO | FILMES | SERIES</summary>
-    <description lang="en">PLUGIN OFICIAL FAUSTINOTV</description>
-    <platform>all</platform>
- </extension>
-
-</addon>
-
 <addon id="plugin.video.favourites"
 version="0.0.5"
 name="Video Favourites"
@@ -1240,65 +1029,6 @@ provider-name="primaeval">
   <description lang="en"></description>
   <disclaimer lang="en"></disclaimer>
 </extension>
-</addon>
-
-<addon id="plugin.video.fenix.flix"
-       name="[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]"
-       version="4.6.4"
-       provider-name="Alderson">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-
-   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-	<extension point="xbmc.addon.repository" name="Repositorio Fenix Flix">
-		<info compressed="false">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/Zip</datadir>
-	</extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">TV [COLOR firebrick]l[/COLOR] FILMES [COLOR firebrick]l[/COLOR] SERIES [COLOR firebrick]l[/COLOR] DESENHOS [COLOR firebrick]l[/COLOR] ANIMES [COLOR firebrick]l[/COLOR] LANCAMENTOS [COLOR firebrick]l[/COLOR] HD [COLOR firebrick]l[/COLOR] FHD</summary>
-
-	<description lang="en">[COLOR firebrick]l[/COLOR] TV [COLOR firebrick]l[/COLOR] FILMES [COLOR firebrick]l[/COLOR] SERIES [COLOR firebrick]l[/COLOR] DESENHOS [COLOR firebrick]l[/COLOR] ANIMES [COLOR firebrick]l[/COLOR] LANCAMENTOS [COLOR firebrick]l[/COLOR] HD [COLOR firebrick]l[/COLOR] FHD [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] O autor nao hospeda nem possui nenhum conteudo encontrado neste addon. O autor nao e responsavel pelo uso e pelo conteudo encontrado neste addon [COLOR firebrick]l[/COLOR]
-
-l [COLOR firebrick]FENIX[/COLOR] FLIX - O MELHOR DO CINEMA NO SEU KODI - 100% FHD [COLOR firebrick]l[/COLOR]</description>
-    <disclaimer lang="en">O autor nao e de forma alguma afiliado a Kodi, a Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
-	<website>https://www.fenixflix.tk/</website>
-    <email></email>
-	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.6.4 [COLOR firebrick]l[/COLOR]
-
-[COLOR firebrick]l[/COLOR] Sistema de espelhamneto [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Novos links externos [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Correcao de Bugs [COLOR firebrick]l[/COLOR]
-
-[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]
-www.fenixflix.orgfree.com</news>
-    <platform>all</platform>
-      <assets>
-      	<icon>icon.png</icon>
-    	<fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshots/01.jpg</screenshot>
-        <screenshot>resources/screenshots/02.jpg</screenshot>
-        <screenshot>resources/screenshots/03.jpg</screenshot>
-      </assets>
-  </extension>
 </addon>
 
 <addon id="plugin.video.flechanegra" name="[COLOR red][B]Flecha[/B][/COLOR] [COLOR black][B]Negra[/B][/COLOR]" version="2.7" provider-name="Flecha">
@@ -1329,8 +1059,8 @@ www.fenixflix.orgfree.com</news>
 
 <addon id="plugin.video.foradabox"
        name="Fora da Box"
-       version="2.1"
-       provider-name="frenchdj, Demagorgon e bit.ly/[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR]">
+       version="2.2"
+       provider-name="Demagorgon">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -1578,7 +1308,7 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
 
 <addon id="plugin.video.KeltecMP"
        name="[B][COLOR dimgrey]KelTec[/COLOR]-[COLOR crimson]Media-Play[/COLOR][/B]"
-       version="5.0-J"
+       version="5.0-O"
        provider-name="Team KelTec Media'Play">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
@@ -1953,38 +1683,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
-<addon id="plugin.video.NeXus"
-       name="[COLOR red][B]NeXus[/B][/COLOR]"
-       version="3.0"
-       provider-name="Loki_rag">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.Nightwolf"
        name="[COLOR white][B]Night[/B][/COLOR][COLOR gold][B]Wolf[/B][/COLOR]"
        version="2.0"
@@ -2132,6 +1830,41 @@ Levando o lazer e o prazer para vocÃªs assistir e curtir cada momento com a fa
        <screenshot>resources/screenshots/2.jpg</screenshot>
        <screenshot>resources/screenshots/3.jpg</screenshot>
     </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.pikachu"
+       name="[B][COLOR yellow][B]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
+       version="2.0"
+       provider-name="[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]</summary>
+    <description>
+       [B]ATENCAO:[B] [COLOR yellow] Os conteudos diponibilizados neste [ ADDON ],sao conteudos retransmitidos de iternet e outras plataformas digitais;Nessecitando assim de uma periodica manutencao.Caso o conteudo que voce queira assistir esteja  [COLOR lime][ OFF ]  [COLOR firebrick] Por favor avise-nos : [ 85]  99738-1821 [COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]
+
+    </description>
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -2539,38 +2272,6 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
-<addon id="plugin.video.vida"
-       name="[COLOR cyan][B]--VIDA--[/B][/COLOR]"
-       version="4.8.0"
-       provider-name="IZAC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-   </requires>
-  <extension point="xbmc.python.pluginsource" library="youtube.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">vida</summary>
-    <description lang="pt">[B][COLOR cyan]--EQUIPE VIDA--[/COLOR][/B][B][COLOR white] IZAC -- BRIDA -- MORNING STAR -- NANDA TRISTANIA -- WILLIAN RDN.[/COLOR][/B]</description>
-	<disclaimer lang="en">--VIDA-- dÃª um UP na sua TV</disclaimer>
-	<platform>all</platform>
-  </extension>
-</addon>
-
 <addon
   id="plugin.video.videodevil"
   version="1.7.184"
@@ -2685,34 +2386,6 @@ Removed: Nudeflix</news>
      <screenshot>resources/art/screenshot-02.jpg</screenshot>
    </assets>
  </extension>
-</addon>
-
-<addon id="plugin.video.xxx.ghost" name="[B][COLOR skyblue]Ghost [/COLOR][COLOR red]XXX[/COLOR][/B]" version="1.0.1" provider-name="Team Ghost">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>[COLOR skyblue]Ghost [/COLOR][COLOR red]XXX[/COLOR]</summary>
-    <description>[COLOR skyblue]Ghost [/COLOR][COLOR red]XXX[/COLOR]</description>
-	<disclaimer>Wir uebernehmen keine Verantwortung fÃ¼r Probleme, die dieses Plugin in irgendeiner Form oder GroeÃŸe verursachen kÃ¶nnte..</disclaimer>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.YouKids"
@@ -2853,6 +2526,28 @@ version="1.0.1" provider-name="Marciocn">">
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repo.pikachutop" name="[B][COLOR yellow][B]PIKACHU [COLOR firebrick] ENTRETENIMENTOS!!![/B][/COLOR]" version="1.0" provider-name="[B][COLOR yellow][B]PIKACHU [COLOR firebrick] ENTRETENIMENTOS!!![/B][/COLOR]">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+</requires>
+<extension point="xbmc.addon.repository" name="[B][COLOR yellow][B]PIKACHU [COLOR firebrick] ENTRETENIMENTOS!!![/B][/COLOR]">
+<info compressed="false">https://raw.githubusercontent.com/kodishmediacenter/store/master/27012020/Laddons.xml</info>
+<checksum>https://raw.githubusercontent.com/kodishmediacenter/store/master/27012020/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/kodishmediacenter/store/master/27012020/</datadir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<news>
+</news>
+<summary>Repositorio oficial do Pikachu</summary>
+<description></description>
+<disclaimer>Seja Bem-Vindo a Familia</disclaimer>
+<platform>all</platform>
+<assets>
+<icon>icon.png</icon>
+</assets>
+</extension>
 </addon>
 
     <addon id="repositorio.attoplay" name="[B][COLOR green]|||[COLOR chartreuse]|||[COLOR gold]|||[COLOR blue] â€¢ [COLOR beige]REPOSITORIO ATTOPLAY[/COLOR] â€¢ [COLOR gold]|||[COLOR chartreuse]|||[COLOR green]|||[/COLOR][/B]" provider-name="[COLOR aqua]Team ATTO[/COLOR]" version="1.0">

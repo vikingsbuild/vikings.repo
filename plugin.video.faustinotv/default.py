@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import urllib
 import urllib2
-import re
+import re,requests, base64
 import os
 import xbmcplugin
 import xbmcgui
@@ -46,16 +46,26 @@ addon = xbmcaddon.Addon('plugin.video.faustinotv')
 addon_version = addon.getAddonInfo('version')
 profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 home = xbmc.translatePath(addon.getAddonInfo('path').decode('utf-8'))
+ART = xbmc.translatePath(os.path.join(home, 'resources','art'))
 favorites = os.path.join(profile, 'favorites')
 history = os.path.join(profile, 'history')
 REV = os.path.join(profile, 'list_revision')
-icon = os.path.join(home, 'icon.png')
+icon = xbmc.translatePath(os.path.join(home, 'icon.png'))
+vipicon = xbmc.translatePath(os.path.join(ART, 'VIP.png'))
+
 FANART = os.path.join(home, 'fanart.jpg')
 source_file = os.path.join(home, 'source_file')
+source_file2 = os.path.join(home, 'source_file2')
 functions_dir = profile
 
+AddonTitle = '[B][COLOR cyan]FaustinoTV[/COLOR][/B]'
+
+BASEURL = "aHR0cDovL3ZpcC5mYXVzdGlub3R2Lm1lL2tvZGkv"
+BASEAUT = "ZGJfYXV0aC5waHA="
 communityfiles = os.path.join(profile, 'LivewebTV')
 downloader = downloader.SimpleDownloader()
+dialog = xbmcgui.Dialog()
+
 debug = addon.getSetting('debug')
 if os.path.exists(favorites)==True:
     FAV = open(favorites).read()
@@ -89,53 +99,126 @@ def makeRequest(url, headers=None):
                 addon_log('Reason: %s' %e.reason)
                 xbmc.executebuiltin("XBMC.Notification(TV Direto,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
 
+def get_username_from_user():
+    keyboard = xbmc.Keyboard(
+        '', AddonTitle + '[COLOR=gold]%s[/COLOR]'%", Por favor insira seu nome de usuário", False)
+    keyboard.doModal()
+    if keyboard.isConfirmed():
+        pwd = keyboard.getText()
+        return pwd
+    else :       
+        exit()
+
+def dec(s):
+    return base64.b64decode(s)
+
+def get_password_from_user():
+    keyboard = xbmc.Keyboard(
+        '', AddonTitle + '[COLOR=gold]%s[/COLOR]'%", Por favor, insira sua senha", False)
+    keyboard.doModal()
+    if keyboard.isConfirmed():
+        pwd = keyboard.getText()
+        return pwd
+    else:
+        exit()
+
+
+
+
+def get_username():
+    
+    try:
+        USERNAME = get_username_from_user()
+        if USERNAME == "":
+            dialog.ok(AddonTitle,'[COLOR=gold]%s[/COLOR]'%"Seu nome de usuário não pode estar vazio")
+            get_username()
+        else:
+            addon.setSetting("username", USERNAME)
+            return
+    except:
+        exit()#get_username()
+
+
+def get_password():
+    try:
+        PASSWORD = get_password_from_user()
+        if PASSWORD == "":
+            dialog.ok(AddonTitle,'[COLOR=gold]%s[/COLOR]'%"Sua senha não pode estar vazia")
+            get_password()
+        else:
+            addon.setSetting("password", PASSWORD)
+            return
+    except:
+        exit()#get_password()
+
+
+
+def doLogin():
+    get_username()
+    get_password()
+    
+    U = addon.getSetting('username')
+    P = addon.getSetting('password')
+    auth_user()
+
+
+
+def auth_user():
+    U = addon.getSetting('username')
+    P = addon.getSetting('password')
+    if U == "" and P == "":
+        msg1 ='[COLOR=gold]%s[/COLOR]'%"Insira seu usuário e senha. Caso não possua, entre em contato via [COLOR lime]Telegram:[/COLOR] https://tinyurl.com/FaustinoTVGroup"
+        msg2 = '[COLOR=gold]%s[/COLOR]'%"Deseja inserir seu nome de usuário e senha agora?"
+        yes_pressed = dialog.yesno(
+            AddonTitle + " - Authentication", msg1, msg2)
+        if yes_pressed:
+            doLogin()
+        else:
+            exit()
+
+    else:
+        ua='Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+        hdrs = {'User-Agent':ua}
+        data = {'user':str(U),'password':str(P)}
+        CHECKURL = str(dec(BASEURL)) + str(dec(BASEAUT))
+        source = requests.post(CHECKURL, headers = hdrs,data=data).text
+
+        if 'login success' in source :
+                    link = re.findall('url="(.*?)"',source)[0] 
+                    return link #pass
+        elif 'wrong password' or 'wrong user' in source :
+                    yes_pressed = dialog.yesno(
+                        AddonTitle, '[COLOR=gold]%s[/COLOR]'%"Desculpe, sua conta de usuário não foi reconhecida. Tente novamente")
+                    if yes_pressed:
+                        doLogin()
+                    else :
+                        exit()  
+
+        #else : pass
+
+
+
+def vip():
+    url = auth_user()
+    getData(url,FANART, data=None)
+    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+    
+    
 def getSources():
         try:
+            addDir('[B][COLOR lime]•[/COLOR] [COLOR yellow]VIP[/COLOR] [COLOR deepskyblue](Bonus)[/COLOR][/B]','url',30,vipicon,FANART,'','','','')
+            url = "https://tinyurl.com/tc9nn3b"
+            getData(url,FANART, data=None)
             if os.path.exists(favorites) == True:
-                addDir('Favorites','url',4,os.path.join(home, 'resources', 'favorite.png'),FANART,'','','','')
+                addDir('Favorites','VIP',4,icon,FANART,'','','','')
             if addon.getSetting("browse_xml_database") == "true":
                 addDir('XML Database','http://xbmcplus.xb.funpic.de/www-data/filesystem/',15,icon,FANART,'','','','')
             if addon.getSetting("browse_community") == "true":
                 addDir('Community Files','community_files',16,icon,FANART,'','','','')
             if addon.getSetting("searchotherplugins") == "true":
                 addDir('Search Other Plugins','Search Plugins',25,icon,FANART,'','','','')
-            if os.path.exists(source_file)==True:
-                sources = json.loads(open(source_file,"r").read())
-                #print 'sources',sources
-                if len(sources) > 1:
-                    for i in sources:
-                        try:
-                            ## for pre 1.0.8 sources
-                            if isinstance(i, list):
-                                addDir(i[0].encode('utf-8'),i[1].encode('utf-8'),1,icon,FANART,'','','','','source')
-                            else:
-                                thumb = icon
-                                fanart = FANART
-                                desc = ''
-                                date = ''
-                                credits = ''
-                                genre = ''
-                                if i.has_key('thumbnail'):
-                                    thumb = i['thumbnail']
-                                if i.has_key('fanart'):
-                                    fanart = i['fanart']
-                                if i.has_key('description'):
-                                    desc = i['description']
-                                if i.has_key('date'):
-                                    date = i['date']
-                                if i.has_key('genre'):
-                                    genre = i['genre']
-                                if i.has_key('credits'):
-                                    credits = i['credits']
-                                addDir(i['title'].encode('utf-8'),i['url'].encode('utf-8'),1,thumb,fanart,desc,genre,date,credits,'source')
-                        except: traceback.print_exc()
-                else:
-                    if len(sources) == 1:
-                        if isinstance(sources[0], list):
-                            getData(sources[0][1].encode('utf-8'),FANART)
-                        else:
-                            getData(sources[0]['url'], sources[0]['fanart'])
         except: traceback.print_exc()
+
 
 def addSource(url=None):
         if url is None:
@@ -2742,6 +2825,10 @@ elif mode==25:
     addon_log("Searchin Other plugins")
     _search(url,name)
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
+elif mode==30:
+    addon_log("VIP")
+    vip()
+    
 elif mode==55:
     addon_log("enabled lock")
     parentalblockedpin =addon.getSetting('parentalblockedpin')
