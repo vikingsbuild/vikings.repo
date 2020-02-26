@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.1" provider-name="Equipe FaustinoTV">
 
   <requires>
 
