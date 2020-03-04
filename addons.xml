@@ -2751,11 +2751,11 @@ version="1.0.1" provider-name="Marciocn">">
     </extension>
 </addon>
 
-<addon id="repository.fenix.flix" name="[B][COLOR firebrick]Fenix[/COLOR][COLOR white] Repo[/B][/COLOR]" version="2.1" provider-name="Alderson">
+<addon id="repository.fenix.flix" name="[B][COLOR firebrick]Fenix[/COLOR][COLOR white] Repo[/B][/COLOR]" version="2.2" provider-name="Alderson">
 	<extension point="xbmc.addon.repository" name="Repositorio Fenix Flix">
 		<info compressed="false">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/Zip</datadir>
+		<datadir zip="true">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/ZipFiles</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 	    <summary>Repositorio Oficial Fenix Flix</summary>
