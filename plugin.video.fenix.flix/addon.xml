@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.fenix.flix"
+       name="[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]" 
+       version="4.7.0"
+       provider-name="Team Fenix Flix">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/> 
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+    <import addon="script.module.livestreamer"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.module.addon.common"/>
+    <import addon="script.module.addon.signals"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.unidecode"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+	<extension point="xbmc.addon.repository" name="Repositorio Fenix Flix">
+		<info compressed="false">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/ZipFiles</datadir>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TV [COLOR firebrick]l[/COLOR] FILMES [COLOR firebrick]l[/COLOR] SERIES [COLOR firebrick]l[/COLOR] DESENHOS [COLOR firebrick]l[/COLOR] ANIMES [COLOR firebrick]l[/COLOR] LANCAMENTOS [COLOR firebrick]l[/COLOR] HD [COLOR firebrick]l[/COLOR] FHD</summary>
+	
+	<description lang="en">[COLOR firebrick]l[/COLOR] TV [COLOR firebrick]l[/COLOR] FILMES [COLOR firebrick]l[/COLOR] SERIES [COLOR firebrick]l[/COLOR] DESENHOS [COLOR firebrick]l[/COLOR] ANIMES [COLOR firebrick]l[/COLOR] LANCAMENTOS [COLOR firebrick]l[/COLOR] HD [COLOR firebrick]l[/COLOR] FHD [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] O autor nao hospeda nem possui nenhum conteudo encontrado neste addon. O autor nao e responsavel pelo uso e pelo conteudo encontrado neste addon [COLOR firebrick]l[/COLOR]
+
+l [COLOR firebrick]FENIX[/COLOR] FLIX - O MELHOR DO CINEMA NO SEU KODI - 100% FHD [COLOR firebrick]l[/COLOR]</description>
+    <disclaimer lang="en">O autor nao e de forma alguma afiliado a Kodi, a Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
+	<website>www.fenixflix.ml</website>
+    <email></email>
+	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.0 [COLOR firebrick]l[/COLOR]
+
+[COLOR firebrick]l[/COLOR] Adicionado Menu de Suporte [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Adicionado Área Premium [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Só Conteudos em FHD [COLOR firebrick]l[/COLOR]
+
+[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]
+www.fenixflix.ml</news>
+    <platform>all</platform>
+      <assets>
+      	<icon>icon.png</icon>
+    	<fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshots/01.jpg</screenshot>
+        <screenshot>resources/screenshots/02.jpg</screenshot>
+        <screenshot>resources/screenshots/03.jpg</screenshot>
+      </assets>
+  </extension>
+</addon>
