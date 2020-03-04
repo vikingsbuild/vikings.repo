@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="1.5" provider-name="Faustino">
+<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="2.0" provider-name="Equipe FaustinoTV">
     <extension point="xbmc.addon.repository" name="Repositório FaustinoTV">
         <info>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml.md5</checksum>
-        <datadir zip="true">http://repo.faustinotv.ml/</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/repo.faustinotv/master/zip/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositório FaustinoTV</summary>

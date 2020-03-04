@@ -369,7 +369,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 	</extension>
 </addon>
 
-<addon id="plugin.video.apollo" name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]" version="1.3.1" provider-name="[COLOR deepskyblue][B]TEAM[/COLOR][/B][COLOR orange][B] APOLLO[/COLOR][/B]">
+<addon id="plugin.video.apollo" name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]" version="1.3.2" provider-name="[COLOR deepskyblue][B]TEAM[/COLOR][/B][COLOR orange][B] APOLLO[/COLOR][/B]">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
@@ -1010,50 +1010,41 @@ O autor nÃ£o Ã© de forma alguma afiliado Ã  Kodi, Ã  Team Kodi ou Ã  X
 </addon>
 
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.1" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.7" provider-name="Equipe FaustinoTV">
 
   <requires>
-
     <import addon="xbmc.python" version="2.1.0"/>
-
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
-
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-
     <import addon="script.module.beautifulsoup4"/>
-
     <import addon="script.module.requests"/>
-
     <import addon="script.module.httplib2"/>
-
     <import addon="script.module.youtube.dl" optional="true"/>
-
-    <import addon="plugin.video.youtube"/>
-
+    <import addon="plugin.video.youtube" optional="true"/>
     <import addon="script.module.urlresolver" optional="true"/>
-
     <import addon="script.module.simplejson"/>
-
 	<import addon="script.module.livestreamer" optional="true"/>
-
-	<import addon="plugin.video.f4mTester" version="2.7.1"/>
-
-	<import addon="script.video.F4mProxy" version="2.1.0"/>
-
-    <import addon="plugin.googledrive" version="1.3.3"/>
-
+	<import addon="plugin.video.f4mTester" version="2.7.9"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
-
         <provides>video</provides>
-
   </extension>
 
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">TV AO VIVO | FILMES | SERIES</summary>
+    <summary lang="en">FILMES E SÃ‰RIES EM HD E FULLD, TV AO VIVO COM DIVERSOS CANAIS,
+CONTAMOS COM UMA Ã€REA BONUS PARA DOADORES, QUE POSSUI FILMES E SERIES EM DUAL-AUDIO + LEGENDAS E ALGUNS CANAIS ADICIONAIS, NSS SEÃ‡ÃƒO POSSUI TAMBÃ‰M CANAIS LEGENDADOS E CANAIS EM 4K</summary>
     <description lang="en">[B][COLOR deepskyblue]FaustinoTV[/COLOR] - [COLOR yellow]Free4ALLL[/COLOR][/B]</description>
     <platform>all</platform>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	    <screenshot>resources/screenshots/01.png</screenshot>
+		<screenshot>resources/screenshots/02.png</screenshot>
+		<screenshot>resources/screenshots/03.png</screenshot>
+
+	</assets>
+
  </extension>
 
 </addon>
@@ -1397,7 +1388,7 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
     </extension>
 </addon>
 
-<addon id="plugin.video.KeltecMPIPTV" name="[B][COLOR blue]KelTecMP[/COLOR] [COLOR red]MMFilmes[/COLOR][/B]" version="19.12.06-P" provider-name="Team KeltecMP">
+<addon id="plugin.video.KeltecMPIPTV" name="[B][COLOR blue]KelTecMP[/COLOR] [COLOR red]MMFilmes[/COLOR][/B]" version="24.02.20" provider-name="Team KeltecMP">
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
@@ -2718,11 +2709,11 @@ version="1.0.1" provider-name="Marciocn">">
     </extension>
 </addon>
 
-<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="1.5" provider-name="Faustino">
+<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="2.0" provider-name="Equipe FaustinoTV">
     <extension point="xbmc.addon.repository" name="RepositÃ³rio FaustinoTV">
         <info>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml.md5</checksum>
-        <datadir zip="true">http://repo.faustinotv.ml/</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/repo.faustinotv/master/zip/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>RepositÃ³rio FaustinoTV</summary>

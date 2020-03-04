@@ -8,3 +8,4 @@ Nao somos responsaveis por colocar o conteudo online, apenas indexamos.
 Link encurtado para download: http://bit.ly/KeltecMP-IPTV
 
 Para sugestoes e report de bugs nossa pagina no FB: https://www.facebook.com/groups/KelTec.Media.Play
+ (ADD-ON DESCONTINUADO)
