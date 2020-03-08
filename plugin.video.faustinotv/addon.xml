@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.7" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.8.1" provider-name="Equipe FaustinoTV">
 
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -14,7 +14,7 @@
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson"/>
 	<import addon="script.module.livestreamer" optional="true"/>
-	<import addon="plugin.video.f4mTester" version="2.7.9"/>	
+	<import addon="plugin.video.f4mTester" version="2.7.1"/>	
   </requires>
   
   <extension point="xbmc.python.pluginsource" library="default.py">
