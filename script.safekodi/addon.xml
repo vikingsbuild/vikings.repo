@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.safekodi" name="SafeKodi" version="1.0.1" provider-name="Yunming">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.requests" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">SafeKodi aims at informing Kodi users about potentially malicious addons installed on their devices</summary>
+		<description lang="en">
+SafeKodi is a Kodi addon which aims at informing Kodi users about potentially malicious addons installed on their devices. For example, SafeKodi is able to identify addons which might install malware or inject unwanted advertisement. SafeKodi further provides the users with the quick option to disable addons marked as unsafe.
+
+SafeKodi's database is continuously updated with de-Kodi, a Kodi crawler which is capable of discovering and testing large cross-sections of Kodi’s decentralized ecosystem at tunable levels of depth and breadth. With de-Kodi, we discovered and tested over 9,000 distinct Kodi addons. More information on de-Kodi can be found in our paper which will be presented at the World Wide Web Conference in 2020.
+
+SafeKodi leverages de-Kodi to constantly explore more addons. If an add-on is marked as "unknown" by SafeKodi, de-Kodi will attempt to automatically locate such addon on the Web and test it on demand.
+
+Addons information (name and version) are sent to our backend at safekodi.com anonymously, i.e., no user information is collected. Our code is open source and we welcome both investigation and bug reporting.
+		</description>
+		<license>GNU General Public License, v2</license>
+		<language>English</language>
+		<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
+		<source>https://github.com/yunmingxiao/safekodi</source>
+		<website>https://safekodi.com</website>
+		<email>yunming.xiao@u.northwestern.edu</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
