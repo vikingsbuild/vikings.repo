@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon 	id="brasilfull.repo" name="[B][COLOR white]REPOSITÓRIO[/COLOR][/B] [B][COLOR firebrick]BRASIL[/COLOR][/B] [B][COLOR white]FULL[/COLOR][/B]"
+		version="1.2"
+		provider-name="[B][COLOR gold]TheusZ[/B][/COLOR]">
+
+	<requires>
+            <import addon="xbmc.python" version="2.1.0"/>
+		    <import addon="script.module.addon.common" optional="true" />
+		    <import addon="script.module.t0mm0.common" optional="true" />
+		    <import addon="script.module.urlresolver" optional="true" />
+    </requires>
+
+	<extension point="xbmc.addon.repository" name="[B][COLOR white]REPOSITÓRIO[/COLOR][/B] [B][COLOR firebrick]BRASIL[/COLOR][/B] [B][COLOR white]FULL[/COLOR][/B]">
+		<info compressed="true">https://repo.brasilfull.gq/addons.xml</info>
+			<checksum>https://repo.brasilfull.gq/addons.xml.md5</checksum>
+			<datadir zip="true">https://repo.brasilfull.gq/repo</datadir>
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+	<news>
+	[COLOR white][B]ATUALIZAÇÕES[/B][/COLOR]
+	[COLOR firebrick][B]l[/B][/COLOR] V1.2 - Re-lançamento oficial
+	</news>
+
+	<description lang="en">[COLOR red]l[/COLOR] GDRIVE [COLOR red]l[/COLOR] F4M TESTER [COLOR red]l[/COLOR] F4M PROXY [COLOR red]l[/COLOR] ELEMENTUM [COLOR red]l[/COLOR]
+
+	[COLOR red]l[/COLOR] Todos os complementos necessários para o bom funcionamento do Brasil Full você encontra aqui![COLOR red]l[/COLOR]
+
+	[COLOR red]l[/COLOR] Brasil Full - Saiu Dublado, Saiu Aqui![COLOR red]l[/COLOR]
+	</description>
+
+<disclaimer lang="en">Todo o conteúdo aqui encontrado pode ser facilmente encontrado pela internet, nosso trabalho é apenas armazenar todo este conteúdo em um banco de dados próprio e disponibiliza-los de forma mais "confortável" aos interessados nesse tipo de conteúdo. Entretando, qualquer plágio das páginas aqui encontradas estarão sujeitas a represárias.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="demagorgon.repository" name="Demagorgon repository" version="0.0.2" provider-name="Demagorgon">
 	<extension point="xbmc.addon.repository" name="Demagorgon Add-on Repository">
 		<info compressed="false">https://raw.githubusercontent.com/cmvac/demagorgon.repository/master/addons.xml</info>
@@ -471,7 +506,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 	</extension>
 </addon>
 
-<addon id="plugin.video.apollo" name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]" version="1.3.2" provider-name="[COLOR deepskyblue][B]TEAM[/COLOR][/B][COLOR orange][B] APOLLO[/COLOR][/B]">
+<addon id="plugin.video.apollo" name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]" version="1.3.9" provider-name="[COLOR deepskyblue][B]TEAM[/COLOR][/B][COLOR orange][B] APOLLO[/COLOR][/B]">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
@@ -612,61 +647,52 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 
 </addon>
 
-<addon id="plugin.video.brasilfull"
-       name="[COLOR green][B]Brasil [/B][/COLOR][COLOR yellow][B]Full[/B][/COLOR]"
-       version="3.2"
-       provider-name="[COLOR firebrick][B]MatheuZ[/B][/COLOR]">
-  <requires>
+<addon id="plugin.video.brasilfull" name="[B][COLOR firebrick]BRASIL[/COLOR][/B] [B][COLOR white]FULL[/COLOR][/B]" version="3.5" provider-name="TheusZ">
+<requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	  <import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
     <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	  <import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="koding.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.repository" name="[COLOR green][B]Brasil [/B][/COLOR][COLOR yellow][B]Full[/B][/COLOR] REPO">
-    <info compressed="false">https://raw.githubusercontent.com/BrasilFullAddon/BRREPO/master/xml/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/BrasilFullAddon/BRREPO/master/xml/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/BrasilFullAddon/BRREPO/master/Plugins</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-  	<summary>[COLOR green][B]Brasil [/B][/COLOR][COLOR yellow][B]Full[/B][/COLOR] - Saiu Dublado, Saiu Aqui</summary>
-    <description lang="en">[COLOR white][B]Add-on brasileiro com conteúdos dublados no idioma pt-BR, qualidade minima em 720p e máxima de 4K.[/B][/COLOR]</description>
-    <disclaimer lang="en">Todo o conteúdo encontrado neste addon esta em um servidor próprio e é armazenado e upado pela equipe Brasil Full, qualquer cópia de conteudo eu vou saber. O uso deste addon é PIRATARIA então caso não goste deste tipo de conteúdo recomendo que não instalem, tanto eu como você (usuário) podem ser punidos pela lei Anti-Pirataria então use por conta, risco e foda-se.</disclaimer>
-    <website>https://brfull.ml/</website>
-    <email>suporte.brasilfull@gmail.com</email>
-    <news>│Atualização v3.2:│
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+</requires>
 
-Sistema de Pesquisa Filmes e Canais│
-                   │Melhorias de estabilidade
-                  Correções de bugs│
-                   │Temas
-              Melhoria na Segurança│
-                   │Melhorias nos Servidores de Canais
+<extension point="xbmc.python.pluginsource" library="core.py">
+	<provides>video</provides>
+</extension>
 
-          Brasil Full - Saiu Dublado Saiu Aqui
-     </news>
-     <platform>all</platform>
-     <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot>resources/screenshots/01.jpg</screenshot>
-      <screenshot>resources/screenshots/02.jpg</screenshot>
-      <screenshot>resources/screenshots/03.jpg</screenshot>
-     </assets>
-  </extension>
+<extension point="xbmc.addon.metadata">
+<description lang="en">[COLOR red]l[/COLOR] TV [COLOR red]l[/COLOR] FILMES [COLOR red]l[/COLOR] SERIES [COLOR red]l[/COLOR] DESENHOS [COLOR red]l[/COLOR]
+
+[COLOR red]l[/COLOR] A equipe Brasil Full disponibiliza gratuitamente um imenso acervo ondemand totalmente dublado e com ótimas qualidades à todos os usuários Kodi.[COLOR red]l[/COLOR]
+
+[COLOR red]l[/COLOR] Brasil Full - Saiu Dublado, Saiu Aqui![COLOR red]l[/COLOR]</description>
+    <disclaimer lang="en">Todo o conteúdo aqui encontrado pode ser facilmente encontrado pela internet, nosso trabalho é apenas armazenar todo este conteúdo em um banco de dados próprio e disponibiliza-los de forma mais "confortável" aos interessados nesse tipo de conteúdo. Entretando, qualquer plágio das páginas aqui encontradas estarão sujeitas a represárias.</disclaimer>
+        <news>[COLOR firebrick]l[/COLOR] Atualizacao v5.1 [COLOR firebrick]l[/COLOR]
+
+[COLOR firebrick]l[/COLOR] Estamos de Volta! [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Base Reformulada para melhor performance [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Trailer sem precisar do  Youtube [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Legenda Forced Opicional [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Novos servidores [COLOR firebrick]l[/COLOR]
+
+[B][COLOR firebrick]BRASIL[/COLOR] [COLOR white]FULL[/COLOR][/B]
+www.brasilfull.gq</news>
+    <platform>all</platform>
+    <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources/screenshots/01.png</screenshot>
+    <screenshot>resources/screenshots/02.png</screenshot>
+    <screenshot>resources/screenshots/03.png</screenshot>
+    </assets>
+</extension>
+
 </addon>
 
 <addon id="plugin.video.braziltv" name="BrazilTV" version="1.2.5" provider-name="teamBrazilTV">
@@ -2708,7 +2734,7 @@ Removed: Nudeflix</news>
 
 <addon id="plugin.video.WolfTV"
        name="WolfTV"
-       version="11.0"
+       version="11.1"
        provider-name="WolfTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
