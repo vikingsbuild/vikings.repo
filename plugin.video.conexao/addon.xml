@@ -1,33 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.conexao"
        name="[B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"
-       version="3.0.3"
+       version="3.0.4"
        provider-name="[B][COLOR lime]Equipe:[/B] [B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]">
  <requires>
- 
-	<import addon="xbmc.addon" version="12.0.0"/>
-    <import addon="xbmc.python" version="2.25.0"/>
-	<import addon="script.module.t0mm0.common"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.t0mm0.common"/>
     <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.simple.downloader"/>
     <import addon="script.module.beautifulsoup4"/>
     <import addon="script.module.simple.downloader"/>
     <import addon="script.module.requests"/>
     <import addon="script.module.httplib2"/>
-	<import addon="script.module.youtube.dl" optional="true"/>
-	<import addon="plugin.video.dailymotion_com"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson"/> 
-	<import addon="script.common.plugin.cache"/>
-    <import addon="script.module.metahandler"/>
-    <import addon="script.module.livestreamer"/>
-    <import addon="script.module.pyamf"/>
-	<import addon="script.module.addon.common"/>
-	<import addon="script.module.addon.signals"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.unidecode"/>
-	
-	
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+
  </requires>
   <extension point="xbmc.python.pluginsource" library="youtube.py">
     <provides>video</provides>

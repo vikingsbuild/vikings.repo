@@ -647,7 +647,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 
 </addon>
 
-<addon id="plugin.video.brasilfull" name="[B][COLOR firebrick]BRASIL[/COLOR][/B] [B][COLOR white]FULL[/COLOR][/B]" version="3.5" provider-name="TheusZ">
+<addon id="plugin.video.brasilfull" name="[B][COLOR firebrick]BRASIL[/COLOR][/B] [B][COLOR white]FULL[/COLOR][/B]" version="3.7" provider-name="TheusZ">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
@@ -673,13 +673,13 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 
 [COLOR red]l[/COLOR] Brasil Full - Saiu Dublado, Saiu Aqui![COLOR red]l[/COLOR]</description>
     <disclaimer lang="en">Todo o conteúdo aqui encontrado pode ser facilmente encontrado pela internet, nosso trabalho é apenas armazenar todo este conteúdo em um banco de dados próprio e disponibiliza-los de forma mais "confortável" aos interessados nesse tipo de conteúdo. Entretando, qualquer plágio das páginas aqui encontradas estarão sujeitas a represárias.</disclaimer>
-        <news>[COLOR firebrick]l[/COLOR] Atualizacao v5.1 [COLOR firebrick]l[/COLOR]
+        <news>[COLOR firebrick]l[/COLOR] Atualizacao v3.7 [COLOR firebrick]l[/COLOR]
 
-[COLOR firebrick]l[/COLOR] Estamos de Volta! [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Base Reformulada para melhor performance [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Trailer sem precisar do  Youtube [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Legenda Forced Opicional [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Novos servidores [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Integração direta com IMDb [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Integração com o Gdrive [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Todas as informações dos conteúdo disponíveis [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Conteúdos em 4K [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Correção de bugs [COLOR firebrick]l[/COLOR]
 
 [B][COLOR firebrick]BRASIL[/COLOR] [COLOR white]FULL[/COLOR][/B]
 www.brasilfull.gq</news>
@@ -871,32 +871,21 @@ O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Founda
 
 <addon id="plugin.video.conexao"
        name="[B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"
-       version="3.0.3"
+       version="3.0.4"
        provider-name="[B][COLOR lime]Equipe:[/B] [B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]">
  <requires>
-
-	<import addon="xbmc.addon" version="12.0.0"/>
-    <import addon="xbmc.python" version="2.25.0"/>
-	<import addon="script.module.t0mm0.common"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.t0mm0.common"/>
     <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.simple.downloader"/>
     <import addon="script.module.beautifulsoup4"/>
     <import addon="script.module.simple.downloader"/>
     <import addon="script.module.requests"/>
     <import addon="script.module.httplib2"/>
-	<import addon="script.module.youtube.dl" optional="true"/>
-	<import addon="plugin.video.dailymotion_com"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson"/>
-	<import addon="script.common.plugin.cache"/>
-    <import addon="script.module.metahandler"/>
-    <import addon="script.module.livestreamer"/>
-    <import addon="script.module.pyamf"/>
-	<import addon="script.module.addon.common"/>
-	<import addon="script.module.addon.signals"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.unidecode"/>
-
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
 
  </requires>
   <extension point="xbmc.python.pluginsource" library="youtube.py">
