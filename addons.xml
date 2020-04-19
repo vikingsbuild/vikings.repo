@@ -2084,8 +2084,8 @@ Nota: esse addon só funciona com Player gerenciador de torrents como o Quasar,Y
 </addon>
 
 <addon id="plugin.video.Nightwolf"
-       name="[COLOR white][B]Night[/B][/COLOR][COLOR gold][B]Wolf[/B][/COLOR]"
-       version="2.0"
+       name="[COLOR white][B]Night[/B][/COLOR][COLOR springgreen][B]Wolf[/B][/COLOR]"
+       version="2.1"
        provider-name="Team Night Wolf">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2109,9 +2109,9 @@ Nota: esse addon só funciona com Player gerenciador de torrents como o Quasar,Y
 
 
   <extension point="xbmc.addon.metadata">
-    <summary>Nightwolf - Tudo de Filmes e Series, você vai encontrar aqui, então entre e fique a vontade, Versão 2.0 Voooandoo - Geet of Herreee</summary>
+    <summary>Nightwolf - Tudo de Filmes e Series, você vai encontrar aqui, então entre e fique a vontade, Versão 2.1 Voooandoo - Geet Over Herreee</summary>
     <description>
-        Team Nightwolf - Duvidas ou Sugestões acesse nosso Facebook: Felipe Knhight Wolf
+        Team Nightwolf - Duvidas ou Sugestões acesse nosso Grupo no Whatsapp "https://chat.whatsapp.com/Kqfc8v6CBJL8nL6KhmZ82Y"
 
     </description>
     <platform>all</platform>
