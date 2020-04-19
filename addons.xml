@@ -2118,7 +2118,7 @@ Nota: esse addon só funciona com Player gerenciador de torrents como o Quasar,Y
   </extension>
 </addon>
 
-<addon id="plugin.video.NordesTv" name="[COLOR blue][B]Nordes[/B][/COLOR][COLOR white][B]Tv[/B][/COLOR]" version="3.2.4" provider-name="Equipe NordesTv">
+<addon id="plugin.video.NordesTv" name="[COLOR blue][B]Nordes[/B][/COLOR][COLOR white][B]Tv[/B][/COLOR]" version="3.2.6" provider-name="Equipe NordesTv">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
