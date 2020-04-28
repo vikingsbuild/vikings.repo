@@ -1919,6 +1919,38 @@ Nota: esse addon só funciona com Player gerenciador de torrents como o Quasar,Y
 
 </addon>
 
+<addon id="plugin.video.megatv"
+       name="[COLOR blue][B]Mega[/B][/COLOR][COLOR white][B] TV [/B][/COLOR]"
+       version="2.0"
+       provider-name="Mega TV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Mega TV Add-on Repository</summary>
+    <description lang="pt">Addon Description</description>
+    <disclaimer lang="en"></disclaimer>
+	<platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.metallicatv" name="Metallica TV" version="2.0" provider-name="Demagorgon">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -3992,45 +4024,6 @@ Addons information (name and version) are sent to our backend at safekodi.com an
 		<summary>Milhano Repositório</summary>
 		<description>Repositorio oficial Tem Milhano</description>
 		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon 	id="vikings.repo" name="[B][COLOR yellow]  Vikings  [COLOR orange]Repositorio Vikings Oficial, SEM BANIMENTO!![/B][/COLOR]"
-		version="1.54"
-		provider-name="[B][COLOR gold]Vikings TEAM[/B][/COLOR]">
-
-	<requires>
-            <import addon="xbmc.python" version="2.1.0"/>
-		    <import addon="script.module.addon.common" optional="true" />
-		    <import addon="script.module.t0mm0.common" optional="true" />
-		    <import addon="script.module.urlresolver" optional="true" />
-    </requires>
-
-	<extension point="xbmc.addon.repository" name=".Vikings Repositorio">
-		<info compressed="true">https://github.com/vikingsbuild/vikings.repo/raw/master/addons.xml</info>
-			<checksum>https://github.com/vikingsbuild/vikings.repo/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/vikingsbuild/vikings.repo/raw/master</datadir>
-	</extension>
-
-	<extension point="xbmc.addon.metadata">
-	<news>
-	[COLOR orange]LOG DE CORREÇÔES[/COLOR]
-	[COLOR red]*[/COLOR] V 1.53 - ajustes de dependencias...
-	[COLOR orange]*[/COLOR] V 1.15.1 - Excluido a instalação do plugin Youtube que provocava erros em algumas box...
-	[COLOR gold]*[/COLOR]   V 1.17.1 - Corrigido dependências que provocava erros quando instalado o repositório em Kodi Padrão.
-	</news>
-
-	<summary>Repositorio Vikings levando os melhores addons a sua familia e aos quatro cantos do Mundo!!!</summary>
-
-	<description>
-                    [B][COLOR orange]Repositório Vikings, SEM BANIMENTO! SEM SCRIPT MALICIOSO!! PURO, LIMPO E SIMPLES!!![/COLOR][/B]
-					[B][COLOR red]Repositório oficial Vikings Build - Proibido reprodução total ou parcial sem prévia autorização[/COLOR][/B]
-					[B][COLOR white]Addons deste repositório é de uso gratuito!![/COLOR][/B]
-					[B][COLOR firebrick]Proibido a venda dos add-ons contidos neste repositório[/COLOR][/B]
-	</description>
-
-<disclaimer>[B][COLOR orange]Repositório Vikings é apenas um AGREGADOR de ADDONS e, assim como o Google.com, apenas agrega e organiza ADDONS DE TERCEIROS. Não somos responsáveis pelos arquivos aqui encontrados.[/COLOR][/B]</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
