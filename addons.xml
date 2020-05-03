@@ -1855,70 +1855,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
-<addon id="plugin.video.MegaBoxTV"
-       name="[B][COLOR red]-=.[/COLOR][/B][B][COLOR gold]Megabox[/COLOR][/B][B][COLOR white]TV[/COLOR][B][COLOR red].=-[/COLOR][/B]"
-       version="2.3.0"
-       provider-name="facebook.com/MegaBoxtvKODI">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">MegaBoxTV</summary>
-    <description lang="en">facebook.com/MegaBoxtvKODI. MegaBoxTV Addon de Filmes Torrent – Séries  Torrent HD 1080p , 720p  Bluray Dual Áudio.
-Nota: esse addon só funciona com Player gerenciador de torrents como o Quasar,YATP,KmediaTorrent,Pulsar etc.</description>
-    <platform>all</platform>
-  </extension>
-
-</addon>
-
-<addon id="plugin.video.MegaBoxTV+18"
-       name="[B][COLOR red]-=.[/COLOR][/B][B][COLOR gold]Megabox[/COLOR][/B][B][COLOR white]18[/COLOR][/B][B][COLOR red].=-[/COLOR][/B]"
-       version="2.3.0"
-       provider-name="facebook.com/MegaBoxtvKODI">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">MegaBoxTV</summary>
-    <description lang="en">facebook.com/MegaBoxtvKODI. MegaBoxTV Addon de Filmes Torrent – Séries  Torrent HD 1080p , 720p  Bluray Dual Áudio.
-Nota: esse addon só funciona com Player gerenciador de torrents como o Quasar,YATP,KmediaTorrent,Pulsar etc.</description>
-    <platform>all</platform>
-  </extension>
-
-</addon>
-
 <addon id="plugin.video.megatv"
        name="[COLOR blue][B]Mega[/B][/COLOR][COLOR white][B] TV [/B][/COLOR]"
        version="2.0"
@@ -2220,7 +2156,7 @@ Nota: esse addon só funciona com Player gerenciador de torrents como o Quasar,Y
     </extension>
 </addon>
 
-<addon id="plugin.video.OnePlay" name="[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR]" version="3.0.4" provider-name="Equipe OnePlay">
+<addon id="plugin.video.OnePlay" name="[COLOR aquamarine][B]ONE[/COLOR][COLOR white]PLAY[/B][/COLOR]" version="3.0.6" provider-name="Equipe OnePlay">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
@@ -3248,6 +3184,19 @@ version="1.0.1" provider-name="Marciocn">">
 <screenshot>resources/series.jpg</screenshot>
 </assets>
 </extension>
+</addon>
+
+<addon id="repository.ddurdle" name="ddurdle's XBMC Addons" version="1.0.2" provider-name="ddurdle">
+	<extension point="xbmc.addon.repository" name="ddurdle's XBMC Addon Repository">
+		<info compressed="false">https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml</info>
+		<checksum>https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://dmdsoftware.net/repository.ddurdle/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install ddurdle's Addons</summary>
+		<description>Download and install addons by ddurdle</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
     <addon id="repository.EzzerMacsWizard" name="EzzerMacs Wizard Repository" version="1.1.2" provider-name="EzzerMac">

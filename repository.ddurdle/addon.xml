@@ -1,0 +1,12 @@
+<addon id="repository.ddurdle" name="ddurdle's XBMC Addons" version="1.0.2" provider-name="ddurdle">
+	<extension point="xbmc.addon.repository" name="ddurdle's XBMC Addon Repository">
+		<info compressed="false">https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml</info>
+		<checksum>https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://dmdsoftware.net/repository.ddurdle/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install ddurdle's Addons</summary>
+		<description>Download and install addons by ddurdle</description>
+		<platform>all</platform>
+	</extension>
+</addon>
