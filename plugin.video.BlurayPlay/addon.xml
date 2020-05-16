@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.BlurayPlay" name="[B][COLOR red]BLURAY[/COLOR][/B] [B][COLOR white]PLAY'S[/COLOR][/B]" version="3.1.6" provider-name="[B][COLOR yellow]TEAM[/COLOR] [COLOR white]BLURAY[/COLOR] [COLOR red]PLAY'S[/B][/COLOR]">
+<addon id="plugin.video.BlurayPlay" name="[B][COLOR red]BLURAY[/COLOR][/B] [B][COLOR white]PLAY'S[/COLOR][/B]" version="3.1.9" provider-name="[B][COLOR yellow]TEAM[/COLOR] [COLOR white]BLURAY[/COLOR] [COLOR red]PLAY'S[/B][/COLOR]">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
@@ -13,11 +13,11 @@
     <import addon="script.common.plugin.cache"/>
     <import addon="script.module.metahandler"/>
 </requires>
-  
+
 <extension point="xbmc.python.pluginsource" library="main.py">
 	<provides>video</provides>
 </extension>
-  
+
 <extension point="xbmc.addon.repository" name="Bluray Plays REPO">
 	<info compressed="false">https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons.xml</info>
 	<checksum>https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons.xml.md5</checksum>
@@ -25,9 +25,9 @@
 </extension>
 
 <extension point="xbmc.addon.metadata">
-    <summary>[COLOR gold]FILMES, SERIES EM [COLOR gold]FHD[/COLOR], [COLOR gold]HD[/COLOR], [COLOR gold]SD[/COLOR], [COLOR gold]NOVELAS[/COLOR], [COLOR gold]DOCUMENTARIOS[/COLOR], [COLOR gold]DESENHOS[/COLOR], [COLOR gold]ETC[/COLOR], [COLOR gold]DUBLADOS[/COLOR] e [COLOR gold]Legendados[/COLOR][/B]. O MELHOR ADDON DE FILMES E SERIES PRO SEU KODI!, AQUI VOCÊ ENCONTRA TUDO, GARANTIDO!. Se Não ACHA FALA COM NOSSO TEAM.[/COLOR]</summary>
-    <description lang="en">[B][COLOR gold]BLURAY PLAY'S É Addon Do Kodi, Onde Organizamos Os Conteudos e Upamos Para Nosso Servidor Privado, Então Se Quiser Copiar Deixa Os Creditos, Fela Da Puta... Ateciosamente Team BLURAY PLAY'S[/COLOR][/B]</description>
-    <disclaimer lang="en">[B][COLOR white]O autor hospedar o conteúdo exibido por este complemento.[/COLOR][/B] [B][COLOR white]BLURAY PLAY'S[/COLOR][/B] [B][COLOR red]tem nenhuma afiliação com o provedor de conteúdo[/COLOR][/B] [B][COLOR gold]somente é responsável por coletar os melhores filmes da Internet, categorização e otimizá-los, de modo a que esta ao alcance de seus clientes. tão fácil e descomplicada.[/COLOR][/B]</disclaimer>
+    <summary>[COLOR white][B]FILMES, SERIES EM FHD, HD, SD, NOVELAS, DOCUMENTARIOS, DESENHOS, ETC, DUBLADOS e Legendados. O MELHOR ADDON DE FILMES E SERIES PRO SEU KODI!, AQUI VOCÊ ENCONTRA TUDO, GARANTIDO!. Se Não ACHA FALA COM NOSSO TEAM.[B][/COLOR]</summary>
+    <description lang="en">[COLOR red][B]BLURAY PLAY'S É Addon Do Kodi, Onde Organizamos Os Conteudos e Upamos Para Nosso Servidor Privado, Então Se Quiser Copiar Deixa Os Creditos, Fela Da Puta... Ateciosamente Team BLURAY PLAY'S[/B][/COLOR]</description>
+    <disclaimer lang="en">[COLOR yellow][B]O autor hospedar o conteúdo exibido por este complemento. BLURAY PLAY'S tem nenhuma afiliação com o provedor de conteúdo, somente é responsável por coletar os melhores filmes da Internet, categorização e otimizá-los, de modo a que esta ao alcance de seus clientes. tão fácil e descomplicada.[/B][/COLOR]</disclaimer>
 	<platform>all</platform>
     <assets>
 	<icon>icon.png</icon>
@@ -37,5 +37,5 @@
     <screenshot>resources/screenshots/03.jpg</screenshot>
 	</assets>
 </extension>
- 
+
 </addon>
