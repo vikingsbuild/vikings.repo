@@ -506,27 +506,35 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 	</extension>
 </addon>
 
-<addon id="plugin.video.apollo" name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]" version="1.4.2" provider-name="[COLOR deepskyblue][B]TEAM[/COLOR][/B][COLOR orange][B] APOLLO[/COLOR][/B]">
+<addon id="plugin.video.apollo" name="[COLOR deepskyblue][B]APOLLO[/COLOR][/B]" version="1.4.3" provider-name="[COLOR deepskyblue][B]TEAM[/COLOR][/B][COLOR orange][B] APOLLO[/COLOR][/B]">
 <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common"/>
+
+<import addon="xbmc.python" version="2.25.0"/>
+	<import addon="script.module.t0mm0.common"/>
     <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.simple.downloader"/>
     <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+	<import addon="script.common.plugin.cache"/>
     <import addon="script.module.metahandler"/>
+    <import addon="script.module.livestreamer"/>
+    <import addon="script.module.pyamf"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.addon.signals"/>
+    <import addon = "script.module.unidecode"/>
+
 </requires>
 <extension point="xbmc.python.pluginsource" library="apollo.py">
 <provides>video</provides>
 </extension>
 <extension point="xbmc.addon.repository" name="Repositorio [COLOR orange][B]APOLLO[/B][/COLOR][COLOR deepskyblue][B][/B][/COLOR]">
-<info compressed="true">https://github.com/Tiagotj/repo.apollo/raw/master/addons.xml</info>
-<checksum>https://github.com/Tiagotj/repo.apollo/raw/master/addons.xml.md5</checksum>
-<datadir zip="true">https://github.com/Tiagotj/repo.apollo/raw/master/plugin.video.apollo/apollo.py</datadir>
+<info compressed="true">https://raw.githubusercontent.com/Tiagotj/repo.apollo/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/Tiagotj/repo.apollo/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/Tiagotj/repo.apollo/master</datadir>
 </extension>
 <extension point="xbmc.addon.metadata">
 <summary lang="en">[COLOR orange][B]FEITO PARA FAMILIA![/COLOR][/B]</summary>
