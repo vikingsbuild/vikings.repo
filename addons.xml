@@ -332,72 +332,6 @@ provider-name="By Chalado">
 	</extension>
 </addon>
 
-<addon id="plugin.video.adulthideout" name="AdultHideout" version="0.8.6" provider-name="Vashiel">
-    <requires>
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <news>
-v 0.8.6 2018-05-18- fixed dato.porn
-        </news>
-        <summary>[COLOR red]XXX[/COLOR] Porn videos</summary>
-        <description>
-Internet [COLOR red]XXX Porn Video[COLOR white] Streams.
-
-[COLOR red][B]WARNING:[/B][COLOR red]Only for adults[/COLOR]
-
-[COLOR white]Github:
-https://github.com/Vashiel/repository.adulthideout
-
-Email:
-adulthideout@yandex.com[/COLOR]
-
-		</description>
-		<disclaimer>
-		</disclaimer>
-		<platform>all</platform>
-		<license>http://www.gnu.org/licenses/</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<mainsource>https://github.com/Vashiel/repository.adulthideout</mainsource>
-		<source></source>
-    </extension>
-</addon>
-
-<addon id="plugin.video.Agora"
-       name="[B][LOWERCASE][CAPITALIZE][COLOR white]Agora[/CAPITALIZE][/LOWERCASE][/B][/COLOR]"
-       version="0.0.4"
-       provider-name="Teco">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary>Addonagora@gmail.com</summary>
-    <description>Addon de Documentales 100% gratuito y basado en Youtube con licencia GNU GPL.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.AladoTV"
        name="AladoTV"
        version="11.0"
@@ -445,28 +379,6 @@ adulthideout@yandex.com[/COLOR]
     <description>Live Concerts and Music Videos in HD quality.
 Channels and Playlists organized by categories. Source: Youtube Website.
 [B][COLOR lime]Advised the latest version of youtube 6.*.*[/B][/COLOR]</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon
-  id="plugin.video.animego"
-  version="1.0.5"
-  name="animego"
-  provider-name="Dknight">
-  <requires>
-        <import addon="xbmc.python" version="2.1.0" optional="true" />
-		<import addon="script.module.simplejson" />
-		<import addon="script.module.urlresolver"  version="0.0.1"/>
-		<import addon="script.module.t0mm0.common" version="1.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>animego</summary>
-    <description>Watch anime on animego</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -593,24 +505,6 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 Channels and Playlists organized by categories. Source: Youtube Website.
 [B][COLOR lime]Advised the latest version of youtube 6.*.*[/B][/COLOR]</description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.bestporn" name="Best Porn Collection" version="3.0.1" provider-name=" CRITTER ">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-	<import addon="script.module.requests" />
-	<import addon="script.module.beautifulsoup4" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<summary lang="en">Videos from collectionofbestporn.com</summary>
-	<description lang="en">This plugin contains Contents that should not be viewed by anyone under the age 18. By opening this plugin you agree that you take responsibility for your own actions.</description>
-	<disclaimer lang="en">The original author neither hosts or stores any content, the original author has no affiliation with content hosts, it is the sole responsibility of the user to ensure they have permission to view any streams provided</disclaimer>
-	<platform>all</platform>
   </extension>
 </addon>
 
@@ -825,58 +719,6 @@ O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Founda
   </extension>
 </addon>
 
-<addon id="plugin.video.CINEFLIX"
-       name="[COLOR white]CINE[COLORred]FLIX[/COLOR]"
-       version="0.1"
-       provider-name="[B][COLORwhite]JUNIOR Lima[/B][/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-</requires>
-<extension library="default.py" point="xbmc.python.pluginsource">
-<provides>video</provides>
-</extension><extension point="xbmc.addon.metadata">
-<summary>[B][COLOOR white]Muita Divesao e so lugar com ADDON [COLOR white]CINE[COLOR red]FLIX[/B][/COLOR]</summary>
-<description lang="en">[/B][COLOR white]CINE[COLOR red]FLIX[COLOR white]E apenas um Agregador de links,E assim como Google.com,Apenas Agrega e arganiza os Links externos.Nao somos Responsaveis pelo Conteudos Encontrados.aqui[/B][/COLOR]</description>
-<platform>all</platform>
-<assets>
-<icon>icon.png</icon>
-<fanart>fanart.jpg</fanart>
-<screenshot>resources/screenshots/01.jpg</screenshot>
-<screenshot>resources/screenshots/02.jpg</screenshot><screenshot>resources/screenshots/03.jpg</screenshot>
-</assets>
-</extension>
-</addon>
-
-<addon id="plugin.video.cinemalivre" name="[COLOR white]Cinema[COLOR red] Livre[/COLOR]" version="1.0" provider-name="Lojink">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
-    <summary lang="en">[COLOR white]Cinema[COLOR red] Livre[/COLOR]</summary>
-	<description lang="en">O [COLOR white]Cinema[COLOR red] Livre[/COLOR] é um portal de vídeos dedicado a disponibilizar online filmes clássicos em versões completas e legendadas.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.conexao"
        name="[B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"
        version="3.0.4"
@@ -1020,79 +862,6 @@ O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Founda
   </extension>
 </addon>
 
-<addon id="plugin.video.DejaVu"
-       name="[COLOR gold]DejaVu[/COLOR]"
-       version="1.1.5"
-       provider-name="The Wombles">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-	<import addon="script.module.resolveurl" version="5.0.00"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
-    <import addon="script.module.web-pdb" version="1.0"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">The Wombles</summary>
-    <description lang="en">The Wombles</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.desenhosjr" name="[COLOR yellow] Desenhos.jr [/COLOR]" version="1.0.0" provider-name="kodi">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Desenhos.jr</summary>
-    <description lang="en">Uma seleção com os melhores desenhos do youtube.</description>
-    <platform>all</platform>
-    <forum></forum>
-    <website></website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.DocHistory" name="Addon da History" version="1.0.0" provider-name="HouseGeek">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Addon da History</summary>
-    <description lang="en">Addons de Documentarios Historicos</description>
-    <platform>all</platform>
-    <forum></forum>
-    <website></website>
-  </extension>
-</addon>
-
 <addon id="plugin.video.ELLAS" name="[COLOR gold]ELLAS[/COLOR]"	version="1.1"	provider-name="Anabel">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1136,38 +905,6 @@ O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Founda
     <forum>n/a</forum>
     <website>n/a</website>
   </extension>
-</addon>
-
-
-<addon id="plugin.video.erotik" name="Erotik (XXX)" version="1.0.21" provider-name="MetalKettle">
-
-  <requires>
-
-    <import addon="xbmc.python" version="2.1.0"/>
-
-    <import addon="script.module.t0mm0.common" version="1.1.0"/>
-
-    <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.urlresolver" version="2.2.0"/>
-
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-
-        <provides>video</provides>
-
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-
-    <summary lang="en"></summary>
-
-    <description lang="en"></description>
-
-    <platform>all</platform>
-
-  </extension>
-
 </addon>
 
 <addon id="plugin.video.Explora"
@@ -1372,35 +1109,6 @@ www.fenixflix.ml</news>
   </extension>
 </addon>
 
-<addon id="plugin.video.foradabox"
-       name="Fora da Box"
-       version="2.2"
-       provider-name="Demagorgon">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Fora da Box</summary>
-    <description>Tudo o que o media center já tinha, mais aquilo que ainda lhe faltava. Todo o conteudo deste addon provém do Youtube.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 
 <addon id="plugin.video.FORMIGAtv" name="[COLOR  blue][B]FORMIGA[COLOR  silver][B]tv[/B][/COLOR]" version="3.0" provider-name="TEAMFORMIGAtv">
 
@@ -1519,37 +1227,6 @@ version="6.0.0~alpha6" />
         <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
         <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
-</addon>
-
-<addon id="plugin.video.hotpoint"
-       name="[B][COLOR red]HOT[COLOR orange]POINT[/B][/COLOR]"
-       version="1.1"
-       provider-name="Tomas Lemos">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">[B][COLOR white]Este addon e apenas um redirecionador de links, nao armazenamos conteudos adultos multimidias, todo seu conteudo e de dominio publico facilmente encontrado na internet[/COLOR][/B]</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.infotec.iptv" name="[COLOR springgreen][B]Infotec[/B][/COLOR].[COLOR red][B]IPTV[/B][/COLOR]" version="0.0.7" provider-name="Anonymous">
@@ -1692,34 +1369,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
         <license>GNU GENERAL PUBLIC LICENSE. Version 2.</license>
         <platform>all</platform>
     </extension>
-</addon>
-
-<addon id="plugin.video.kidzflix"
-       name="KIDzFLIX"
-       version="1.0"
-       provider-name="LUIS - COCA COLA MAN">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-	<import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>KIDzFLIX BY TEAM J2MF4</summary>
-    <description>KIDzFLIX ....Bringing Joy To A Child
- </description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.kodikaraoke" name="Kodi Karaoke Lite" version="0.0.3" provider-name="Kodi Karaoke">
@@ -1894,85 +1543,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
-<addon id="plugin.video.monkeyspank" name="Monkey Spank" version="1.0.0" provider-name="MrSkeletor">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.requests" version="1.1.0"/>
-        <import addon="script.module.t0mm0.common" version="1.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <news>v 1.0.0 Birth</news>
-        <summary>[COLOR deeppink]XXX[/COLOR] Adult Content</summary>
-        <description>[COLOR deeppink]Porn Videos[/COLOR]</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-		<license>http://www.gnu.org/licenses/</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<mainsource>http://repo.illuminatitemple.xyz</mainsource>
-		<source></source>
-    </extension>
-</addon>
-
-<addon id="plugin.video.mundocine"
-       name="[COLOR white]Mundo[/COLOR] [COLOR grey]Cine[/COLOR]"
-       version="1.0.1"
-       provider-name="Toni clasico">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" />
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
-	<import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR white]Mundo[/COLOR] [COLOR grey]Cine[/COLOR]</summary>
-    <description lang="en">[COLOR grey]Vive todo el cine clasico.[/COLOR].</description>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-
-
-</addon>
-
-<addon id="plugin.video.mundoinfantil"
-	name="[COLOR cornflowerblue]Mundo Infantil[/COLOR]"
-	version="1.2"
-	provider-name="j.ruiz">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR white]Contenido para niños de YouTube[/COLOR]</summary>
-    <description lang="en">[COLOR white]Todo el contenido por el addon es de YouTube, todas las actualizaciones y cambios seran publicadas en grupo de KODI PR y mi pagina de Facebook, les invito a unirse para que asi obtengan siempre la ultima version actualizada del addon. https://www.facebook.com/colussus.xmen[/COLOR]</description>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-</addon>
-
 <addon id="plugin.video.netfreeplay"
        name="[B][COLOR yellow]NETFREE[/COLOR] PLAY[/B]"
        version="2.0"
@@ -2044,32 +1614,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
 
     </description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.next"
-	name="[COLOR blue]NEXT[/COLOR]"
-	version="0.0.6"
-	provider-name="NEXT">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.repository" name="NEXT Repositorio">
-        <info>https://raw.githubusercontent.com/djliptv/NEXT/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/djliptv/NEXT/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/djliptv/NEXT/master/Repositorio/</datadir>
-    </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">NEXTube</summary>
-    <description lang="en">Musica Actual Y Retro.</description>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
   </extension>
 </addon>
 
@@ -2220,6 +1764,41 @@ Levando o lazer e o prazer para vocês assistir e curtir cada momento com a fam�
        <screenshot>resources/screenshots/2.jpg</screenshot>
        <screenshot>resources/screenshots/3.jpg</screenshot>
     </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.pikachu"
+       name="[B][COLOR yellow][B]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
+       version="2.0"
+       provider-name="[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]</summary>
+    <description>
+       [B]ATENCAO:[B] [COLOR yellow] Os conteudos diponibilizados neste [ ADDON ],sao conteudos retransmitidos de iternet e outras plataformas digitais;Nessecitando assim de uma periodica manutencao.Caso o conteudo que voce queira assistir esteja  [COLOR lime][ OFF ]  [COLOR firebrick] Por favor avise-nos : [ 85]  99738-1821 [COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]
+
+    </description>
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -2687,39 +2266,6 @@ More minor bugfixes (honestly could not list them all)
   </extension>
 </addon>
 
-<addon id="plugin.video.uwc"
-       name="Ultimate Whitecream"
-       version="1.1.55"
-       provider-name="Whitecream">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.urlresolver"  version="3.0.12" />
-        <import addon="script.video.F4mProxy" version="2.5.7" />
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>GPL 2.0</license>
-        <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
-        <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-        <news>Fixed: Porntrex listing - next page categories (private videos are hidden)
-Fixed: Porn00
-Fixed: Czechhd
-Fixed: HDZog
-Fixed: ParadiseHill
-Fixed: Other stuff I forgot
-Removed: Nudeflix</news>
-    </extension>
-</addon>
-
 
 <addon id="plugin.video.ValeAPenaVerDenovo" name="[COLOR  white][B]ValeAPenaVerDenovo[/B][/COLOR]" version="3.0" provider-name="TEAMFORMIGAtv">
 
@@ -2763,37 +2309,6 @@ Removed: Nudeflix</news>
 
 </addon>
 
-<addon id="plugin.video.VelhosTempos"
-       name="[B][COLOR red]Velhos Tempos[/B][/COLOR]"
-       version="0.0.5"
-       provider-name="Sergio Tools">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[B][COLOR gold]Velhos Tempos [/COLOR]</summary>
-    <description lang="en">[B][COLOR red]Seriados, filmes e desenhos que não voltam...[/B][/COLOR] [B][COLOR blue]Nós não hospedamos ou distribuimos qualquer conteúdo exibido por este addon.[/COLOR][/B] [B][COLOR lime] Nós do Addon Velhos Tempos, não temos nenhuma afiliação com o provedor de conteúdo,[/COLOR][/B] [B][COLOR gold] somos apenas responsáveis por linkar os endereços de conteúdos que já se encontram na Internet, categorizando e organizando, para que quem queira, possa desfrutá-los dentro do seu player preferido.[/COLOR][/B]</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon
   id="plugin.video.videodevil"
   version="1.7.184"
@@ -2812,35 +2327,6 @@ Removed: Nudeflix</news>
     <description>This addon plays videos from YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies and some other adult streaming sites. It contains explicit adult material. You may only view this addon if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content. If you do not meet these requirements, then you do not have permission to use this addon. </description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.vrlivre" name="[COLOR blue]VRlivreTV[/COLOR] [COLOR red]By Sergio[/COLOR]" version="0.0.4" provider-name="Sergio Tools">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson"/>
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">VRlivreTV</summary>
-    <description lang="en">VRlivreTV - Nosso Agregador de Links e Conteúdos Educacionais</description>
-    <platform>all</platform>
-    <forum></forum>
-    <website>http://sergiogracas.com</website>
   </extension>
 </addon>
 
@@ -2870,44 +2356,6 @@ Removed: Nudeflix</news>
  </description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.xstream" name="xStream" version="3.5.6~nightly" provider-name="xStream-Team">
- <requires>
-   <import addon="xbmc.python"                 version="2.14.0"/>
-   <import addon="repository.xstream"          version="1.1.1" />
-   <import addon="script.module.urlresolver"   version="3.0.0"/>
-   <import addon="script.module.metahandler"   version="1.0.0"/>
-   <import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
- </requires>
- <extension point="xbmc.python.pluginsource" library="default.py">
-   <provides>video</provides>
- </extension>
- <extension point="xbmc.addon.metadata">
-   <summary lang="de">Watch xStream!</summary>
-   <description lang="de">Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutschen Quellen zugreifen</description>
-   <disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
-   <forum>https://lastship.ch</forum>
-   <source>https://github.com/lastship/plugin.video.xstream</source>
-   <license>GNU GPLv3</license>
-   <platform>all</platform>
-   <news>
-   xStream 3.5.6~nightly
-- [cinenator] site offline
-- [kinox.one] no streams
-- [movie2k.ag] recaptcha
-- [kino.cx] add mystream hoster support
-- [Foxx.to] Fix regex
-- [Alleserien] Fix Hoster
-- Update cookies_helper.py
-   </news>
-   <assets>
-     <icon>icon.png</icon>
-     <fanart>fanart.jpg</fanart>
-     <screenshot>resources/art/screenshot-01.jpg</screenshot>
-     <screenshot>resources/art/screenshot-02.jpg</screenshot>
-   </assets>
- </extension>
 </addon>
 
 <addon id="plugin.video.YouKids"
@@ -2955,34 +2403,6 @@ Removed: Nudeflix</news>
         [COLOR red]forums.tvaddons.ag/tvaddons-ag-addon-repository/46413-youmusic[/COLOR]
     </disclaimer>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.youporn"
-	     name="YouPorn"
-	     version="3.00.001"
-	     provider-name="Echo Coder">
-  <requires>
-	<import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.urlresolver.xxx"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">OVER 18 ONLY - Support is available https://github.com/Colossal1/plugin.video.youporn/issues</summary>
-    <description lang="en">YouPorn Scraping by Echo Coder
-
-Skin and code for skin by Demonstratorz</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>https://github.com/Colossal1/plugin.video.youporn</forum>
-    <website>https://github.com/Colossal1/plugin.video.youporn</website>
-    <email>echocoderxbmc@protonmail.com</email>
   </extension>
 </addon>
 
@@ -3109,19 +2529,6 @@ version="1.0.2" provider-name="Marciocn">">
 	</extension>
 </addon>
 
-<addon id="repository.adulthideout" name="AdultHideout REPO" version="1.0.1" provider-name="Vashiel">
-	<extension point="xbmc.addon.repository" name="AdultHideout Addon Repository">
-		<info compressed="false">https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml</info>
-		<checksum>https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/Vashiel/repository.adulthideout/raw/master/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>AdultHideout Addon Repository</summary>
-		<description>First Try for a Adult Kodi Addon</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="repository.braziltv" name="BrazilTV Repo" version="1.1" provider-name="teamBrazilTV">
   <extension point="xbmc.addon.repository" name="BrazilTV Repo">
     <info compressed="false">http://braziltv.yolasite.com/resources/repo/addons.xml</info>
@@ -3231,20 +2638,6 @@ www.fenixflix.ml</news>
 	</extension>
 </addon>
 
-<addon id="repository.foliver" name="[B][COLOR green].FOLIVER [COLOR blue]FOR [COLOR yellow]KODI [COLOR white]Repository[/B][/COLOR]" version="1.0.1" provider-name="FOLIVER FOR KODI">
-	<extension point="xbmc.addon.repository" name="Foliver For Kodi Repository">
-		<info compressed="false">http://raw.github.com/FoliverForKodi/repo/master/addons.xml</info>
-		<checksum>http://raw.github.com/FoliverForKodi/repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/FoliverForKodi/repo/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>OS MEUS ADDONS</summary>
-		<description>FOLIVER FOR KODI ADDONS E BUILDS</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="repository.Loki" name="Loki Repository" version="0.0.5" provider-name="Loki">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -3304,20 +2697,6 @@ www.fenixflix.ml</news>
         <screenshot>resources/screenshots/02.jpg</screenshot>
         <screenshot>resources/screenshots/03.jpg</screenshot>
       </assets>
-	</extension>
-</addon>
-
-<addon id="repository.xbmcadult" name="XBMC-Adult Addons" version="1.0.6" provider-name="xbmc-adult">
-	<extension point="xbmc.addon.repository" name="XBMC Adult Addons">
-		<info compressed="false">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml</info>
-		<checksum>http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>XBMC Addons for Adults Only</summary>
-		<description>This repository contains addons that are for adults only. You may only view the contents of this repository if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content.</description>
-		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
-		<platform>all</platform>
 	</extension>
 </addon>
 
