@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.fenix.flix"
        name="[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]" 
-       version="4.7.0"
-       provider-name="Team Fenix Flix">
+       version="4.7.2"
+       provider-name="Team Fênix Flix">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -42,11 +42,11 @@ l [COLOR firebrick]FENIX[/COLOR] FLIX - O MELHOR DO CINEMA NO SEU KODI - 100% FH
     <disclaimer lang="en">O autor nao e de forma alguma afiliado a Kodi, a Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
 	<website>www.fenixflix.ml</website>
     <email></email>
-	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.0 [COLOR firebrick]l[/COLOR]
+	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.2 [COLOR firebrick]l[/COLOR]
 
-[COLOR firebrick]l[/COLOR] Adicionado Menu de Suporte [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Adicionado Área Premium [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Só Conteudos em FHD [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Adicionado all infos em todas as categorias [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Adicionado all infos nos conteúdos [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Só conteudos em HD e FHD [COLOR firebrick]l[/COLOR]
 
 [B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]
 www.fenixflix.ml</news>

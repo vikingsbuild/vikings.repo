@@ -1023,8 +1023,8 @@ provider-name="primaeval">
 
 <addon id="plugin.video.fenix.flix"
        name="[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]"
-       version="4.7.0"
-       provider-name="Team Fenix Flix">
+       version="4.7.2"
+       provider-name="Team Fênix Flix">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -1064,11 +1064,11 @@ l [COLOR firebrick]FENIX[/COLOR] FLIX - O MELHOR DO CINEMA NO SEU KODI - 100% FH
     <disclaimer lang="en">O autor nao e de forma alguma afiliado a Kodi, a Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
 	<website>www.fenixflix.ml</website>
     <email></email>
-	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.0 [COLOR firebrick]l[/COLOR]
+	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.2 [COLOR firebrick]l[/COLOR]
 
-[COLOR firebrick]l[/COLOR] Adicionado Menu de Suporte [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Adicionado Área Premium [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Só Conteudos em FHD [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Adicionado all infos em todas as categorias [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Adicionado all infos nos conteúdos [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Só conteudos em HD e FHD [COLOR firebrick]l[/COLOR]
 
 [B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]
 www.fenixflix.ml</news>
@@ -2309,6 +2309,37 @@ More minor bugfixes (honestly could not list them all)
 
 </addon>
 
+<addon id="plugin.video.VelhosTempos"
+       name="[B][COLOR red]Velhos Tempos[/B][/COLOR]"
+       version="0.0.5"
+       provider-name="Sergio Tools">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR gold]Velhos Tempos [/COLOR]</summary>
+    <description lang="en">[B][COLOR red]Seriados, filmes e desenhos que não voltam...[/B][/COLOR] [B][COLOR blue]Nós não hospedamos ou distribuimos qualquer conteúdo exibido por este addon.[/COLOR][/B] [B][COLOR lime] Nós do Addon Velhos Tempos, não temos nenhuma afiliação com o provedor de conteúdo,[/COLOR][/B] [B][COLOR gold] somos apenas responsáveis por linkar os endereços de conteúdos que já se encontram na Internet, categorizando e organizando, para que quem queira, possa desfrutá-los dentro do seu player preferido.[/COLOR][/B]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="plugin.video.videodevil"
   version="1.7.184"
@@ -2327,6 +2358,35 @@ More minor bugfixes (honestly could not list them all)
     <description>This addon plays videos from YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies and some other adult streaming sites. It contains explicit adult material. You may only view this addon if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content. If you do not meet these requirements, then you do not have permission to use this addon. </description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.vrlivre" name="[COLOR blue]VRlivreTV[/COLOR] [COLOR red]By Sergio[/COLOR]" version="0.0.4" provider-name="Sergio Tools">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">VRlivreTV</summary>
+    <description lang="en">VRlivreTV - Nosso Agregador de Links e Conteúdos Educacionais</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website>http://sergiogracas.com</website>
   </extension>
 </addon>
 
