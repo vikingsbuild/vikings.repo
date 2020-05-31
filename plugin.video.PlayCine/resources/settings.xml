@@ -1,0 +1,10 @@
+<settings>
+<category label="Legenda">
+	<setting label="[COLOR lightblue]Legenda[/COLOR]" type="lsep"/>
+	<setting label="Pedir legenda externa ao reproduzir?" id="legenda" type="bool" default="false" />
+</category>
+<category label="Minha Lista">
+	<setting label="[COLOR lightblue]Minha Lista[/COLOR]" type="lsep"/>
+	<setting label="Entre aqui para limpar Minha Lista" type="action" action="RunScript(plugin.video.Neticine, limparMinhaLista)"/>	
+</category>
+</settings>

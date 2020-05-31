@@ -1802,6 +1802,23 @@ Levando o lazer e o prazer para vocês assistir e curtir cada momento com a fam�
   </extension>
 </addon>
 
+<addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.0" provider-name="Zoreu">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.future"/>
+		<import addon="script.module.simplejson"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Play Cine para sua Familia.</summary>
+        <description>Play Cine oferece as melhores séries e filmes para você no seu kodi.</description>
+        <disclaimer>PlayCine hospeda os conteudos, todos os filmes e series são links agregados ao addon.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
