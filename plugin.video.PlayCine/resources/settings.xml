@@ -5,6 +5,6 @@
 </category>
 <category label="Minha Lista">
 	<setting label="[COLOR lightblue]Minha Lista[/COLOR]" type="lsep"/>
-	<setting label="Entre aqui para limpar Minha Lista" type="action" action="RunScript(plugin.video.Neticine, limparMinhaLista)"/>	
+	<setting label="Entre aqui para limpar Minha Lista" type="action" action="RunScript(plugin.video.PlayCine, limparMinhaLista)"/>	
 </category>
 </settings>

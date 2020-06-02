@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.1" provider-name="Equipe OnePlay"> 
+<addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.2" provider-name="Equipe OnePlay"> 
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.future"/>
@@ -16,7 +16,7 @@
     <extension point="xbmc.addon.metadata">
         <summary>Play Cine para sua Familia.</summary>
         <description>Play Cine oferece as melhores séries e filmes para você no seu kodi.</description>
-        <disclaimer>PlayCine hospeda os conteudos, todos os filmes e series são links agregados ao addon.</disclaimer>
+        <disclaimer>PlayCine não hospeda os conteudos, todos os filmes e series são links agregados ao addon.</disclaimer>
         <platform>all</platform>
     </extension>
 </addon>
