@@ -46,7 +46,7 @@ if REMOTE_DBG:
         sys.exit(1)
 
 
-addon = xbmcaddon.Addon('plugin.video.conexao')
+addon = xbmcaddon.Addon('plugin.video.kallplay')
 addon_version = addon.getAddonInfo('version')
 profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 home = xbmc.translatePath(addon.getAddonInfo('path').decode('utf-8'))
@@ -68,30 +68,22 @@ if os.path.exists(source_file)==True:
     SOURCES = open(source_file).read()
 else: SOURCES = []
 
-
-SOURCES = [{"title": "IGOR LISTA", "url": "https://cld.pt/dl/download/6a9e1f36-5ed4-4d61-8243-04f9f311008c/tees.xml", "fanart": "xxxxxx", "GENERO": "IPTV ", "date": "09/12/2016", "credits": "Igor Rangel", "thumbnail": "http://logos3.ucoz.com/IgorLista_5-0.png"}]
-
-base =  ''                                                                                                                                                                                                                                                                                                "===WE4APY2QMH4ROPZ5CGZ5FN33GGXYNJTYKG2NOBD46SXIHTD4IH2BN"
-tam = len(base)
-basedem = base[::-1]
-MainBase = base64.b32decode(basedem)
-
-off =  MainBase
+#bCHBase = base64.decodestring('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2thbGx5c2Rlcm9jay9LYWxsUGxheS9tYXN0ZXIvYWRkb25zL0NhbmFpcy9jYW5haXN0dmFvdml2bw')
 
 def CHIndex():
     addon_log("CHIndex")
-	#addDir('[COLOR white][B]SITE WWW.VIDATV.XYZ [/COLOR][/B]','100',100,icon,FANART,'','','','')
+	#addDir('[COLOR white][B]SITE WWW.KALLPLAYTV.XYZ [/COLOR][/B]','100',100,icon,FANART,'','','','')
     getData(off,'')
     msg2 = "https://pastebin.com/raw/kx01LpNR"
     msg = msg2
     line1 = urllib2.urlopen(msg).read()
     time = 15000 #in miliseconds
-    xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%('[COLOR cyan][B]--VIDA--[/COLOR][/B]',line1, time, icon))
+    xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%('[COLOR cyan][B]--KALLPLAY--[/COLOR][/B]',line1, time, icon))
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 def addon_log(string):
     if debug == 'true':
-        xbmc.log("[addon.conexao-%s]: %s" %(addon_version, string))
+        xbmc.log("[addon.kallplay-%s]: %s" %(addon_version, string))
 
 
 def makeRequest(url, headers=None):
@@ -123,11 +115,11 @@ def makeRequest(url, headers=None):
             addon_log('URL: '+url)
             if hasattr(e, 'code'):
                 addon_log('ERRO - CODIGO - %s.' % e.code)
-                xbmc.executebuiltin("XBMC.Notification(conexao,ERRO - CODIGO - "+str(e.code)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(kallplay,ERRO - CODIGO - "+str(e.code)+",10000,"+icon+")")
             elif hasattr(e, 'reason'):
                 addon_log('ERRO DE SERVIDOR.')
                 addon_log('Reason: %s' %e.reason)
-                xbmc.executebuiltin("XBMC.Notification(conexao,ERRO DE SERVIDOR. - "+str(e.reason)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(kallplay,ERRO DE SERVIDOR. - "+str(e.reason)+",10000,"+icon+")")
 
 def getSources():
         try:
@@ -248,7 +240,7 @@ def addSource(url=None):
             b.close()
         addon.setSetting('new_url_source', "")
         addon.setSetting('new_file_source', "")
-        xbmc.executebuiltin("XBMC.Notification(conexao,New source added.,5000,"+icon+")")
+        xbmc.executebuiltin("XBMC.Notification(kallplay,New source added.,5000,"+icon+")")
         if not url is None:
             if 'xbmcplus.xb.funpic.de' in url:
                 xbmc.executebuiltin("XBMC.Container.Update(%s?mode=14,replace)" %sys.argv[0])
@@ -641,23 +633,23 @@ def getItems(items,fanart,dontLink=False):
                             dm = "plugin://plugin.video.dailymotion_com/?mode=playLiveVideo&url=" + i.string
                             url.append(dm)
 							
-                elif len(item('conexaotvn')) >0:
-                    for i in item('conexaotvn'):
+                elif len(item('vidatvn')) >0:
+                    for i in item('vidatvn'):
                         if not i.string == None:
-                            conexaotvn = 'http://nazabox.ddns.net/'+i.string+'.mp4'
-                            url.append(conexaotvn)
+                            vidatvn = 'http://nazabox.ddns.net/'+i.string+'.mp4'
+                            url.append(vidatvn)
 
-                elif len(item('conexaotvb')) >0:
-                    for i in item('conexaotvb'):
+                elif len(item('vidatvb')) >0:
+                    for i in item('vidatvb'):
                         if not i.string == None:
-                            conexaotvb = 'http://www.blogger.com/video-play.mp4?contentId='+i.string
-                            url.append(conexaotvb)
+                            vidatvb = 'http://www.blogger.com/video-play.mp4?contentId='+i.string
+                            url.append(vidatvb)
 
-                elif len(item('conexaotvg')) >0:
-                    for i in item('conexaotvg'):
+                elif len(item('vidatvg')) >0:
+                    for i in item('vidatvg'):
                         if not i.string == None:
-                            conexaotvg = 'plugin://plugin.video.gdrive?mode=streamURL&amp;url=https://docs.google.com/file/d/'+i.string
-                            url.append(conexaotvg)
+                            vidatvg = 'plugin://plugin.video.gdrive?mode=streamURL&amp;url=https://docs.google.com/file/d/'+i.string
+                            url.append(vidatvg)
 
                 elif len(item('playthis')) >0:
                     for i in item('playthis'):
@@ -677,17 +669,17 @@ def getItems(items,fanart,dontLink=False):
                             urlsolve = ''+i.string+''
                             url.append(urlsolve)
 
-                elif len(item('conexaoonef')) >0:
-                    for i in item(conexaoonef):
+                elif len(item('vidaonef')) >0:
+                    for i in item(vidaonef):
                         if not i.string == None:
-                            conexaoonef = 'plugin://plugin.video.playthis/?mode=play&player=false&path=https://emcc-my.sharepoint.com/:v:/g/personal/conexaofilmes_ondrive_pw/'+i.string+'?download=1&rebase=on'
-                            url.append(conexaoonef)
+                            vidaonef = 'plugin://plugin.video.playthis/?mode=play&player=false&path=https://emcc-my.sharepoint.com/:v:/g/personal/vidafilmes_ondrive_pw/'+i.string+'?download=1&rebase=on'
+                            url.append(vidaonef)
 
-                elif len(item('conexaoones')) >0:
-                    for i in item('conexaoones'):
+                elif len(item('vidaones')) >0:
+                    for i in item('vidaones'):
                         if not i.string == None:
-                            conexaoones = 'plugin://plugin.video.playthis/?mode=play&player=false&path=https://emcc-my.sharepoint.com/:v:/g/personal/conexaoseries_ondrive_pw/'+i.string+'?download=1&rebase=on'
-                            url.append(conexaoones)
+                            vidaones = 'plugin://plugin.video.playthis/?mode=play&player=false&path=https://emcc-my.sharepoint.com/:v:/g/personal/vidaseries_ondrive_pw/'+i.string+'?download=1&rebase=on'
+                            url.append(vidaones)
 
                 elif len(item('base64x')) >0:
                     for i in item('base64x'):
