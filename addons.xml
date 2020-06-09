@@ -1845,7 +1845,7 @@ Levando o lazer e o prazer para vocÃªs assistir e curtir cada momento com a famÃ
   </extension>
 </addon>
 
-<addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.2" provider-name="Equipe OnePlay">
+<addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.3" provider-name="Equipe OnePlay">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.future"/>
