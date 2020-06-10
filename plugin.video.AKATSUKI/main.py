@@ -38,9 +38,9 @@ title_descricao = "AKASTSUKI 1.3\nESPERO QUE GOSTEM DOS NOSSOS CONTEUDOS, ENTRE 
 url_title = 'AGRADEÇO POR USAREM O ADDON AKATSUKI'
 
 #### MENSAGEM BEM VINDOS  #############################################################
-titulo_boas_vindas = "BEM-VINDOS"
-mensagem_bem_vindo = "[B][COLOR white]AKATSUKI AGRADECE POR USAR NOSSO ADDON ![/COLOR]\n[COLOR red]Siga-Nos Nas Nossas Rede Sociais PARA NOS AJUDAR:[/COLOR] [COLOR red] WhatsApp -[/COLOR] https://chat.whatsapp.com/JbxpPMAnBR64MUcb06dyiT [/B]"
-####  MENSAGEM SECUNDARIA ######################################################
+titulo_boas_vindas = "BEM-VINDOS, ENTRE EM CONTATO PARA TER UM ADDON SÓ DE TV EXCLUSIVA DE GRAÇA"
+mensagem_bem_vindo = "[B][COLOR white]AKATSUKI AGRADECE POR USAR NOSSO ADDON ![/COLOR]\n[COLOR red] BAIXE O ELEMENTUM PARA QUE SEUS FILMES E SÉRIES RODEM PERFEITO SEM TRAVAMENTO:[/COLOR] [COLOR red] APROVEITE! -[/COLOR] [/B]"
+####  MENSAGEM SECUNDARIA #############################################################
 mensagem_secundaria = "[COLOR red][B]AKATSUKI[/B][/COLOR] - [COLOR white][B]CASO QUEIRA FAZER ALGUMA DOAÇÃO, ENTRE EM CONTATO PELO NOSSO ZAP (71) 996191556[/B][/COLOR]"
 ####  TEMPO DA MENSAGEM EM MILISEGUNDOS ###############################################
 time_msg = 15000
