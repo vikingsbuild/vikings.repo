@@ -1336,6 +1336,41 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
+<addon id="plugin.video.KamiKaze"
+       name="[COLOR darkorange][B]KamiKaze[/B][/COLOR]"
+       version="1.1"
+       provider-name="The KamiKazes">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>KamiKaze - Tudo de Filmes e Series, você vai encontrar aqui, então entre e fique a vontade, Versão 1.1</summary>
+    <description>
+        KamiKaze - Duvidas ou Sugestões acesse nosso Grupo no Whatsapp "https://chat.whatsapp.com/Kqfc8v6CBJL8nL6KhmZ82Y"
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.KelTec-MP.torrents" name="[B][COLOR dimgrey]KelTec-Media-Play[COLOR white] - [/COLOR][COLOR darkgreen]TORRENTS![/COLOR][/B]" version="1.9" provider-name="[COLOR crimson]Team - KelTec-Media-Play[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
@@ -1646,41 +1681,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
     <summary>AGRADEÇEMOS A COLABORAÇÃO e APOIO DOS ENVOLVIDOS NA CRIAÇÃO DO ADDONS</summary>
     <description>
         PROIBIDA A VENDA DO ADDONS CONTEUDO TOTALMENTE GRATUITO!!
-
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.Nightwolf"
-       name="[COLOR white][B]Night[/B][/COLOR][COLOR springgreen][B]Wolf[/B][/COLOR]"
-       version="2.1"
-       provider-name="Team Night Wolf">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-	<import addon="plugin.video.SportsDevil" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>Nightwolf - Tudo de Filmes e Series, você vai encontrar aqui, então entre e fique a vontade, Versão 2.1 Voooandoo - Geet Over Herreee</summary>
-    <description>
-        Team Nightwolf - Duvidas ou Sugestões acesse nosso Grupo no Whatsapp "https://chat.whatsapp.com/Kqfc8v6CBJL8nL6KhmZ82Y"
 
     </description>
     <platform>all</platform>
