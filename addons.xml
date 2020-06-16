@@ -1441,6 +1441,47 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
     </extension>
 </addon>
 
+<addon id="plugin.video.KINGBR" name="[B][COLOR white]KING-BR[/COLOR][/B]" version="1.2.1" provider-name="[B][COLOR yellow] EVERSON SANTOS[/B][/COLOR]">
+<requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+</requires>
+
+<extension point="xbmc.python.pluginsource" library="main.py">
+	<provides>video</provides>
+</extension>
+
+<extension point="xbmc.addon.repository" name="PAIN">
+	<info compressed="false"></info>
+	<checksum></checksum>
+    <datadir zip="true"></datadir>
+</extension>
+
+<extension point="xbmc.addon.metadata">
+    <summary>[COLOR lime]O ADD-ON COM CONTEUDOS ATUALIZADOS[/COLOR]</summary>
+    <description lang="en">[B]ADD-ON KING BR CONTEUDOS NOVOS E ATUALIZADOS[/B] - [COLOR yellow] TRABALHAMOS POR MEIO DE LINK NÃO HOSPEDAMOS NADA NO ADD-ON [/COLOR]</description>
+    <disclaimer lang="en">[COLOR yellow][B] BY KING BR[/B][/COLOR]</disclaimer>
+	<platform>all</platform>
+    <assets>
+	<icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources/screenshots/01.jpg</screenshot>
+    <screenshot>resources/screenshots/02.jpg</screenshot>
+    <screenshot>resources/screenshots/03.jpg</screenshot>
+	</assets>
+</extension>
+
+</addon>
+
 <addon id="plugin.video.kodikaraoke" name="Kodi Karaoke Lite" version="0.0.3" provider-name="Kodi Karaoke">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
