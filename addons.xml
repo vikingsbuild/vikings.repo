@@ -1441,7 +1441,7 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
     </extension>
 </addon>
 
-<addon id="plugin.video.KINGBR" name="[B][COLOR white]KING-BR[/COLOR][/B]" version="1.2.1" provider-name="[B][COLOR yellow] EVERSON SANTOS[/B][/COLOR]">
+<addon id="plugin.video.KINGBR" name="[B][COLOR white]KING-BR[/COLOR][/B]" version="1.2.3" provider-name="[B][COLOR yellow] EVERSON SANTOS[/B][/COLOR]">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
