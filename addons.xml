@@ -1336,39 +1336,39 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
   </extension>
 </addon>
 
-<addon id="plugin.video.KamiKaze"
-       name="[COLOR darkorange][B]KamiKaze[/B][/COLOR]"
-       version="1.1"
-       provider-name="The KamiKazes">
-  <requires>
+<addon id="plugin.video.KamiKaze" name="[B][COLOR white]Kami[/COLOR][/B][B][COLOR darkorange]Kaze[/COLOR][/B]" version="1.1.2" provider-name="[B][COLOR yellow]The KamiKazees[/COLOR][/B]">
+<requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-	<import addon="plugin.video.SportsDevil" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+</requires>
 
+<extension point="xbmc.python.pluginsource" library="main.py">
+	<provides>video</provides>
+</extension>
 
-  <extension point="xbmc.addon.metadata">
-    <summary>KamiKaze - Tudo de Filmes e Series, você vai encontrar aqui, então entre e fique a vontade, Versão 1.1</summary>
-    <description>
-        KamiKaze - Duvidas ou Sugestões acesse nosso Grupo no Whatsapp "https://chat.whatsapp.com/Kqfc8v6CBJL8nL6KhmZ82Y"
+<extension point="xbmc.addon.metadata">
+    <summary>[COLOR white][B]Filmes, Series, Shows, Músicas e Jogos. Tudo para sua familia no seu kodi[B][/COLOR]</summary>
+    <description lang="en">[COLOR darkorange][B]KamiKaze é um plugin que organiza os conteudos, que estão na internet, via Torrent, Lembre-se de ter instalado no seu Kodi o Plugin ELEMENTUM[/B][/COLOR]</description>
+    <disclaimer lang="en">[COLOR yellow][B]O autor não se responsabiliza pelos conteúdos neste addon, apenas organizamos links de terceiros, também não é filiado ao team Kodi (xbmc)[/B][/COLOR]</disclaimer>
+	<platform>all</platform>
+    <assets>
+	<icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources/screenshots/01.jpg</screenshot>
+    <screenshot>resources/screenshots/02.jpg</screenshot>
+    <screenshot>resources/screenshots/03.jpg</screenshot>
+	</assets>
+</extension>
 
-    </description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.KelTec-MP.torrents" name="[B][COLOR dimgrey]KelTec-Media-Play[COLOR white] - [/COLOR][COLOR darkgreen]TORRENTS![/COLOR][/B]" version="1.9" provider-name="[COLOR crimson]Team - KelTec-Media-Play[/COLOR]">

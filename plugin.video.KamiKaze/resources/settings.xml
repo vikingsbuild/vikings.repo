@@ -1,28 +1,51 @@
 <settings>
-  
-  <category label="Adicionar Fonte">
-    <setting id="choose_source" type="enum" values="Escolher Arquivo|Entre com a URL" label="Escolha o tipo de fonte" default=""/>
-    <setting id="new_file_source" type="file" source="files" label="Escolher Arquivo" default="" visible="eq(-1,0)"/>
-    <setting id="new_url_source" type="text" label="Adicione URL" default="" visible="eq(-2,1)"/>
-    <setting type="sep" />
-    <setting type="action" label="Adicionar fonte" option="close" action="RunPlugin(plugin://plugin.video.iptvTWTUTORIAIS/?mode=7)" />
-    <setting type="sep" />
-    <setting id="searchotherplugins" label="Pesquisar Outros plugins" type="bool" default="false"/>
-  </category>
-  
-  <category label="Geral">
-    <setting id="save_location" type="folder"  label="Selecione um local de download." default=""/>
-    <setting id="use_thumb" type="bool" label="Use Miniaturas como Fanart" default="false" />
-    <setting id="logo-folderPath" type="folder"  label="Selecione o diretório para o logotipo." default=""/>
-    <setting id="add_playlist" type="bool" label="Adicione ítens com vários links como listas de reprodução" default="false"/>
-    <setting id="ask_playlist_items" type="bool" label="Pedir itens da lista de reprodução para escolher a caixa de diálogo" default="false" />
-    <setting id="debug" type="bool" label="Ativar depuração de complemento" default="false"/>
-    <setting id="1080pquality" label="Reproduz vídeo 1080p sob demanda, se disponível (Não ao Vivo)" type="bool" default=""/>
-    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Reproduza IMDBid com:" default="Genesis"/>
-    <setting id="donotshowbychannels" label="Não mostrar ítens no nome do canal" type="bool" default="false"/>
-    <setting id="parentalblockedpin" label="Pin do Controle Parental" type="text"  option="hidden"  default=""/>
-    <setting id="parentalblocked" label="Quer aplicar o Controle Parental?" type="bool" default="false" enable="false"/>
-    
-  </category>
-
+<category label="VIP">
+	<setting label="[COLOR lightblue]Configurações de Acesso[/COLOR] [COLOR gold](Vip)[/COLOR]" type="lsep"/>
+	<setting label="Usuário" id="username" type="text" default="" enable="!eq(-1,false)"/>
+	<setting label="Senha" id="password" type="text" default="" enable="!eq(-2,false)" option="hidden"/>
+	<setting label="Saida de Transmissão VIP" id="saida" type="labelenum" default="ts" values="ts|m3u8"/>
+	<setting label="Executar com" id="f4mvip" type="enum" values="[COLOR aquamarine]F4mTester[/COLOR] [COLOR lime](mais estável, maior delay)[/COLOR]|[COLOR aquamarine]Padrão[/COLOR] [COLOR yellow](menor delay)[/COLOR]" default="1" />
+	<setting label="Exibir Menu VIP" id="exibirvip" type="bool" default="false" />
+</category>
+<category label="Proxy">
+		<setting label="[COLOR lightblue]Opções do Proxy:[/COLOR]" type="lsep"/>
+		<setting label="Ativar Proxy" id="proxy" type="bool"  default="false" />
+		<setting label="Número de Tentativas" id="proxy_try" type="enum" values="1 Vez|2 Vezes|3 Vezes|4 Vezes|5 Vezes|6 Vezes|6 Vezes|7 Vezes|8 Vezes|9 Vezes|10 Vezes" default="4" />
+		<setting label="[COLOR yellow][B]Utilize apenas se a operadora estiver bloqueando o servidor[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]BlurayPlay.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Não se aplica a servidores de IPTV como o VIP esses tem[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]conexão direta.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Utilize VPN se a operadora bloqueia o IPTV.[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Canais">
+		<setting label="[COLOR lightblue]Configurações dos Canais:[/COLOR]" type="lsep"/>
+		<setting label="Exibir Canais 4K (Lista M3U)" id="uhdtv" type="bool" default="true" />
+		<setting label="Exibir Canais FHD (Lista M3U)" id="fhdtv" type="bool" default="true" />
+		<setting label="Exibir Canais HD (Lista M3U)" id="hdtv" type="bool" default="true" />
+		<setting label="Exibir Canais SD (Lista M3U)" id="sdtv" type="bool" default="true" />
+		<setting label="(Lista M3U) Exibir Apenas Canais de" id="filtrar" type="enum" values="Desativado|Futebol|Esportes|Filmes e Series|Infantil|Documentario|Aberto|Reality show" default="0" />
+		<setting label="Executar com" id="f4m" type="enum" values="[COLOR aquamarine]F4mTester[/COLOR] [COLOR lime](mais estável, maior delay)[/COLOR]|[COLOR aquamarine]Padrão[/COLOR] [COLOR yellow](menos estável, menor delay)[/COLOR]" default="0" />
+</category>
+<category label="Controle dos Pais">
+		<setting label="[COLOR lightblue]Controle dos Pais:[/COLOR]" type="lsep"/>
+		<setting label="Exibir Menu Adultos" id="adult" type="bool" default="false" />
+		<setting label="Exibir Canais Adultos (Lista M3U)" id="adult2" type="bool" default="false" />
+		<setting label="Tipo de Teclado (OK para trocar)" id="keyboard" type="enum" values="Númerico|Alfanúmerico" default="0" />
+		<setting label="Entre aqui para alterar senha" type="action" action="RunScript(plugin.video.meuaddon, SetPassword)"/>
+		<setting label="[COLOR yellow][B]Senha padrão 0069[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Complementos">
+	<setting label="[COLOR lightblue]Configurações de Complemento:[/COLOR]" type="lsep"/>
+	<setting label="Verificar Complementos" id="check_addon" type="bool" default="true" />
+	<setting label="Baixar e Instalar Elementum" id="elementum" type="bool" default="false" />
+</category>
+<category label="Outros">
+	<setting label="[COLOR lightblue]Configurações Gerais:[/COLOR]" type="lsep"/>
+	<setting label="Exibir Mensagem de Boas Vindas" id="mensagem1" type="bool" default="true" />
+	<setting label="Exibir Mensagem de Status" id="mensagem2" type="bool" default="true" />
+	<setting label="Exibir Favoritos" id="favoritos" type="bool" default="false" />
+    <setting label="Entre aqui para limpar os favoritos" type="action" action="RunScript(plugin.video.meuaddon, limparFavoritos)"/>
+	<setting label="Executar youtube fora do BlurayPlay" id="youtubeexterno" type="bool" default="false" />
+    <setting label="Use Miniaturas como Fanart" id="use_thumb" type="bool" default="false" />
+</category>
 </settings>
