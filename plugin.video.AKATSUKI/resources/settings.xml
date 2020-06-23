@@ -1,0 +1,60 @@
+﻿<settings>
+<category label="VIP">
+	<setting label="[COLOR white][B]Configurações de Acesso[/B][/COLOR] [COLOR red][B](Vip)[/B][/COLOR]" type="lsep"/>
+	<setting label="[COLOR white][B]Usuário[/B][/COLOR]" id="username" type="text" default="" enable="!eq(-1,false)"/>
+	<setting label="[COLOR white][B]Senha[/B][/COLOR]" id="password" type="text" default="" enable="!eq(-2,false)" option="hidden"/>
+	<setting label="[COLOR white][B]Servidor[/B][/COLOR]" id="dnsvip" type="enum" values="Servidor 1|Servidor 2" default="0" />	
+	<setting label="[COLOR white][B]Saida de Transmissão VIP[/B][/COLOR]" id="saida" type="enum" values="TS|M3U8" default="0" />
+	<setting label="[COLOR white][B]Executar com[/B][/COLOR]" id="f4mvip" type="enum" values="[COLOR white][B]F4mTester[/B][/COLOR] [COLOR red][B](mais estável, maior delay)[/B][/COLOR]|[COLOR white][B]Padrão[/B][/COLOR] [COLOR yellow][B](menor delay)[/B][/COLOR]" default="1" />
+	<setting label="[COLOR yellow][B]Exibir Menu VIP[/B][/COLOR]" id="exibirvip" type="bool" default="true" />
+	<setting label="[COLOR yellow][B]Informações da Conta[/B][/COLOR]" type="lsep"/>
+	<setting label="Servidor" id="server_number" type="text" enable="false" default=""/>
+	<setting label="Status" id="status_vip" type="text" enable="false" default=""/>
+	<setting label="Criado em" id="created_at" type="text" enable="false" default=""/>
+	<setting label="Expira em" id="exp_date" type="text" enable="false" default=""/>
+	<setting label="Demonstrativo" id="is_trial" type="text" enable="false" default=""/>
+	<setting label="Limite de Conexão" id="max_connection" type="text" enable="false" default=""/>
+</category>
+<category label="Proxy">
+		<setting label="[COLOR lightblue][B]Opções do Proxy:[/B][/COLOR]" type="lsep"/>
+		<setting label="[COLOR white][B]Ativar Proxy[/B][/COLOR]" id="proxy" type="bool"  default="false" />
+		<setting label="[COLOR white][B]Número de Tentativas[/B][/COLOR]" id="proxy_try" type="enum" values="1 Vez|2 Vezes|3 Vezes|4 Vezes|5 Vezes|6 Vezes|6 Vezes|7 Vezes|8 Vezes|9 Vezes|10 Vezes" default="4" />
+		<setting label="[COLOR yellow][B]Utilize apenas se a operadora estiver bloqueando o servidor[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]AKATSUKIPlay.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Aviso: Pode demorar a carregar[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Não se aplica a servidores de IPTV como o VIP esses tem[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]conexão direta.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Utilize VPN se a operadora bloqueia o IPTV.[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Canais">
+		<setting label="[COLOR lightblue][B]Configurações dos Canais:[/B][/COLOR]" type="lsep"/>
+		<setting label="[COLOR white][B]Exibir Canais 4K (Lista M3U)[/B][/COLOR]" id="uhdtv" type="bool" default="true" />
+		<setting label="[COLOR white][B]Exibir Canais FHD (Lista M3U)[/B][/COLOR]" id="fhdtv" type="bool" default="true" />
+		<setting label="[COLOR white][B]Exibir Canais HD (Lista M3U)[/B][/COLOR]" id="hdtv" type="bool" default="true" />
+		<setting label="[COLOR white][B]Exibir Canais SD (Lista M3U)[/B][/COLOR]" id="sdtv" type="bool" default="true" />
+		<setting label="[COLOR white][B](Lista M3U) Exibir Apenas Canais de[/B][/COLOR]" id="filtrar" type="enum" values="Desativado|Futebol|Esportes|Filmes e Series|Infantil|Documentario|Aberto|Reality show|Noticias" default="0" />
+		<setting label="[COLOR white][B]Executar com[/B][/COLOR]" id="f4m" type="enum" values="[COLOR white][B]F4mTester[/B][/COLOR] [COLOR red][B](mais estável, maior delay)[/B][/COLOR]|[COLOR white][B]Padrão[/B][/COLOR] [COLOR red][B](menos estável, menor delay)[/B][/COLOR]" default="0" />
+</category>
+<category label="Controle dos Pais">
+		<setting label="[COLOR lightblue][B]Controle dos Pais:[/B][/COLOR]" type="lsep"/>
+		<setting label="[COLOR white][B]Exibir Menu Adultos[/B][/COLOR]" id="adult" type="bool" default="false" />
+		<setting label="[COLOR white][B]Exibir Canais Adultos (Lista M3U)[/B][/COLOR]" id="adult2" type="bool" default="false" />
+		<setting label="[COLOR white][B]Tipo de Teclado (OK para trocar)[/B][/COLOR]" id="keyboard" type="enum" values="Númerico|Alfanúmerico" default="0" />
+		<setting label="[COLOR white][B]Entre aqui para alterar senha[/B][/COLOR]" type="action" action="RunScript(plugin.video.AKATSUKIPlay, SetPassword)"/>
+		<setting label="[COLOR yellow][B]Senha padrão 0069[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Complementos">
+	<setting label="[COLOR lightblue][B]Configurações de Complemento:[/B][/COLOR]" type="lsep"/>
+	<setting label="[COLOR white][B]Verificar Complementos[/B][/COLOR]" id="check_addon" type="bool" default="true" />
+	<setting label="[COLOR white][B]Baixar e Instalar Elementum[/B][/COLOR]" id="elementum" type="bool" default="false" />
+</category>
+<category label="Outros">
+	<setting label="[COLOR lightblue][B]Configurações Gerais:[/B][/COLOR]" type="lsep"/>
+	<setting label="[COLOR white][B]Exibir Mensagem de Boas Vindas[/B][/COLOR]" id="mensagem1" type="bool" default="true" />
+	<setting label="[COLOR white][B]Exibir Mensagem de Status[/B][/COLOR]" id="mensagem2" type="bool" default="true" />
+	<setting label="[COLOR white][B]Exibir Favoritos[/B][/COLOR]" id="favoritos" type="bool" default="false" />
+    <setting label="[COLOR white][B]Entre aqui para limpar os favoritos[/B][/COLOR]" type="action" action="RunScript(plugin.video.AKATSUKIPlay, limparFavoritos)"/>
+	<setting label="[COLOR white][B]Executar Youtube[/B][/COLOR]" id="ytbmode" type="enum" values="Interno 1|Interno 2|Externo" default="1" />
+    <setting label="[COLOR white][B]Use Miniaturas como Fanart[/B][/COLOR]" id="use_thumb" type="bool" default="false" />
+</category>
+</settings>
