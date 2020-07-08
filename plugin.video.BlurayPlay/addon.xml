@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.BlurayPlay" name="[B][COLOR red]BLURAY[/COLOR][/B] [B][COLOR white]PLAY'S[/COLOR][/B]" version="3.2.1" provider-name="[B][COLOR yellow]TEAM[/COLOR] [COLOR white]BLURAY[/COLOR] [COLOR red]PLAY'S[/B][/COLOR]">
+<addon id="plugin.video.BlurayPlay" name="[B][COLOR red]BLURAY[/COLOR][/B] [B][COLOR white]PLAY'S[/COLOR][/B]" version="3.2.3" provider-name="[B][COLOR yellow]TEAM[/COLOR] [COLOR white]BLURAY[/COLOR] [COLOR red]PLAY'S[/B][/COLOR]">
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
