@@ -1884,41 +1884,6 @@ Levando o lazer e o prazer para vocês assistir e curtir cada momento com a fam�
   </extension>
 </addon>
 
-<addon id="plugin.video.pikachu"
-       name="[B][COLOR yellow]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/B][/COLOR]"
-       version="4.1"
-       provider-name="[B][COLOR yellow] PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR][/B]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-	<import addon="plugin.video.SportsDevil" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>[COLOR yellow]PIKACHU [COLOR lime] ENTRETENIMENTOS!!![/COLOR]</summary>
-    <description>
-       [B]Atenção:[B][I][COLOR yellow] Os conteúdos disponibilizados neste ADDON, são conteúdos retransmitidos de internet e outras plataformas digitais;[/B][/I][/COLOR] [I][B][COLOR blue]Grupo Telegram:[/B][/I][/COLOR][B][I][COLOR white][tinyurl.com/grupopikachu ][/I][/B][/COLOR][B][I][COLOR yellow] | [COLOR blue]Channel Telegram:[/B][/I][/COLOR][B][I][COLOR white][t.me/addonpikachu][/B][/I][/COLOR][B][I][COLOR lime] Visite-nos No Telegram!!![/B][/I][/COLOR]
-    </description>
-    <platform>all</platform>
-  </extension>
-
-</addon>
-
 <addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.4" provider-name="Equipe OnePlay">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
