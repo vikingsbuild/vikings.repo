@@ -83,6 +83,29 @@
 	</extension>
 </addon>
 
+<addon id="plugin.audio.estudioKaza" name="Estúdio KAZA FM" version="1.0" provider-name="EstudioKAZA">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pt">ESTUDIO KAZA FM</summary>
+    <description lang="pt">Bandeirantes - PR</description>
+    <disclaimer lang="pt">KODI PLUGIN BY PAGANINITECH.COM</disclaimer>
+    <language>Portuguese</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE</license>
+    <website>http://www.estudiokaza.com/</website>
+    <source>http://www.estudiokaza.com/</source>
+	<assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+	</assets>
+  </extension>
+</addon>
+
 <addon id="plugin.audio.m80"
        name="M80 Radio"
        version="1.3"
@@ -330,47 +353,6 @@ provider-name="By Chalado">
 		<screenshot></screenshot>
 	</assets>
 	</extension>
-</addon>
-
-<addon id="plugin.video.AKATSUKI" name="[B][COLOR red]AKATSUKI[/COLOR][/B]" version="1.4" provider-name="[B][COLOR yellow]PAIN[/B][/COLOR]">
-<requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common"/>
-    <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.common.plugin.cache"/>
-    <import addon="script.module.metahandler"/>
-</requires>
-
-<extension point="xbmc.python.pluginsource" library="main.py">
-	<provides>video</provides>
-</extension>
-
-<extension point="xbmc.addon.repository" name="PAIN">
-	<info compressed="false"></info>
-	<checksum></checksum>
-    <datadir zip="true"></datadir>
-</extension>
-
-<extension point="xbmc.addon.metadata">
-    <summary>[COLOR white][B]Aproveite o máximo dos nossos contúdos[/B][/COLOR]</summary>
-    <description lang="en">][B]ATUALIZAÇÕES CONSTANTIMENTE[/B]</description>
-    <disclaimer lang="en">[COLOR yellow][B]OS MELHORES CONTEÚDOS PARA SEU ENTRETENIMENTO[/B][/COLOR]</disclaimer>
-	<platform>all</platform>
-    <assets>
-	<icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
-    <screenshot>resources/screenshots/01.jpg</screenshot>
-    <screenshot>resources/screenshots/02.jpg</screenshot>
-    <screenshot>resources/screenshots/03.jpg</screenshot>
-	</assets>
-</extension>
-
 </addon>
 
 <addon id="plugin.video.AladoTV"
@@ -1105,7 +1087,7 @@ provider-name="primaeval">
 
 <addon id="plugin.video.fenix.flix"
        name="[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]"
-       version="4.7.2"
+       version="4.7.4"
        provider-name="Team Fênix Flix">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -1146,11 +1128,11 @@ l [COLOR firebrick]FENIX[/COLOR] FLIX - O MELHOR DO CINEMA NO SEU KODI - 100% FH
     <disclaimer lang="en">O autor nao e de forma alguma afiliado a Kodi, a Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
 	<website>www.fenixflix.ml</website>
     <email></email>
-	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.2 [COLOR firebrick]l[/COLOR]
+	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.4 [COLOR firebrick]l[/COLOR]
 
 [COLOR firebrick]l[/COLOR] Adicionado all infos em todas as categorias [COLOR firebrick]l[/COLOR]
 [COLOR firebrick]l[/COLOR] Adicionado all infos nos conteúdos [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Só conteudos em HD e FHD [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Só Conteudos em HD e FHD [COLOR firebrick]l[/COLOR]
 
 [B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]
 www.fenixflix.ml</news>
@@ -1381,41 +1363,6 @@ Toda a fonte  vem de utilizadores do Youtube. Addon criado pela Kodiazor Team.</
     <forum></forum>
     <website></website>
   </extension>
-</addon>
-
-<addon id="plugin.video.KamiKaze" name="[B][COLOR white]Kami[/COLOR][/B][B][COLOR darkorange]Kaze[/COLOR][/B]" version="1.1.2" provider-name="[B][COLOR yellow]The KamiKazees[/COLOR][/B]">
-<requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common"/>
-    <import addon="script.module.beautifulsoup"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.common.plugin.cache"/>
-    <import addon="script.module.metahandler"/>
-</requires>
-
-<extension point="xbmc.python.pluginsource" library="main.py">
-	<provides>video</provides>
-</extension>
-
-<extension point="xbmc.addon.metadata">
-    <summary>[COLOR white][B]Filmes, Series, Shows, Músicas e Jogos. Tudo para sua familia no seu kodi[B][/COLOR]</summary>
-    <description lang="en">[COLOR darkorange][B]KamiKaze é um plugin que organiza os conteudos, que estão na internet, via Torrent, Lembre-se de ter instalado no seu Kodi o Plugin ELEMENTUM[/B][/COLOR]</description>
-    <disclaimer lang="en">[COLOR yellow][B]O autor não se responsabiliza pelos conteúdos neste addon, apenas organizamos links de terceiros, também não é filiado ao team Kodi (xbmc)[/B][/COLOR]</disclaimer>
-	<platform>all</platform>
-    <assets>
-	<icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
-    <screenshot>resources/screenshots/01.jpg</screenshot>
-    <screenshot>resources/screenshots/02.jpg</screenshot>
-    <screenshot>resources/screenshots/03.jpg</screenshot>
-	</assets>
-</extension>
-
 </addon>
 
 <addon id="plugin.video.KelTec-MP.torrents" name="[B][COLOR dimgrey]KelTec-Media-Play[COLOR white] - [/COLOR][COLOR darkgreen]TORRENTS![/COLOR][/B]" version="1.9" provider-name="[COLOR crimson]Team - KelTec-Media-Play[/COLOR]">
