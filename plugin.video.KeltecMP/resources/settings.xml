@@ -20,9 +20,11 @@
 <setting label="[COLOR white]Configurações Gerais[/COLOR]" type="lsep"/>    
 <setting id="mensagem1" type="bool" label="Exibir Mensagem de Boas Vindas" default="true" />	
 <setting id="mensagem2" type="bool" label="Exibir Mensagem de Status" default="true" />	
-  
-<setting id="1080pquality" label="Reproduz vídeo 1080p sob demanda, se disponível (Não ao Vivo)" type="bool" default="true"/>    
+<setting id="add_playlist" type="bool" label="Adicione ítens com vários links como listas de reprodução" default="true"/>
+<setting id="ask_playlist_items" type="bool" label="Pedir itens da lista de reprodução para escolher" default="true" />
+<setting id="debug" type="bool" label="Ativar depuração de complemento" default="false"/>
+<setting id="Updatecommonresolvers" type="bool" label="Atualizar Resolvedores Comuns" default="true"/>
+<setting id="1080pquality" label="Reproduz vídeo 1080p sob demanda, se disponível (Não ao Vivo)" type="bool" default="true"/>
 <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Reproduza IMDBid com:" default="Genesis"/>
 </category>
-
 </settings>
