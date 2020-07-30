@@ -2044,6 +2044,46 @@ Toda a fonte  vem de utilizadores do Youtube.
   </extension>
 </addon>
 
+<addon id="plugin.video.reviva"
+       name="[COLOR white][B]REVIVA[/B][/COLOR]"
+       version="1.0"
+       provider-name="Viko K">  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>REVIVA as cronologias e os grandes sucessos de bilheteria do cinema!</summary>
+<description>
+Meu addon apenas redireciona os links. Não armazeno conteúdo multimidia. Os conteúdos são de domínio público encontrados na internet via torrent!
+RESOLUÇÃO: 1080p
+Qualidade: Blu-ray Rip
+Formato:   MKV | MP4
+Qualidade de Áudio: 10 (5.1)
+Qualidade de Vídeo: 10
+IMDb: 6.9
+</description>
+    <platform>all</platform>
+<assets>
+       <icon>icon.png</icon>
+       <fanart>fanart.jpg</fanart>
+       <screenshot>resources/screenshots/1.jpg</screenshot>
+       <screenshot>resources/screenshots/2.jpg</screenshot>
+       <screenshot>resources/screenshots/3.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.rodasemotores"
        name="Rodas e Motores"
        version="2.1"
