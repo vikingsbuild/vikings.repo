@@ -11,6 +11,21 @@
     <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid com:" default="Genesis"/>
     <setting id="donotshowbychannels" label="Não mostrar items por baixo do nome do canal" type="bool" default="false"/>   
   </category>
+  
+  <category label="Visualização">
+    <setting id="use_thumb" type="bool" label="Usar Thumbnails como Fanart" default="true" />
+    <setting id="add_playlist" type="bool" label="Mostrar Janela de seleção de Links" default="true"/>
+    <setting id="ask_playlist_items" type="bool" label="Escolher items do Menu de Contexto" default="true" />
+  </category>
+  
+  
+  <category label="Complementos">
+	<setting label="[COLOR aqua]Configurações de Complemento:[/COLOR]" type="lsep"/>
+	<setting label="Verificar Complementos" id="check_addon" type="bool" default="false" />
+	<setting label="Baixar e Instalar Elementum" id="elementum" type="bool" default="false" />
+	<setting label="Baixar e Instalar Youtube" id="youtube" type="bool" default="true" />
+</category>
+  
   <category label="Login e Adiconar">
     <setting id="raw" type="text" label="Enable Login IPTV:" values="" option="hidden" default="INH"/>
 	<setting type="sep" />
