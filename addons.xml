@@ -1319,7 +1319,7 @@ version="6.0.0~alpha6" />
     </extension>
 </addon>
 
-<addon id="plugin.video.infotec.iptv" name="[COLOR springgreen][B]Infotec[/B][/COLOR].[COLOR red][B]IPTV[/B][/COLOR]" version="0.0.7" provider-name="Anonymous">
+<addon id="plugin.video.infotec.iptv" name="[COLOR springgreen][B]Infotec[/B][/COLOR].[COLOR red][B]IPTV[/B][/COLOR]" version="0.0.8" provider-name="Anonymous">
   <requires>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -1857,7 +1857,7 @@ Levando o lazer e o prazer para vocÃªs assistir e curtir cada momento com a famÃ
   </extension>
 </addon>
 
-<addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.4" provider-name="Equipe OnePlay">
+<addon id="plugin.video.PlayCine" name="[B][COLOR red]Play[/COLOR] [COLOR white]Cine[/COLOR][/B]" version="1.0.5" provider-name="Equipe OnePlay">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.future"/>
