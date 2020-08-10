@@ -406,6 +406,40 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
+<addon id="plugin.video.ANIMESDUBRASIL"
+       name="[COLOR white][B]ANIMES DUBRASIL[/B][/COLOR]"
+       version="1.0"
+       provider-name="by ANIMESDUBRASIL">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Canal exclusivo com animes dublados para os fãns brasileiros.</summary>
+    <description>
+        Termo de responsabilidade: Todos os links e arquivos que se encontram no site, estão hospedados na própria internet, somente indicamos onde se encontra, não hospedamos nenhum dos arquivos aqui encontrados que seja de distribuição ilegal. Qualquer arquivo protegido por algum tipo de lei deve permanecer, no máximo, 24 horas em seu computador. Eles podem ser baixados apenas para teste, devendo o usuário apagá-lo ou comprá-lo após 24 horas. A aquisição desses arquivos pela internet é de única e exclusiva responsabilidade do usuário. Os donos, webmasters e qualquer outra pessoa que tenha relacionamento com a produção do site não tem responsabilidade alguma sobre os arquivos que o usuário venha a baixar e para que irá utilizá-los. Caso você possua os direitos de algum vídeo ou imagem e não quer que apareça neste site, mande email para ludeilson@gmail.com e ela será retirada.
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.aod" name="Anime on Demand" version="0.6.5" provider-name="L0RE">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
