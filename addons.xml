@@ -1038,36 +1038,21 @@ O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Founda
 </addon>
 
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.8.3" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.8.5" provider-name="Equipe FaustinoTV">
 
   <requires>
-
     <import addon="xbmc.python" version="2.1.0"/>
-
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
-
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-
     <import addon="script.module.beautifulsoup4"/>
-
     <import addon="script.module.requests"/>
-
     <import addon="script.module.httplib2"/>
-
     <import addon="script.module.youtube.dl" optional="true"/>
-
-    <import addon="plugin.video.youtube"/>
-
+    <import addon="plugin.video.youtube" optional="true"/>
     <import addon="script.module.urlresolver" optional="true"/>
-
     <import addon="script.module.simplejson"/>
-
 	<import addon="script.module.livestreamer" optional="true"/>
-
 	<import addon="plugin.video.f4mTester" version="2.7.1"/>
-
-	<import addon="script.video.F4mProxy" version="2.1.0"/>
-
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
