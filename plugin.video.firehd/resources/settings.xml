@@ -1,0 +1,13 @@
+﻿<settings>
+<category label="INFORMAÇÕES">
+<setting id="msg1" label="[B][COLOR white]TV, Filmes, Séries, Desenhos e Animes.[/COLOR]" value="true" type="bool" default="true"/>
+<setting id="msg2" label="[B][COLOR white]Fire TV é apenas um AGREGADOR de links e, assim como o Google.com, apenas agrega e organiza os links externos. Não somos responsáveis pelos arquivos aqui encontrados.[/COLOR][/B]" value="true" type="bool" default="true"/>
+<setting id="msg3" label="[B][COLOR white]Fire TV: [COLOR gold]O Melhor conteúdo de Todos ![/COLOR][/COLOR][/B]" value="true" type="bool" default="true"/>
+<setting id="use_thumb" type="bool" visible="false" default="false" />
+<setting id="add_playlist" type="bool" visible="false" default="true"/>
+<setting id="ask_playlist_items" type="bool" visible="false" default="true" />
+<setting id="debug" type="bool" visible="false" default="false"/>
+<setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid com:" visible="false" default="Genesis"/>
+<setting id="donotshowbychannels" type="bool" visible="false" default="false"/>
+</category>
+</settings>
