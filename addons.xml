@@ -2425,32 +2425,30 @@ More minor bugfixes (honestly could not list them all)
 </addon>
 
 <addon id="plugin.video.team.milhanos"
-       name="TEAM MILHANOS"
-       version="1.0.2"
+       name="[COLOR lime][B]Team [/COLOR][COLOR yellow]Milhanos[/B][/COLOR]"
+       version="0.0.1"
        provider-name="TEAM MILHANOS">
   <requires>
+
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="plugin.video.youtube" optional="true" />
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
+	<import addon="script.module.livestreamer" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">BY TEAM MILHANO</summary>
-    <description lang="en">BY TEAM MILHANO</description>
+    <summary>BY TEAM MILHANO</summary>
+    <description>TEAM MILHANO "WE LEAD THE WAY"
+ </description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -2757,6 +2755,20 @@ More minor bugfixes (honestly could not list them all)
  </description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="repo.alado" name="[COLOR lime][B]Alado[/COLOR][COLOR gold] Repository[/B][/COLOR]" version="0.1" provider-name="[COLOR lime][B]ALADO[/B][/COLOR]">
+	<extension point="xbmc.addon.repository" name="repo.alado">
+		<info compressed="false">https://raw.githubusercontent.com/Alado2020/repo.alado/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Alado2020/repo.alado/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Alado2020/repo.alado/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>[COLOR gold]By Team Milhano[/COLOR]</summary>
+		<description>[COLOR gold]By Team Milhano[/COLOR]</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repo.conexaoTV"
