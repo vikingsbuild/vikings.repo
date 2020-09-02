@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.apollo" name="APOLLO" version="1.4.9" provider-name="TEAM APOLLO"> 
+<addon id="plugin.video.apollo" name="APOLLO" version="1.5.0" provider-name="TEAM APOLLO"> 
 <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common"/>
