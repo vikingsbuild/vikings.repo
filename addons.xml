@@ -1194,7 +1194,7 @@ www.fenixflix.ml</news>
 
 <addon id="plugin.video.firehd"
        name="[B][COLOR chocolate]Tv Fogo HD[/COLOR][/B]"
-       version="8.4"
+       version="8.4.1"
        provider-name="[B][COLOR yellow]Equipe: TV Fogo[/COLOR][/B]">
 
   <requires>
