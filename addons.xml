@@ -3586,8 +3586,8 @@ Addons information (name and version) are sent to our backend at safekodi.com an
 	</extension>
 </addon>
 
-<addon 	id="vikings.repo" name="[B][COLOR yellow]  Vikings  [COLOR orange]Repositorio Vikings Oficial, SEM BANIMENTO!![/B][/COLOR]"
-		version="1.55"
+<addon 	id="vikings.repo" name="[B][COLOR orange]Repo Vikings [COLOR green]Livre de Imagens Pornograficas e ofensivas a Familia Brasileira!![/B][/COLOR]"
+		version="1.56"
 		provider-name="[B][COLOR gold]Vikings TEAM[/B][/COLOR]">
 
 	<requires>
