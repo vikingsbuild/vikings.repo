@@ -1,0 +1,13 @@
+﻿<settings>
+<category label="INFORMAÇÕES">
+<setting id="msg1" label="[B][COLOR white]FÓRUM: [COLOR gold]BIT.LY/BRPLAYON[/COLOR][/COLOR][/B]" value="true" type="bool" default="true"/>
+<setting id="msg2" label="[B][COLOR white]DOAÇÕES: [COLOR gold]BIT.LY/BRPLAYDOAR[/COLOR][/COLOR][/B]" value="true" type="bool" default="true"/>
+<setting id="msg3" label="[B][COLOR white]DOWNLOADS: [COLOR gold]BIT.LY/BRPLAYD[/COLOR][/COLOR][/B]" value="true" type="bool" default="true"/>
+<setting id="use_thumb" type="bool" visible="false" default="false" />
+<setting id="add_playlist" type="bool" visible="false" default="true"/>
+<setting id="ask_playlist_items" type="bool" visible="false" default="true" />
+<setting id="debug" type="bool" visible="false" default="false"/>
+<setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid com:" visible="false" default="Genesis"/>
+<setting id="donotshowbychannels" type="bool" visible="false" default="false"/>
+</category>
+</settings>
