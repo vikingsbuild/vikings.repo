@@ -5,7 +5,7 @@
     <setting id="new_file_source" type="file" source="files" label="Escolher Arquivo" default="" visible="eq(-1,0)"/>
     <setting id="new_url_source" type="text" label="Adicione URL" default="" visible="eq(-2,1)"/>
     <setting type="sep" />
-    <setting type="action" label="Adicionar fonte" option="close" action="RunPlugin(plugin://plugin.video.iptvTWTUTORIAIS/?mode=7)" />
+    <setting type="action" label="Adicionar fonte" option="close" action="RunPlugin()" />
     <setting type="sep" />
     <setting id="searchotherplugins" label="Pesquisar Outros plugins" type="bool" default="false"/>
   </category>
@@ -13,7 +13,7 @@
 <category label="Players">
 	    <setting label="[B][COLOR blue]Selecione abaixo seu gerenciador de torrents[/B][/COLOR]" type="lsep" /> 
 	    <setting type="sep" />
-        <setting label="32054" type="labelenum" id="plugin" default="Quasar" values="Elementun|Quasar|YATP"/>
+        <setting label="32054" type="labelenum" id="plugin" default="Elementun" values="Elementun|Quasar|YATP"/>
 		<setting type="sep" />
 	    <setting label="32057" type="lsep"/>
 	    <setting label="32058" type="lsep"/>

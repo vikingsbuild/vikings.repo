@@ -841,7 +841,7 @@ O autor não é de forma alguma afiliado à Kodi, à Team Kodi ou à XBMC Founda
 
 <addon id="plugin.video.BXL"
        name="[COLOR red][B]ADDON [B][/COLOR] [COLOR white][B]BXL[/B][/COLOR]"
-       version="2.5"
+       version="2.5.1"
        provider-name="CARIVALDO ARAUJO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
