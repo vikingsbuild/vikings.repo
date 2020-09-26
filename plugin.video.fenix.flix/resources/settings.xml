@@ -6,7 +6,8 @@
 	<setting id="password" type="text" label="Senha" default="" enable="!eq(-2,false)" option="hidden"/>
 	<setting label="CONFIGURAÇÕES ADICIONAIS" type="lsep"/>
 	<setting id="saida" type="labelenum" label="Saida de Transmissão PREMIUM" default="ts" values="ts|m3u8"/>
-	<setting id="exibirvip" type="bool" label="Exibir Menu PREMIUM" default="true" />
+	<setting id="exibirpremium" type="bool" label="Exibir Menu PREMIUM" default="false" />
+	<setting id="suporte" type="bool" label="Exibir FENIX FLIX (PREMIUM)" default="true" />
 </category>
 <category label="CONFIGURAÇÕES">
 	<setting label="CONFIGURAÇÕES GERAIS" type="lsep"/>

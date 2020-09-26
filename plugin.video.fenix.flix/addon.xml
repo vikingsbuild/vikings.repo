@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.fenix.flix"
        name="[B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]" 
-       version="4.7.4"
+       version="4.7.5"
        provider-name="Team Fênix Flix">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -33,7 +33,7 @@
 		<datadir zip="true">https://raw.githubusercontent.com/fenixflix/repository.fenix.flix/master/ZipFiles</datadir>
 	</extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">TV [COLOR firebrick]l[/COLOR] FILMES [COLOR firebrick]l[/COLOR] SERIES [COLOR firebrick]l[/COLOR] DESENHOS [COLOR firebrick]l[/COLOR] ANIMES [COLOR firebrick]l[/COLOR] LANCAMENTOS [COLOR firebrick]l[/COLOR] HD [COLOR firebrick]l[/COLOR] FHD</summary>
+    <summary lang="en">[COLOR firebrick]Fênix[/COLOR] [COLOR white]Flix[/COLOR] - O Melhor do Cinema no seu Kodi!</summary>
 	
 	<description lang="en">[COLOR firebrick]l[/COLOR] TV [COLOR firebrick]l[/COLOR] FILMES [COLOR firebrick]l[/COLOR] SERIES [COLOR firebrick]l[/COLOR] DESENHOS [COLOR firebrick]l[/COLOR] ANIMES [COLOR firebrick]l[/COLOR] LANCAMENTOS [COLOR firebrick]l[/COLOR] HD [COLOR firebrick]l[/COLOR] FHD [COLOR firebrick]l[/COLOR]
 [COLOR firebrick]l[/COLOR] O autor nao hospeda nem possui nenhum conteudo encontrado neste addon. O autor nao e responsavel pelo uso e pelo conteudo encontrado neste addon [COLOR firebrick]l[/COLOR]
@@ -42,14 +42,14 @@ l [COLOR firebrick]FENIX[/COLOR] FLIX - O MELHOR DO CINEMA NO SEU KODI - 100% FH
     <disclaimer lang="en">O autor nao e de forma alguma afiliado a Kodi, a Team Kodi ou a XBMC Foundation. Este e um recurso sem fins lucrativos, organizado exclusivamente para fins educacionais e protegido pela doutrina de uso justo da Lei de Direitos Autorais, especificamente a secao 107, que promove a liberdade de expressao, permitindo o uso nao licenciado de obras protegidas por direitos autorais.</disclaimer>
 	<website>www.fenixflix.ml</website>
     <email></email>
-	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.4 [COLOR firebrick]l[/COLOR]
+	<news>[COLOR firebrick]l[/COLOR] Atualizacao v4.7.5 [COLOR firebrick]l[/COLOR]
 
 [COLOR firebrick]l[/COLOR] Adicionado all infos em todas as categorias [COLOR firebrick]l[/COLOR]
-[COLOR firebrick]l[/COLOR] Adicionado all infos nos conteúdos [COLOR firebrick]l[/COLOR]
+[COLOR firebrick]l[/COLOR] Adicionado Filmes e Series Torrent [COLOR firebrick]l[/COLOR]
 [COLOR firebrick]l[/COLOR] Só Conteudos em HD e FHD [COLOR firebrick]l[/COLOR]
 
 [B][COLOR firebrick]FENIX[/COLOR] [COLOR white]FLIX[/COLOR][/B]
-www.fenixflix.ml</news>
+[COLOR firebrick]www.fenixflix.ml[/COLOR]</news>
     <platform>all</platform>
       <assets>
       	<icon>icon.png</icon>
