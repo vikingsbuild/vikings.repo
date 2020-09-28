@@ -1,50 +1,29 @@
-<settings>
-<!--<category label="VIP">
-	<setting label="[COLOR white][B]Configurações de Acesso[/B][/COLOR] [COLOR firebrick][B]Vip[/B][/COLOR]" type="lsep"/>
-	<setting label="[COLOR white][B]Usuário[/B][/COLOR]" id="username" type="text" default="" enable="!eq(-1,false)"/>
-	<setting label="[COLOR white][B]Senha[/B][/COLOR]" id="password" type="text" default="" enable="!eq(-2,false)" option="hidden"/>
-	<setting label="[COLOR white][B]Saida de Transmissão VIP[/B][/COLOR]" id="saida" type="labelenum" default="ts" values="ts|m3u8"/>
-	<setting label="[COLOR white][B]Executar com[/B][/COLOR]" id="f4mvip" type="enum" values="[COLOR white][B]F4mTester[/B][/COLOR] [COLOR red][B](mais estável, maior delay)[/B][/COLOR]|[COLOR white][B]Padrão[/B][/COLOR] [COLOR yellow][B](menor delay)[/B][/COLOR]" default="1" />
-	<setting label="[COLOR white][B]Exibir Menu VIP[/B][/COLOR]" id="exibirvip" type="bool" default="true" />
-</category> -->
-<category label="Favoritos">
-	<setting label="[COLOR lightblue][B]Configurações dos Favoritos:[/B][/COLOR]" type="lsep"/>
-	<setting label="[COLOR white][B]Exibir Favoritos[/B][/COLOR]" id="favoritos" type="bool" default="true" />
-    <setting label="[COLOR white][B]Entre aqui para limpar os favoritos[/B][/COLOR]" type="action" action="RunScript(plugin.video.brasilfull, limparFavoritos)"/>
-</category>
-<category label="Proxy">
-		<setting label="[COLOR lightblue][B]Opções do Proxy:[/B][/COLOR]" type="lsep"/>
-		<setting label="[COLOR white][B]Ativar Proxy[/B][/COLOR]" id="proxy" type="bool"  default="false" />
-		<setting label="[COLOR white][B]Número de Tentativas[/B][/COLOR]" id="proxy_try" type="enum" values="1 Vez|2 Vezes|3 Vezes|4 Vezes|5 Vezes|6 Vezes|6 Vezes|7 Vezes|8 Vezes|9 Vezes|10 Vezes" default="4" />
-		<setting label="[COLOR yellow][B]Utilize apenas se a operadora estiver bloqueando o servidor.[/B][/COLOR]" type="bool"/>
-</category>
-<category label="Canais">
-		<!--<setting label="[COLOR lightblue][B]Configurações dos Canais:[/B][/COLOR]" type="lsep"/>
-		<setting label="[COLOR white][B]Exibir Canais 4K[/B][/COLOR]" id="uhdtv" type="bool" default="true" />
-		<setting label="[COLOR white][B]Exibir Canais FHD[/B][/COLOR]" id="fhdtv" type="bool" default="true" />
-		<setting label="[COLOR white][B]Exibir Canais HD[/B][/COLOR]" id="hdtv" type="bool" default="true" />
-		<setting label="[COLOR white][B]Exibir Canais SD[/B][/COLOR]" id="sdtv" type="bool" default="true" />
-		<setting label="[COLOR white][B](Lista M3U) Exibir Apenas Canais de[/B][/COLOR]" id="filtrar" type="enum" values="Desativado|Futebol|Esportes|Filmes e Series|Infantil|Documentario|Aberto|Reality show" default="0" />-->
-		<setting label="[COLOR white][B]Executar com[/B][/COLOR]" id="f4m" type="enum" values="[COLOR white][B]F4mTester[/B][/COLOR] [COLOR red][B](mais estável, maior delay)[/B][/COLOR]|[COLOR white][B]Padrão[/B][/COLOR] [COLOR red][B](menos estável, menor delay)[/B][/COLOR]" default="0" />
-</category>
-<category label="Controle dos Pais">
-		<setting label="[COLOR lightblue][B]Controle dos Pais:[/B][/COLOR]" type="lsep"/>
-		<setting label="[COLOR white][B]Exibir Menu Adultos[/B][/COLOR]" id="adult" type="bool" default="false" />
-		<setting label="[COLOR white][B]Exibir Canais Adultos[/B][/COLOR]" id="adult2" type="bool" default="false" />
-		<setting label="[COLOR white][B]Tipo de Teclado (OK para trocar)[/B][/COLOR]" id="keyboard" type="enum" values="Númerico|Alfanúmerico" default="0" />
-		<setting label="[COLOR white][B]Entre aqui para alterar senha[/B][/COLOR]" type="action" action="RunScript(plugin.video.brasilfull, SetPassword)"/>
-		<setting label="[COLOR yellow][B]Senha padrão 69[/B][/COLOR]" type="bool"/>
-</category>
-<category label="Complementos">
-	<setting label="[COLOR lightblue][B]Configurações de Complemento:[/B][/COLOR]" type="lsep"/>
-	<setting label="[COLOR white][B]Verificar ad-ons faltantes ao iniciar[/B][/COLOR]" id="check_addon" type="bool" default="false" />
-	<setting label="[COLOR white][B]Baixar e Instalar Elementum[/B][/COLOR]" id="elementum" type="bool" default="false" />
-</category>
-<category label="Outros">
-	<setting label="[COLOR lightblue][B]Configurações Gerais:[/B][/COLOR]" type="lsep"/>
-	<setting label="[COLOR white][B]Exibir Mensagem de Boas Vindas[/B][/COLOR]" id="mensagem1" type="bool" default="false" />
-	<setting label="[COLOR white][B]Exibir Mensagem de Status[/B][/COLOR]" id="mensagem2" type="bool" default="true" />
-	<setting label="[COLOR white][B]Executar Youtube Externamente[/B][/COLOR]" id="youtubeexterno" type="bool" default="false" />
-    <setting label="[COLOR white][B]Use Miniaturas como Fanart[/B][/COLOR]" id="use_thumb" type="bool" default="false" />
-</category>
+﻿<settings>
+  <category label="Personalização">
+    <setting id="mostrar_versao" type="bool" label="Mostrar Versão Atual" default="true" />
+    <setting id="enable_configs" type="bool" label="Habilitar Menu de Configurações" default="true" />
+    <setting id="enable_notification" type="bool" label="Habilitar Notificação de Boas Vindas" default="true" />
+    <setting id="enable_content_add" type="bool" label="Habilitar Mensagem de Atualização de Conteúdos" default="true" />
+  </category>
+  
+  <category label="Funções">
+    <setting id="ask_playlist_items" type="bool" label="Habilitar Seleção de Links" default="true" enable="false"/>
+    <setting id="add_playlist" type="bool" label="Agrupar conteúdos" default="true" enable="false"/>
+    <setting id="use_thumb" type="bool" label="Usar Fundos como Capas" default="false" />
+    <setting id="donotshowbychannels" label="Desabilitar Menus" type="bool" default="false" enable="false"/>
+  </category>
+
+  <category label="Controle dos Pais">
+    <setting id="parentalblockedpin" label="PIN" type="text"  option="hidden"  default=""/>
+    <setting id="parentalblocked" label="Ativar controle dos pais" type="bool" default="false" enable="true"/>
+  </category>
+
+  <category label="Player">
+    <setting id="1080pquality" label="Exbição em 1080p (quando possível)" type="bool" default=""/>
+    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Player Torrent Padrão:" default="Genesis"/>
+  </category>
+
+  <category label="Servidor de Conteúdos">
+    <setting id="server_content" type="enum" values="1|2|3" label="Selecione um servidor:" default="0"/>
+  </category>
 </settings>

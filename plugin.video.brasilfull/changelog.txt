@@ -1,0 +1,13 @@
+VERSÃO 2.8
+
+- Sem mais limites
+
+- O add-on agora funciona sem depender de nenhum outro add-on externo
+
+- Novos Servidores
+
+- Novas Fontes para Canais
+
+- Add-on otimizado
+
+- Segurança melhorada
