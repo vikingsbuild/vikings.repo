@@ -1,0 +1,23 @@
+<html>
+<head>
+<title></title>
+<script src="/cdn-cgi/apps/head/czX2R08NR5xrDQdsVcjlW5XJc58.js"></script><style>
+a:visited {color:#FFF;}
+a:link{color:#FFF;}
+a:visited {color:#FFF;}
+a:hover {color:#FFF;}
+a:active{color:#FFF;}
+</style>
+<script type="text/javascript" src="http://jwpsrv.com/library/4+R8PsscEeO69iIACooLPQ.js"></script>
+<script>jwplayer.key="gGpS+jTZmHT4xHlTSOhEsuk/Gt9I4gbAdqP1LQ54u8TX2EcxYlzoRA=="</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body link="#000000" vlink="#000000" alink="#000000" bgcolor="#000000">
+<body style="margin:0;padding:0">
+<center>
+<div id="myElement">Carregando o video...</div>
+<script type="text/javascript">
+
+	var player = jwplayer("myElement");
+
+    player.setup({

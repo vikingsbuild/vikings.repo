@@ -1,0 +1,25 @@
+import xbmc 
+
+def lista(pasta,token):
+    
+    f = open(pasta, 'w')
+    f.write('<settings>')
+    f.write('<setting id="epgCache" value="true" />')
+    f.write('<setting id="epgPath" value="" />')
+    f.write('<setting id="epgPathType" value="1" />')
+    f.write('<setting id="epgTSOverride" value="false" />')
+    f.write('<setting id="epgTimeShift" value="0.000000" />')
+    f.write('<setting id="epgUrl" value="http://lista.servidorfull.com/epg?k=9AjeaFHcGVmRSx2VzwmRS9UMtZVVwZVZaJ1aXZjTHZFUCRFVYFTRO5EZxQlc1sWYahGWUFXNw0kSkVFV" />')
+    f.write('<setting id="logoBaseUrl" value="" />')
+    f.write('<setting id="logoFromEpg" value="0" />')
+    f.write('<setting id="logoPath" value="" />')
+    f.write('<setting id="logoPathType" value="1" />')
+    f.write('<setting id="m3uCache" value="true" />')
+    f.write('<setting id="m3uPath" value="" />')
+    f.write('<setting id="m3uPathType" value="1" />')
+    f.write('<setting id="m3uUrl" value="http://lista.servidorfull.com/getCanaisList?token='+token+'&type=m3u&output=mpegts" />')
+    f.write('<setting id="sep1" value="" />')
+    f.write('<setting id="sep2" value="" />')
+    f.write('<setting id="sep3" value="" />')
+    f.write('<setting id="startNum" value="1" />')
+    f.write('</settings>')  
