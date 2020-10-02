@@ -10,23 +10,14 @@
     <setting label="[COLOR white]OnePlay Pro: [COLOR lime]Recomendado[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, oneplaypro)"/>
     <setting label="[COLOR white]OnePlay Fast: [COLOR gold]Opcional[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, oneplayfast)"/>
     <setting label="[COLOR white]OnePlay Lite: [COLOR gold]Opcional[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, oneplaylite)"/>
+	<setting label="[COLOR lightblue]Download app android[/COLOR] [COLOR dodgerblue](P2P)[/COLOR]" type="lsep"/>
+    <setting label="[COLOR white]Aplicativo P2P: Outro Sistema[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, playp2p)"/>
 	<setting label="[COLOR lightblue]Informações da Conta:[/COLOR]" type="lsep"/>
 	<setting label="[COLOR yellow][B]Status[/B][/COLOR]" id="status_vip" type="text" enable="false" default=""/>
 	<setting label="[COLOR yellow][B]Criado em[/B][/COLOR]" id="created_at" type="text" enable="false" default=""/>
 	<setting label="[COLOR yellow][B]Expira em[/B][/COLOR]" id="exp_date" type="text" enable="false" default=""/>
 	<setting label="[COLOR yellow][B]Demonstrativo[/B][/COLOR]" id="is_trial" type="text" enable="false" default=""/>
 	<setting label="[COLOR yellow][B]Limite de Conexão[/B][/COLOR]" id="max_connection" type="text" enable="false" default=""/>
-</category>
-<category label="EPG">
-        <setting label="[COLOR lightblue]Opções do guia de programação:[/COLOR]" type="lsep"/>
-        <setting label="Ativar EPG (guia de programação)" type="bool" id="epg" default="false"/>
-		<setting label="Baixar EPG a cada" id="epg_days" type="enum" values="1 dia|2 dias|3 dias|4 dias|5 dias|6 dias|7 dias" default="2" />
-		<setting label="Última atualização" id="epg_last" type="text" enable="false" default=""/>
-		<setting label="Entre aqui para limpar o EPG" type="action" action="RunScript(plugin.video.OnePlay, limparEPG)"/>
-		<setting label="[COLOR yellow][B]Ativar o EPG deixa o addon lento![/B][/COLOR]" type="bool"/>
-		<setting label="[COLOR yellow][B]Verifique se data e hora do sistema estão ajustados![/B][/COLOR]" type="bool"/>
-		<setting label="[COLOR white][B]Disponivel apenas no VIP e em TV AO VIVO/Servidor 2[/B][/COLOR]" type="bool"/>
-		<setting label="[COLOR white][B]e Servidor 3.[/B][/COLOR]" type="bool"/>
 </category>
 <category label="Proxy">
 		<setting label="[COLOR lightblue]Opções do Proxy:[/COLOR]" type="lsep"/>
