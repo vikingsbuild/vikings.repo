@@ -23,7 +23,7 @@
 	<setting id="cPageani" label="cPageani" type="text" default="0" visible="false" />
 	<setting id="cPagedes" label="cPagedes" type="text" default="0" visible="false" />
 	<setting id="cPagefo1" label="cPagefo1" type="text" default="0" visible="false" />
-	<setting id="i1iiIIiiI111" label="i1iiIIiiI111" type="text" default="0" visible="false" />
+	<setting id="cPageMMf" label="cPageMMf" type="text" default="0" visible="false" />
 	<setting id="cPageGOf" label="cPageGOf" type="text" default="0" visible="false" />
 	<setting label="" type="sep" />
 	<setting id="actDelHistorico1" type="action" label="Limpar o Histórico" action="RunPlugin(plugin://plugin.video.KelTecPlay/default.py?mode=40&url=settings)" option="close"/>

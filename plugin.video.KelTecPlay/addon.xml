@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.KelTecPlay" name="[B][COLOR white]KelTec[/COLOR] [COLOR crimson]Play[/COLOR][/B]" version="1.0-G" provider-name="Team KelTec">
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.KelTecPlay" name="[B][COLOR white]KelTec[/COLOR] [COLOR crimson]Play[/COLOR][/B]" version="2.0c" provider-name="Team KelTec">
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
