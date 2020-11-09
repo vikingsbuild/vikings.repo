@@ -1,0 +1,76 @@
+<settings>
+<category label="VIP">
+	<setting label="[COLOR lightblue]Configurações de Acesso[/COLOR] [COLOR gold](Vip):[/COLOR]" type="lsep"/>
+	<setting label="Usuário" id="username" type="text" default="" enable="!eq(-1,false)"/>
+	<setting label="Senha" id="password" type="text" default="" enable="!eq(-2,false)" option="hidden"/>
+	<setting label="Saida de Transmissão VIP" id="saida" type="enum" values="TS|M3U8" default="0" />	
+	<setting label="Executar com" id="f4mvip" type="enum" values="[COLOR aquamarine]F4mTester[/COLOR] [COLOR lime](Maior delay)[/COLOR]|[COLOR aquamarine]Padrão[/COLOR] [COLOR yellow](Menor delay)[/COLOR]" default="0" />
+	<setting label="Exibir Menu VIP" id="exibirvip" type="bool" default="true" />
+	<setting label="[COLOR lightblue]Download app android[/COLOR] [COLOR gold](Vip)[/COLOR]" type="lsep"/>
+    <setting label="[COLOR white]OnePlay Pro: [COLOR lime]Recomendado[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, oneplaypro)"/>
+    <setting label="[COLOR white]OnePlay Fast: [COLOR gold]Opcional[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, oneplayfast)"/>
+    <setting label="[COLOR white]OnePlay Lite: [COLOR gold]Opcional[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, oneplaylite)"/>
+	<setting label="[COLOR lightblue]Download app android[/COLOR] [COLOR dodgerblue](P2P)[/COLOR]" type="lsep"/>
+    <setting label="[COLOR white]Aplicativo P2P: Outro Sistema[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, playp2p)"/>
+	<setting label="[COLOR lightblue]Informações da Conta:[/COLOR]" type="lsep"/>
+	<setting label="[COLOR yellow][B]Status[/B][/COLOR]" id="status_vip" type="text" enable="false" default=""/>
+	<setting label="[COLOR yellow][B]Criado em[/B][/COLOR]" id="created_at" type="text" enable="false" default=""/>
+	<setting label="[COLOR yellow][B]Expira em[/B][/COLOR]" id="exp_date" type="text" enable="false" default=""/>
+	<setting label="[COLOR yellow][B]Demonstrativo[/B][/COLOR]" id="is_trial" type="text" enable="false" default=""/>
+	<setting label="[COLOR yellow][B]Limite de Conexão[/B][/COLOR]" id="max_connection" type="text" enable="false" default=""/>
+</category>
+<category label="Proxy">
+		<setting label="[COLOR lightblue]Opções do Proxy:[/COLOR]" type="lsep"/>
+		<setting label="Ativar Proxy" id="proxy" type="bool"  default="false" />
+		<setting label="Número de Tentativas" id="proxy_try" type="enum" values="1 Vez|2 Vezes|3 Vezes|4 Vezes|5 Vezes|6 Vezes|6 Vezes|7 Vezes|8 Vezes|9 Vezes|10 Vezes" default="4" />
+		<setting label="[COLOR yellow][B]Utilize apenas se a operadora estiver bloqueando o servidor[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]OnePlay.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Aviso: Pode demorar a carregar[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Não se aplica a servidores de IPTV como o VIP esses tem[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]conexão direta.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Utilize VPN se a operadora bloqueia o IPTV.[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Canais">
+		<setting label="[COLOR lightblue]Configurações dos Canais:[/COLOR]" type="lsep"/>
+		<setting label="Exibir Canais 4K (Lista M3U)" id="uhdtv" type="bool" default="true" />
+		<setting label="Exibir Canais FHD (Lista M3U)" id="fhdtv" type="bool" default="true" />
+		<setting label="Exibir Canais HD (Lista M3U)" id="hdtv" type="bool" default="true" />
+		<setting label="Exibir Canais SD (Lista M3U)" id="sdtv" type="bool" default="true" />
+		<setting label="(Lista M3U) Exibir Apenas Canais de" id="filtrar" type="enum" values="Desativado|Futebol|Esportes|Filmes e Series|Infantil|Documentario|Aberto|Reality show|Noticias" default="0" />
+		<setting label="Executar com" id="f4m" type="enum" values="[COLOR aquamarine]F4mTester[/COLOR] [COLOR lime](Maior delay)[/COLOR]|[COLOR aquamarine]Padrão[/COLOR] [COLOR yellow](Menor delay)[/COLOR]" default="0" />
+</category>
+<category label="Controle dos Pais">
+		<setting label="[COLOR lightblue]Controle dos Pais:[/COLOR]" type="lsep"/>
+		<setting label="Exibir Menu Adultos (Servidor 2)" id="adult" type="bool" default="false" />
+		<setting label="Exibir Canais Adultos (Lista M3U)" id="adult2" type="bool" default="false" />
+		<setting label="Tipo de Teclado (OK para trocar)" id="keyboard" type="enum" values="Númerico|Alfanúmerico" default="0" />
+		<setting label="Entre aqui para alterar senha" type="action" action="RunScript(plugin.video.OnePlay, SetPassword)"/>
+		<setting label="[COLOR yellow][B]Senha padrão 0069[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Complementos">
+	<setting label="[COLOR lightblue]Configurações de Complemento:[/COLOR]" type="lsep"/>
+	<setting label="Verificar Complementos" id="check_addon" type="bool" default="true" />
+	<setting label="Baixar e Instalar Elementum" id="elementum" type="bool" default="true" />
+	<setting label="Baixar e Instalar Youtube" id="youtube" type="bool" default="false" />
+</category>
+<category label="Outros">
+	<setting label="[COLOR lightblue]Configurações Gerais:[/COLOR]" type="lsep"/>
+	<setting label="Exibir Mensagem de Boas Vindas" id="mensagem1" type="bool" default="true" />
+	<setting label="Exibir Mensagem de Status" id="mensagem2" type="bool" default="true" />
+	<setting label="Exibir Favoritos" id="favoritos" type="bool" default="false" />
+    <setting label="Entre aqui para limpar os favoritos" type="action" action="RunScript(plugin.video.OnePlay, limparFavoritos)"/>	
+	<setting label="Executar Youtube" id="ytbmode" type="enum" values="Interno 1|Interno 2|Externo" default="1" />	
+    <setting label="Exibir Menu Pesquisar" id="pesquisa" type="bool" default="false" />
+    <setting label="Use Miniaturas como Fanart" id="use_thumb" type="bool" default="false" />
+</category>
+<category label="Apoio">
+	<setting label="[COLOR lightblue]Suporte:[/COLOR]" type="lsep"/>
+    <setting label="[COLOR aquamarine]One[/COLOR][COLOR white]Play[/COLOR]: Site" type="action" action="RunScript(plugin.video.OnePlay, supportsite)"/>
+    <setting label="[COLOR aquamarine]One[/COLOR][COLOR white]Play[/COLOR]: Facebook" type="action" action="RunScript(plugin.video.OnePlay, supportfacebook)"/>
+    <setting label="[COLOR aquamarine]One[/COLOR][COLOR white]Play[/COLOR]: Telegram" type="action" action="RunScript(plugin.video.OnePlay, supporttelegram)"/>
+	<setting label="[COLOR lightblue]Doação:[/COLOR]" type="lsep"/>
+    <setting label="[COLOR aquamarine]One[/COLOR][COLOR white]Play[/COLOR]: [COLOR steelblue]Mercado[/COLOR][COLOR skyblue]Pago[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, donatemercadopago)"/>
+    <setting label="[COLOR aquamarine]One[/COLOR][COLOR white]Play[/COLOR]: [COLOR white]Pag[/COLOR][COLOR lime]Seguro[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, donatepagbank)"/>
+    <setting label="[COLOR aquamarine]One[/COLOR][COLOR white]Play[/COLOR]: [COLOR lime]PicPay[/COLOR]" type="action" action="RunScript(plugin.video.OnePlay, donatepicpay)"/>
+</category>
+</settings>

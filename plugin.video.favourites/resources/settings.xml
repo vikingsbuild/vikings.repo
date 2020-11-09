@@ -1,0 +1,6 @@
+<settings>
+<category label="Appearance">
+<setting id="sort" label="Sort" type="bool" default="true" />
+<setting id="add" label="Show Add Button" type="bool" default="true" />
+</category>
+</settings>

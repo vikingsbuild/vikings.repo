@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.Nordes.Tv" name="[COLOR green][B]Nordes [/B][/COLOR][COLOR yellow][B]TV[/B][/COLOR][COLOR white] Repo[/COLOR]" version="1.3" provider-name="Luis Carlos">
+	<extension point="xbmc.addon.repository" name="Repositorio NordesTv">
+		<info compressed="false">https://raw.githubusercontent.com/luis45carlos/RepoNordesTv/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/luis45carlos/RepoNordesTv/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/luis45carlos/RepoNordesTv/master/ZipFiles/</datadir>
+    </extension>
+	<extension point="xbmc.addon.metadata">
+        <description>[COLOR yellow][B]l[/COLOR][/B] Repositorio Oficial de instalacao dos plugins de funcionamento e do addon NordesTv [COLOR yellow][B]l[/COLOR][/B]</description>
+		<disclaimer lang="en">O addon que sera instalado não hospeda nem possui nenhum conteúdo. O autor não é responsável pelo uso e pelo conteúdo encontrado usando este addon.</disclaimer>
+		<platform>all</platform>
+		<website/>
+        <video_guide></video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+      <assets>
+      	<icon>icon.png</icon>
+    	<fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshots/01.jpg</screenshot>
+        <screenshot>resources/screenshots/02.jpg</screenshot>
+        <screenshot>resources/screenshots/03.jpg</screenshot>
+      </assets>
+	</extension>
+</addon>

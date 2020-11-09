@@ -1,0 +1,37 @@
+﻿<settings>
+ <category label="Geral">
+    <setting id="1080pquality" label="Abrir videos em 1080p" type="bool" default=""/>
+    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid com:" default="Genesis"/>
+    <setting id="donotshowbychannels" label="Não mostrar items por baixo do nome do canal" type="bool" default="false"/>
+    
+  </category>
+ 
+
+ <category label="Visualização">
+    <setting id="use_thumb" type="bool" label="Usar Thumbnails como Fanart" default="true" />
+    <setting id="add_playlist" type="bool" label="Mostrar Janela de seleção de Links" default="true"/>
+    <setting id="ask_playlist_items" type="bool" label="Escolher items do Menu de Contexto" default="true" />
+  </category>
+
+
+  <category label="Complementos">
+	<setting label="[COLOR aqua]Configurações de Complemento:[/COLOR]" type="lsep"/>
+	<setting label="Verificar Complementos" id="check_addon" type="bool" default="false" />
+	<setting label="Baixar e Instalar Elementum" id="elementum" type="bool" default="false" />
+	<setting label="Baixar e Instalar Youtube" id="youtube" type="bool" default="true" />
+</category>
+ 
+   <category label="Login e Adiconar">
+    <setting id="raw" type="text" label="Enable Login IPTV:" values="" option="hidden" default="NJIEY"/>
+	<setting type="sep" />
+	<setting id="sourcefile" type="bool" label="Ativar as listas inseridas" enable="!eq(-1,0,false)" default="false"/>				
+    <setting id="new_url_source" type="text" label="Adicionar URL" default="" visible="!eq(-1,false)"/>
+    <setting type="action" label="Adicionar nome:" option="close" visible="!eq(-2,false)" action="RunPlugin(plugin://plugin.video.kallplay/?mode=7)" />
+  </category>  
+ 
+  
+   <category label="Controle dos Pais">
+    	<setting id="parentalblockedpin" label="Senha" type="text"  option="hidden" default="1234"/> 
+    <setting id="parentalblocked" label="Ativar?" type="bool"  default="false" enable="true"/>
+    </category>
+</settings>

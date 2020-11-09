@@ -1,0 +1,224 @@
+Visit noobsandnerds.com for all your Kodi needs
+
+v.3.2.4:
+- Addon install method now has Krypton compatibility
+- Removed the REGISTER menu item.
+- Fixed the issue with recommended addon install getting stuck if repo not already installed.
+- Fixed the issue with re-installing addons, now wipes correctly and reinstalls
+- Fixed the BUILD backup option where it was failing.
+- The ADDON backup addon install method now needs to be enabled in settings if you want it. READ NOTES BELOW!!!
+
+--- WARNING: The ADDON backup install method can potentially install bad modules not designed for your version of Kodi and it can also fail to install certain dependencies which are required for the addon(s) to run correctly. You should only enable this option if you're an advanced user and understand the risks - using this method could cause BIG problems with your install you've been warned!
+
+
+
+v.3.2.0:
+- Redirected tutorials to nantuts addon
+- Fixed build backup option
+- Added new artwork
+- Cleaned up menu systems, brought everything out to root menu
+- Fixed the profile switcher
+- Recoded the add-on installer, much better and more reliable (recommended method)
+- Removed need for login
+
+v.3.1.1:
+- Added option to set the amount of time the CB Protection notification stays on for
+- Fixed the remove notification option
+
+v.3.1:
+FIXES:
+-Recent Fixes (Please test to confirm they are working):
+-Profiles asking for a backup name even if one already exists: FIXED (23rd Jan 2016)
+-Not working on SPMC (possibly TVMC too, need confirmation on that): FIXED??? (23rd Jan 2016) Please test and update me.
+-Skin Shortcuts Error, failing to extract: FIXED??? (23rd Jan 2016) Please test on a skin that uses  skinshortcuts and update me.
+-Error when downloading guisettings zip: FIXED (23rd Jan 2016) Think this was user error, can't get it to fail
+-Universal backup isn't deleting packages folder: FIXED (23rd Jan 2016)
+-Check special path conversion is working: FIXED (23rd Jan 2016) Appears to be user error, can't see anything wrong
+-Glitch with folder names when logging in with incorrect info: FIXED (24th Jan 2016)
+
+ADDITIONS:
+-Add Reset add-on to context menu: ADDED (23rd Jan 2016)
+-Provide a listing of subscription or premium services: ADDED (23rd Jan 2016)
+-Re-write some of the calls server side to improve performance: ADDED (24th Jan 2016)
+-Add Community Build Protection, this can only be disabled by the build author. If you want to use someone elses build as a base to work off then you will not be able to remove their protection. You will have to learn how to use Kodi a little better and just copy the bits you want into a new fresh Kodi install. ADDED (24th Jan 2016)
+
+
+v.3.0.5:
+- Removed notify script, that may possibly be causing issues.
+
+v.3.0.4:
+- Speed improvements and some minor bug fixes like guisettings and local restore fix.
+
+v.3.0.2:
+- Add-ons section updated:
+--- Now have the option to view the 100 most popular (most downloaded) add-ons
+--- Manual Search improved, anything you type in the search box will search in addon title, author, id and even description tags.
+--- Fixed the issue with add-on not showing all video add-ons when searching by Kodi categories
+- Small bug fix, put an exception in for copytree function when backing up addons in a build.
+- Added back the ETA and size of download progress dialog. Can't remember why it was removed all those month ago, seems to work fine.
+
+v.3.0.1:
+- Fixed download path on AFTV
+
+v.3.0:
+- Force close issues now a thing of the past, re-coded so no need for manual force close.
+- Community Builds HUGE updates...
+--- Completely redesigned the install process, will now install as a new "CP profile" so you can switch from build to build easily.
+--- Improved NaN backup method, now includes full addon structure if item is a dependency of another addon.
+--- Only one simple install option, if you want to copy library, kodi profiles etc this will be added via maintenance.
+--- All builds should be created using NaN method, size is very small and it just works much better. However support is there for the old method still but it's not recommended.
+--- Apostrophe's can now be used in the filename when adding build.
+- Added option for running a cache cleaning service in addon settings. Removes textures not used in past 14 days.
+- Re-coded the cache cleaning function, now searches for every cache folder in addon_data and not just hardcoded paths.
+- When clicking on check login status it will now take you to programs root which forces CP to re-load with correct creds.
+- Removed the notification system (temporarily) as this needs a complete re-code and was causing issues with site.
+
+v.2.1.8:
+- OpenELEC NOW FULLY SUPPORTED! You can now add OpenELEC backup tar files as an option for install.
+- Fixed the issue with backgrounds not installing on some droid devices, was spaces in the filepath!
+- Added Jarvis compatibility to CP web form and in addon.
+- Backup will now also backup script.skinshortcuts so now fully supports builds with skins like Aeon
+- Improved backup dialogs so it doesn't appear unresponsive when you click on it.
+- Now notifies after restart (after installing a build) of the update process that's about to take place.
+- New live update link added so important announcements can be sent for user to click on.
+- Not totally addon related, it sort of is... Check out the mycontent area on noobsandnerds. You now have access to all your tutorials, builds and downloads.
+- Re-worked maintenance section much more noob friendly and added these new functions:
+--- Check For Special Characters - This will search a path for any files with non-ASCII chars and can delete them.
+--- Clean My Kodi Folders - This will clear all cache including packages, thumbnails etc. It also tells user how much space can be saved.
+
+v.2.1.6:
+- Fixed issue caused by last update, CB section not accessible
+- Added instructions for various sections
+- Added option to create NaN keyword
+
+v.2.1.5:
+- Can now force close android if you have the the com.rechild.advancedtaskkiller apk installed
+- Backup process has been improved, scripts are fully backed up
+- Menu structure changed, now an install content menu for codes, comm. builds and addons
+- All paths now pointing to NaN server
+
+v.2.1.4:
+- FINALLY Fixed problem with some android and OE devices crashing
+- fixed issue with viewport showing as an entry for third party builds put on archive.org
+- Now Pointing to new servers for Community Builds so if they don't load just keep trying as it will mean the servers are struggling.
+
+v.2.1.1:
+- Added to noobsandnerds repository.
+- Removed all instances of global var calls, hopefully may fix android issue.
+- Login improved and will only check daily.
+- Removed a lot of old code no longer required.
+- Added openelec specific stuff:
+--- Wi-Fi Settings
+--- Create OE Backup
+--- Restore OE Backup (from anywhere not just backup folder
+- Hopefully fixed the android kick-out issue, can't replicate on any droid devices here at least.
+
+- Addons section completely redone:
+--- 2 options for Install method, either the old way or the new recommended way which ensures latest is installed.
+--- If addon is installed it will notify you and you can run the addon direct from menu.
+--- If addon hasn't installed correctly or updated yet you can force update or just choose option 2.
+
+- Community Builds completely redone:
+--- All new builds created will be much smaller in size and will only install content not already on the device.
+--- Updates will now only take seconds to do and will only require force close if guisettings has changed.
+--- You can now add your own build lists or use this addon to integrate other wizards via the settings.
+--- If broken build is found (from third party list) it will try and fix it.
+--- If broken build is beyond repair it will notify you rather than crashing out with no message.
+
+- Tutorials:
+--- You can now enable/disable all the different tutorials sections, we've left the most popular on by default.
+
+
+- NEW noobsandnerds keywords:
+--- You can now create your own artwork packs, addon packs... anything you want!
+
+INSTRUCTIONS:
+Create a zip file of the content you want in your keyword. Example, if you just want to create an addon pack
+you would just zip up the addons folder. If you wanted addons AND the addon_data for some of these addons you would
+zip up both the addons folder and the userdata/addon_data folder so your zip would look like something like this:
+
+uk_pack.zip
+---addons
+-------plugin.video.iplayer
+-------plugin.video.itv
+-------plugin.video.ukplay
+---userdata
+-------addon_data
+---------------plugin.video.iplayer
+
+You can of course zip up absolutely anything you want so get creative, maybe start creating artwork packs that
+people can use in their community builds. So long as everyone agrees to use the same file structure they will be
+universal. We would recommend for artwork creating a folder called "background_art" in userdata and then all
+community builders can link their skins to those folders. So for example you may have something like:
+
+starwars.zip
+---userdata
+------background_art
+---------livetv
+------------<pic1.jpg>
+------------<pic2.jpg>
+---------movies
+------------<pic1.jpg>
+------------<pic2.jpg>
+------------<pic3.jpg>
+------------<pic4.jpg>
+
+You get the idea!
+
+Once you've got your zip file upload it to somewhere like archive.org or copy.com, find the final resolved URL
+(the one when you type it in a browser it will just start downloading without the need to press a button).
+Next just go to http://urlshortbot.com and use the word noobs followed by your keyword. In the starwars example
+above we would just type in noobsstarwars as the shortened name and in Kodi we just type "starwars" for
+the content to be installed!
+
+-----------------------------------------------------------------------------------------
+DEPRECIATED - OLD TOTAL INSTALLER ADDON
+v.2.0.6:
+- Totally re-coded the service timing so it uses proper alarm calls. No more lockups.
+- Fixed up some dialog messages, now if it doesn't force close it tells user to pull power.
+- Fixed wipe kodi option in maintenance
+- Fixed RunScript options in settings which had broken.
+
+v.2.0.5:
+- Fixed Option 1 (Fresh Install).
+- Fixed Wipe option (was failing to keep Total Installer after wipe on Android).
+- Added options to keep sources and favourites when installing a community build.
+- Added service, this allows for internet connection check and CB notifications.
+- Edited main menu so Community Builds always shows as a category but still needs unlocking.
+
+v.2.0.4:)
+--- Locked CB install option 1 as it's causing boot loop on OE.
+
+v.2.0.9:
+- Small bugfix with login, new members weren't being picked up
+
+v.2.0.8:
+- NEW ADDON: The Community Portal
+
+- Added missing countries.
+- Fix guisettings step, old builds with TI installed were overwriting the newer version.
+- Fix uploadlog for TI (typo in plugin ID for uploadlog module)
+- Fix issue with special characters in user/pass.
+- Wipe Kodi without the need for restart (load master profile).
+- Add Isengard category to both the add-on and web form.
+- Add option to show all builds (even those that may be marked as incompatible with system)
+- Improved search functions so not quite as demanding on servers.
+- Fixed the download count on add-on portal.
+- Added check for download path and login that can be run directly from settings without the need for saving settings. Thank you DixieDean for that tip!
+- Added reset option in settings, this will remove the addon_data/plugin.program.totalinstaller folder.
+
+v.2.0.3:
+- Small fix on startup video, added a close on the dialog which was covering up the video
+
+v.2.0.2:
+- Fixed wipe build option.
+- Added internet check on startup.
+- Added broken status on addon portal when browsing lists.
+
+v.2.0.1:
+- Minor update, some systems didn't like base64
+
+Version 2.0:
+- A complete re-write, all my own code apart from the handful of modules not obfuscated.
+- The default.py is now obfuscated due to some morons stealing work without crediting the original author and also removing licenses.
+Sorry about that, it goes against everything I believe in but until these idiots are dealt with it will stay this way.

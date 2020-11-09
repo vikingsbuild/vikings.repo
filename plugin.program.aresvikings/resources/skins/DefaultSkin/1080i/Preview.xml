@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<controls>
+		<control type="image">
+			<description>Background Image</description>
+			<posx>800</posx>
+			<posy>500</posy>
+			<width>400</width>
+			<height>200</height>
+			<texture>Background/loguploader-black.png</texture>
+		</control>
+		<control type="textbox">
+			<posx>800</posx>
+			<posy>500</posy>
+			<width>400</width>
+			<height>200</height>
+			<font>font24</font>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>Please close this video window.</label>
+		</control>
+		<control type="button" id="101">
+			<left>900</left>
+			<top>600</top>
+			<width>200</width>
+			<height>75</height>
+			<font>font18</font>
+			<textcolor>FFFFFFFF</textcolor>
+			<label>[B]Close[/B]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<onclick>PlayerControl(Stop)</onclick>
+			<texturefocus border="40">Button/red.png</texturefocus>
+			<texturenofocus border="40">Button/red.png</texturenofocus>
+		</control>
+		<control type="videowindow">
+			<posx>390</posx>
+			<posy>110</posy>
+			<width>1255</width>
+			<height>890</height>
+			<aspectratio align="center">scale</aspectratio>
+			<visible>Player.HasMedia</visible>
+		</control>
+		<control type="button" id="102">
+			<left>0</left>
+			<top>0</top>
+			<width>2000</width>
+			<height>2000</height>
+			<onclick>PlayerControl(Stop)</onclick>
+			<texturefocus border="40"></texturefocus>
+			<texturenofocus border="40"></texturenofocus>
+		</control>
+	</controls>
+</window>

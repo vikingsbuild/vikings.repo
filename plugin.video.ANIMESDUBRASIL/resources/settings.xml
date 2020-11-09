@@ -1,0 +1,28 @@
+<settings>
+  
+  <category label="Adicionar Fonte">
+    <setting id="choose_source" type="enum" values="Escolher Arquivo|Entre com a URL" label="Escolha o tipo de fonte" default=""/>
+    <setting id="new_file_source" type="file" source="files" label="Escolher Arquivo" default="" visible="eq(-1,0)"/>
+    <setting id="new_url_source" type="text" label="Adicione URL" default="" visible="eq(-2,1)"/>
+    <setting type="sep" />
+    <setting type="action" label="Adicionar fonte" option="close" action="RunPlugin(plugin://plugin.video.iptvTWTUTORIAIS/?mode=7)" />
+    <setting type="sep" />
+    <setting id="searchotherplugins" label="Pesquisar Outros plugins" type="bool" default="false"/>
+  </category>
+  
+  <category label="Geral">
+    <setting id="save_location" type="folder"  label="Selecione um local de download." default=""/>
+    <setting id="use_thumb" type="bool" label="Use Miniaturas como Fanart" default="false" />
+    <setting id="logo-folderPath" type="folder"  label="Selecione o diretório para o logotipo." default=""/>
+    <setting id="add_playlist" type="bool" label="Adicione ítens com vários links como listas de reprodução" default="true"/>
+    <setting id="ask_playlist_items" type="bool" label="Pedir itens da lista de reprodução para escolher a caixa de diálogo" default="true" />
+    <setting id="debug" type="bool" label="Ativar depuração de complemento" default="false"/>
+    <setting id="1080pquality" label="Reproduz vídeo 1080p sob demanda, se disponível (Não ao Vivo)" type="bool" default=""/>
+    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Reproduza IMDBid com:" default="Genesis"/>
+    <setting id="donotshowbychannels" label="Não mostrar ítens no nome do canal" type="bool" default="false"/>
+    <setting id="parentalblockedpin" label="Pin do Controle Parental" type="text"  option="hidden"  default=""/>
+    <setting id="parentalblocked" label="Quer aplicar o Controle Parental?" type="bool" default="false" enable="false"/>
+    
+  </category>
+
+</settings>

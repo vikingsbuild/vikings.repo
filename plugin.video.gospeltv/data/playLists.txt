@@ -1,0 +1,142 @@
+[
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/DEFESA%20DO%20EVANGELHO", 
+        "logos": "https://i.ytimg.com/vi/iD6b_XNdiVs/hqdefault.jpg/", 
+        "image": "https://i.ytimg.com/vi/iD6b_XNdiVs/hqdefault.jpg", 
+        "cache": 0, 
+        "name": "Defesa do Evangelho"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/EncontroComAsProfecias", 
+        "logos": "http://i.imgur.com/04XQqgh.png/", 
+        "image": "http://i.imgur.com/04XQqgh.png", 
+        "cache": 0, 
+        "name": "Encontro com as Profecias"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/EstaEscrito", 
+        "logos": "http://i.imgur.com/bpNqx0d.png/", 
+        "image": "http://i.imgur.com/bpNqx0d.png", 
+        "cache": 0, 
+        "name": "Esta Escrito"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/Falando%20ao%20Cora%C3%A7%C3%A3o", 
+        "logos": "http://i.imgur.com/6cVjrUN.png/", 
+        "image": "http://i.imgur.com/6cVjrUN.png", 
+        "cache": 0, 
+        "name": "Falando ao Coraçao"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/Li%C3%A7%C3%B5es%20da%20Biblia", 
+        "logos": "http://i.imgur.com/5BrPOwx.png/", 
+        "image": "http://i.imgur.com/5BrPOwx.png", 
+        "cache": 0, 
+        "name": "Lições da Biblia"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/Medita%C3%A7%C3%B5esnaPalavra", 
+        "logos": "http://i.imgur.com/WFNprDO.png/", 
+        "image": "http://i.imgur.com/WFNprDO.png", 
+        "cache": 0, 
+        "name": "Meditações na Palavra"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/MEVAM", 
+        "logos": "https://goo.gl/M1Ufmo/", 
+        "image": "https://goo.gl/M1Ufmo", 
+        "cache": 0, 
+        "name": "Mevam"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/Reavivados%20pela%20Palavra", 
+        "logos": "http://i.imgur.com/UVTYj5g.png/", 
+        "image": "http://i.imgur.com/UVTYj5g.png", 
+        "cache": 0, 
+        "name": "Reavivados pela Palavra"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/Tempo%20de%20Refletir", 
+        "logos": "http://i.imgur.com/p08rNjJ.png/", 
+        "image": "http://i.imgur.com/p08rNjJ.png", 
+        "cache": 0, 
+        "name": "Tempo de Refletir"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/JULIANO%20SON", 
+        "logos": "", 
+        "image": "http://goo.gl/gmB4mL", 
+        "cache": 0, 
+        "name": "Juliano Son"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/Pr%20Hernane%20Santos", 
+        "logos": "http://goo.gl/cc3BA6/", 
+        "image": "http://goo.gl/cc3BA6", 
+        "cache": 0, 
+        "name": "Pr Hernane Santos"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/Pr.%20Takayama", 
+        "logos": "https://goo.gl/h6QfdH/", 
+        "image": "https://goo.gl/h6QfdH", 
+        "cache": 0, 
+        "name": "Pr. Takayama"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/claudioduarte", 
+        "logos": "http://i.imgur.com/MjC9muZ.png/", 
+        "image": "http://i.imgur.com/MjC9muZ.png", 
+        "cache": 0, 
+        "name": "Claudio Duarte"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/rodolfo%20abrantes", 
+        "logos": "https://goo.gl/NWbOey/", 
+        "image": "https://goo.gl/NWbOey", 
+        "cache": 0, 
+        "name": "Rodolfo Abrantes"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/ministerio%20orvalho", 
+        "logos": "http://i.imgur.com/JOtCfHM.png/", 
+        "image": "http://i.imgur.com/JOtCfHM.png", 
+        "cache": 0, 
+        "name": "Ministerio Orvalho"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/clipes", 
+        "logos": "https://goo.gl/jzLbu0/", 
+        "image": "https://goo.gl/jzLbu0", 
+        "cache": 0, 
+        "name": "Clipes"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/filmes", 
+        "logos": "https://goo.gl/qT0Qna/", 
+        "image": "https://goo.gl/qT0Qna", 
+        "cache": 0, 
+        "name": "Filmes Gospel"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/harpa%20crista", 
+        "logos": "https://goo.gl/ctWGXJ/", 
+        "image": "https://goo.gl/ctWGXJ", 
+        "cache": 0, 
+        "name": "Harpa Crista"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/shows", 
+        "logos": "https://goo.gl/Fzh7cT/", 
+        "image": "https://goo.gl/Fzh7cT", 
+        "cache": 0, 
+        "name": "Shows"
+    }, 
+    {
+        "url": "https://raw.githubusercontent.com/kodishmediacenter/gospel/master/radio%20e%20tv%20gospel", 
+        "logos": "https://goo.gl/gf5ljL/", 
+        "image": "https://goo.gl/gf5ljL", 
+        "cache": 0, 
+        "name": "Radio e TV Gospel"
+    }
+]

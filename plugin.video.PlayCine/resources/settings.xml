@@ -1,0 +1,16 @@
+<settings>
+<category label="Legenda">
+	<setting label="[COLOR lightblue]Legenda[/COLOR]" type="lsep"/>
+	<setting label="Pedir legenda externa ao reproduzir?" id="legenda" type="bool" default="false" />
+</category>
+<category label="Minha Lista">
+	<setting label="[COLOR lightblue]Minha Lista[/COLOR]" type="lsep"/>
+	<setting label="Entre aqui para limpar Minha Lista" type="action" action="RunScript(plugin.video.PlayCine, limparMinhaLista)"/>	
+</category>
+<category label="Aparência">
+	<setting label="[COLOR lightblue]Aparência[/COLOR]" type="lsep"/>
+	<setting label="Exibir Menus" id="menus" type="enum" values="Padrão|Lista" default="0" />
+	<setting label="Exibir Itens" id="itens" type="enum" values="Padrão|Lista" default="0" />
+</category>
+</settings>
+	

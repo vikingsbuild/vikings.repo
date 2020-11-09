@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.playthis"
+       name="PlayThis"
+       version="3.4.3"
+       provider-name="anxdpanic">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.urlresolver" version="3.4.0"/>
+        <import addon="script.module.youtube.dl"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/__run__.py">
+        <provides>executable video audio image</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>
+- update reddit video resolver
+- fix m3u8 check missing urls with parameters
+- add shout: to direct play
+- filter .css
+- remove unused dialog
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/media/screenshots/screenshot000.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot001.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot002.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot003.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot004.jpg</screenshot>
+        </assets>
+        <summary lang="en_gb">Find and resolve media from a url to play or open.</summary>
+        <description lang="en_gb">
+PlayThis will attempt to find and resolve* media from a url to play or open. A history list is available for future use, exporting to .m3u/.strm** and sending to a remote PlayThis add-on. Supports video, audio, images and executable***.
+* resolves using URLResolver and youtube-dl
+** exported .m3u/.strm is only usable in Kodi w/ PlayThis installed
+*** 'executable' items are urls with potential results available through scraping
+
+Companion browser extension available on the Chrome Web Store and Mozilla's AMO Gallery
+
+Artwork by @konsumer420
+        </description>
+        <language></language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum></forum>
+        <website>https://github.com/anxdpanic/plugin.video.playthis#playthis</website>
+        <source>https://github.com/anxdpanic/plugin.video.playthis</source>
+	</extension>
+</addon>

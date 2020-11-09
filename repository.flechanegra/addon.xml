@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.flechanegra" name="[COLOR red][B]Flecha[/B][/COLOR] [COLOR black][B]Negra[/B][/COLOR] Repository" version="2.5" provider-name="Flecha Negra">
+	<requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.simple.downloader" version="0.9.4"/>
+        <import addon="script.module.t0mm0.common" version="2.0.0"/>
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.httplib2" />
+        <import addon="script.module.simple.downloader" version="0.9.4"/>
+        <import addon="plugin.video.youtube" version="5.2.1" />
+        <import addon="script.module.urlresolver" />
+        <import addon="script.module.simplejson" />    
+        <import addon="script.module.livestreamer"/>
+        <import addon="script.module.pyamf"/>
+        <import addon="script.common.plugin.cache" version="2.5.2"/>
+        <import addon="script.module.metahandler" version="2.5.1"/>
+	    <import addon="script.module.addon.common" />
+	    <import addon="script.module.addon.signals" version="0.0.1"/>
+	    <import addon="script.module.youtube.dl" optional="true"/>	
+	</requires>
+	<extension point="xbmc.addon.repository" name="[B][COLOR red]Flecha Negra [COLOR red]repositorio[/B][/COLOR]">
+		    <info compressed="false">https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/addons.xml</info>
+		    <checksum>https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/addons.xml.md5</checksum>
+		    <datadir zip="true">https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master</datadir>
+		<dir minversion="17.0.0">
+			<info compressed="true">https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/krypton/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/krypton</datadir>
+		</dir>
+		<dir minversion="17.9.0">
+			<info compressed="true">https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/leia/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/flechanegra/repository.flechanegra/master/leia</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>repositorio Flecha Negra</summary>
+		<description>repositorio oficial Flecha Negra - Proibido reproducao sem previa autorizacao</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<news>[I]v1.2[/I][CR]- Suporte para uma Skin!</news>
+	</extension>
+</addon>

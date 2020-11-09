@@ -1,0 +1,494 @@
+########################################################
+# VideoDevil Catcher list
+########################################################
+# title: str <- Start flag
+# target: RegEx <- Start flag
+# url: *%s*
+# data: *%s*
+# header str|str
+# limit: int
+# action: str
+# build: *%s*
+# ext_target: RegEx
+# ext_url: *%s*
+# ext_data: *%s*
+# ext_header str|str
+# ext_limit: int
+# ext_action: str
+# ext_build: *%s*
+# extension: str (default = flv)
+# info: str
+# quality: low, standard, high or fallback <- End flag
+########################################################
+# Catcher sites
+########################################################
+title=ahme.com
+target=video src="([^"]+)"
+url=%s
+build=%s|Referer=https://www.ah-me.com/
+quality=standard
+########################################################
+title=madthumbs.com
+target=<source src="([^"]+)"
+url=%s
+quality=standard
+########################################################
+title=pornoxo.com
+target=source src="([^"]+)"
+url=%s
+quality=standard
+target=file":\s*"([^"]+)",\s*"label":\s*"Standard
+url=%s
+quality=standard
+target=file":\s*"([^"]+)",\s*"label":\s*"High
+url=%s
+quality=high
+########################################################
+title=gfvideos.com
+target=href="(/videos/[^"]+)"
+url=%s
+build=http://www.girlfriendvideos.com%s
+quality=standard
+########################################################
+title=eporner.com
+target="(/dload/[^"]+(?:240p|360p).mp4)
+url=%s
+build=http://www.eporner.com%s
+quality=low
+target="(/dload/[^"]+720p.mp4)
+url=%s
+build=http://www.eporner.com%s
+quality=standard
+target="(/dload/[^"]+1080p.mp4)
+url=%s
+build=http://www.eporner.com%s
+quality=high
+########################################################
+title=2video.de
+target=<div id="box">[^<]*<h2>Download</h2>[^<]*<p><a href="([^"]+)" target="_blank">
+url=http://www.2video.de/index.php?dl=%s&skill=download
+quality=standard
+########################################################
+title=clipnabber.com
+target=<div id="Math">(\d+)</div>
+url=http://clipnabber.com
+build=%s
+quality=fallback
+########################################################
+title=atrapavideo.com
+target=so.addVariable\('file','(.+?.flv)
+url=http://www.atrapavideo.com/video
+data=data[url]=%s
+header=Referer|http://www.atrapavideo.com/en/
+quality=standard
+########################################################
+title=getvids.de
+target=href="([^"]+)" title="Download">
+url=http://getvids.de/video.cgi
+data=downloadurl=%s
+header=Referer|http://getvids.de/video.cgi
+quality=standard
+########################################################
+title=degrab.de
+target=Download Link.+?<a href="([^"]+)"
+url=http://www.degrab.de/?url=%s
+action=unquote
+quality=standard
+########################################################
+title=youporn.com
+target=videoUrl":"([^"]+)
+url=%s
+build=%s|Referer=https://www.youporn.com/
+quality=standard
+########################################################
+title=extremetube.com
+target=quality_(?:240|180)p":"([^"]+)
+url=%s
+header=Cookie|age_verified=1
+action=prefix
+quality=low
+target=quality_(?:480|360)p":"([^"]+)
+url=%s
+header=Cookie|age_verified=1
+action=prefix
+quality=standard
+target=quality_720p":"([^"]+)
+url=%s
+header=Cookie|age_verified=1
+action=prefix
+quality=high
+target=quality_1080p":"([^"]+)
+url=%s
+header=Cookie|age_verified=1
+action=prefix
+quality=high
+########################################################
+title=xvideos.com
+target=flv_url=(http[^"]+?)&amp;
+url=%s
+quality=standard
+########################################################
+title=moviesand.com
+target=<source src="([^"]+)" type='video/mp4' />
+url=%s
+quality=standard
+########################################################
+title=redtube.com
+target=240","videoUrl":"([^"]+)"
+url=%s
+extension=mp4
+quality=low
+target=480","videoUrl":"([^"]+)"
+url=%s
+extension=mp4
+quality=standard
+target=720","videoUrl":"([^"]+)"
+url=%s
+extension=mp4
+quality=high
+########################################################
+title=mofosex.com
+target=<a href="(//[^"]+(flv|mp4)[?][^"]+hash=[^"]+)"
+url=%s
+action=prefix
+quality=high
+target="video_url":"([^"]+)
+url=%s
+action=prefix
+quality=standard
+########################################################
+title=xhamster.com
+target=file: '([^']+)'
+url=%s
+quality=standard
+########################################################
+title=hotgoo.com
+target=so.addVariable\('file','(.+?)'
+url=%s
+quality=standard
+########################################################
+title=motherless.com
+target='(http[^']+mp4)
+url=%s
+quality=standard
+########################################################
+title=pornomovies
+target=source src="([^"]+)"
+url=%s
+build=https:%s
+quality=standard
+########################################################
+title=clipa.tv
+target=<a href="([/]get-video.flv[?]uri=.+?)" class="download"
+url=http://en.clipa.tv/?uri=%s
+build=http://en.clipa.tv%s
+quality=standard
+########################################################
+title=simple-match
+target=(https*://[^"<]+?.(mp4|flv))
+url=%s
+action=quote
+quality=standard
+########################################################
+title=spankwire.com
+target=cdnPath240.*?=\s*'([^']+)
+url=%s
+build=http:%s
+extension=mp4
+quality=low
+target=cdnPath480.*?=\s*'([^']+)
+url=%s
+build=http:%s
+extension=mp4
+quality=standard
+target=cdnPath720.*?=\s*'([^']+)
+url=%s
+build=http:%s
+extension=mp4
+quality=high
+########################################################
+title=fapdu.com
+target="file" : "([^ ]+)"
+url=%s
+quality=standard
+########################################################
+title=moviefap.com
+target=flashvars.config = escape."([^ ]+)VID=
+url=%s
+ext_target=<videoLink>(.+?)</videoLink>
+ext_url=%s
+quality=standard
+########################################################
+#title=keepvid.com
+#target=<a href="([^"]+)" class="link" target="\_blank">[^<]+</a>[^<]+<em>\(video\.flv - Low Quality\)
+#url=http://keepvid.com/?url=%s
+#header=Referer|http://keepvid.com/
+#extension=flv
+#quality=standard
+#target=<a href="([^"]+)" class="link" target="\_blank">[^<]+</a>[^<]+<em>\(video\.mp4 - High Quality\)
+#extension=mp4
+#quality=high
+#target=<a href="([^"]+)" class="link" target="\_blank">
+#quality=fallback
+########################################################
+title=pornhub.com
+target=var player_quality_240p = '([^"]+.mp4[^']*)';
+url=%s
+quality=low
+target=var player_quality_480p = '([^"]+.mp4[^']*)';
+url=%s
+quality=standard
+target=var player_quality_720p = '([^"]+.mp4[^']*)';
+url=%s
+quality=high
+target=var player_quality_1080p = '([^"]+.mp4[^']*)';
+url=%s
+quality=high
+########################################################
+title=m.pornhub.com
+target=quality":"480[^"]*",[^}]+videoUrl":"(https:[^"]+)
+url=%s
+header=Cookie|platform=tablet
+quality=standard
+target=quality":"720[^"]*",[^}]+videoUrl":"(https:[^"]+)
+url=%s
+header=Cookie|platform=tablet
+quality=high
+target=quality":"1080[^"]*",[^}]+videoUrl":"(https:[^"]+)
+url=%s
+header=Cookie|platform=tablet
+quality=high
+########################################################
+#title=viloader.net
+#target=unescape%28%22(http.+?\.flv)%22%29%3
+#url=http://www.viloader.net/mybic_server.php
+#data=skill=formDownload&url=%s&json=false
+#header=Referer|http://www.viloader.net
+#quality=standard
+########################################################
+title=empflix.com
+target=contentUrl" content="([^"]+)
+url=%s
+quality=standard
+########################################################
+title=tnaflix.com
+target=([^"]+mp4[^"]+)
+url=%s
+quality=standard
+########################################################
+title=slutload.com
+target=data-url="([^"]+)"
+url=%s
+action=decode
+quality=standard
+########################################################
+title=tukif.com
+target=<iframe src="([^"]+)"
+url=%s
+ext_target=source\ssrc="([^"]+)"\stype="video/mp4"\slabel="360p
+ext_url=%s
+header=Referer|https://tukif.com
+quality=low
+target=<iframe src="([^"]+)"
+url=%s
+ext_target=source\ssrc="([^"]+)"\stype="video/mp4"\slabel="540p
+ext_url=%s
+header=Referer|https://tukif.com
+quality=standard
+target=<iframe src="([^"]+)"
+url=%s
+ext_target=source\ssrc="([^"]+)"\stype="video/mp4"\slabel="720p
+ext_url=%s
+header=Referer|https://tukif.com
+quality=high
+target=<iframe src="([^"]+)"
+url=%s
+ext_target=source\ssrc="([^"]+)"\stype="video/mp4"\slabel="1080p
+ext_url=%s
+header=Referer|https://tukif.com
+quality=high
+########################################################
+title=yuvutu.com
+target=<iframe src="([^"]+)"
+url=%s
+build= http://www.yuvutu.com%s
+ext_target=file:\s*"([^"]+)"
+ext_url=%s
+quality=standard
+########################################################
+title=hentaigasm.com
+target=(http[^"]+.mp4)
+url=%s
+quality=standard
+########################################################
+title=porn.com
+target=url:"([^"]+240.mp4[^"]*)"
+url=%s
+quality=low
+target=url:"([^"]+360.mp4[^"]*)"
+url=%s
+quality=standard
+target=url:"([^"]+720.mp4[^"]*)"
+url=%s
+quality=high
+########################################################
+title=pornmaki.com
+target=file:"([^"]+)"
+url=%s
+quality=standard
+########################################################
+title=pornburst.xxx
+target=source src="([^"]+)
+url=%s
+quality=standard
+########################################################
+title=sexu.com
+target="file":"([^"]+)
+url=%s
+header=User-Agent|iPad
+build=%s|Referer=http://sexu.com&User-Agent=iPad
+extension=mp4
+quality=low
+target="file":"([^"]+480p-x.mp4)
+url=%s
+header=User-Agent|iPad
+build=%s|Referer=http://sexu.com&User-Agent=iPad
+extension=mp4
+quality=standard
+target="file":"([^"]+720p-x.mp4)
+url=%s
+header=User-Agent|iPad
+build=%s|Referer=http://sexu.com&User-Agent=iPad
+extension=mp4
+quality=high
+########################################################
+title=vporn.com
+target=<source src="([^"]+)" type="video/mp4" label="720p HD"
+url=%s
+header=Referer|https://www.vporn.com
+quality=high
+target=<source src="([^"]+)" type="video/mp4" label="480p"
+url=%s
+header=Referer|https://www.vporn.com
+quality=standard
+target=<source src="([^"]+)" type="video/mp4" label="320p"
+url=%s
+header=Referer|https://www.vporn.com
+quality=low
+########################################################
+title=pornhd.com
+target=sources:.+?360p":"([^"]+)
+url=%s
+header=Referer|https://www.pornhd.com/
+quality=low
+target=sources:.+?480p":"([^"]+)
+url=%s
+header=Referer|https://www.pornhd.com/
+quality=standard
+target=sources:.+?720p":"([^"]+)
+url=%s
+header=Referer|https://www.pornhd.com/
+quality=high
+########################################################
+title=faapy.com
+target=(?:video_url|file):\s['"]([^'"]+)
+url=%s
+quality=standard
+########################################################
+title=bitporno.com
+target=source src="([^"]+)
+url=%s
+quality=standard
+########################################################
+title=fux.com
+target=<button id="download720p.*?data-id="([^"]+)"
+url=%s
+build=https://tkn.kodicdn.com/%s/desktop/720
+ext_target="720":{"status":"success","token":"([^"]+)"
+ext_url=%s
+ext_header=Origin|https://www.fux.com/
+quality=high
+target=<button id="download480p.*?data-id="([^"]+)"
+url=%s
+build=https://tkn.kodicdn.com/%s/desktop/480
+ext_target="480":{"status":"success","token":"([^"]+)"
+ext_url=%s
+ext_header=Origin|https://www.fux.com/
+quality=standard
+target=<button id="download360p.*?data-id="([^"]+)"
+url=%s
+build=https://tkn.kodicdn.com/%s/desktop/360
+ext_target="360":{"status":"success","token":"([^"]+)"
+ext_url=%s
+ext_header=Origin|https://www.fux.com/
+quality=low
+target=<button id="download240p.*?data-id="([^"]+)"
+url=%s
+build=https://tkn.kodicdn.com/%s/desktop/240
+ext_target="240":{"status":"success","token":"([^"]+)"
+ext_url=%s
+ext_header=Origin|https://www.fux.com/
+quality=fallback
+########################################################
+title=indiangilma.com
+target=new SWFObject.".*?config=([^"]+)"
+url=%s
+ext_target=<file>([^<]+)<
+ext_url=%s
+quality=standard
+########################################################
+title=vmasala.com
+target=source\s*src="([^"]+).+?label='240p'
+url=%s
+build=%s|User-Agent=iPhone
+quality=low
+target=source\s*src="([^"]+).+?label='360p'
+url=%s
+build=%s|User-Agent=iPhone
+quality=low
+target=source\s*src="([^"]+).+?label='480p'
+url=%s
+build=%s|User-Agent=iPhone
+quality=standard
+target=source\s*src="([^"]+).+?label='720p'
+url=%s
+build=%s|User-Agent=iPad
+quality=high
+########################################################
+title=spankingtube.com
+target=<source src="([^"]+)" type="video/mp4">
+url=%s
+quality=standard
+########################################################
+title=indianpornvideos.com
+target=mp4"\s*src="([^"]+)
+url=%s
+quality=standard
+########################################################
+title=porn300.com
+target=source\s*src="([^"]+)
+url=%s
+quality=standard
+########################################################
+title=celebsnudeworld.com
+target=source\s*src="([^"]+)[^<]+res="360"
+url=%s
+extension=mp4
+quality=standard
+target=source\s*src="([^"]+)[^<]+res="720"
+url=%s
+extension=mp4
+quality=high
+########################################################
+title=smutindia.com
+target=file:\s*"([^"]+)"
+url=%s
+extension=mp4
+quality=standard
+########################################################
+title=stileproject.com
+target=file:\s*'([^']+)',
+url=%s
+extension=mp4
+quality=standard
+########################################################

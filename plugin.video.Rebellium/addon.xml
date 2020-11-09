@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Rebellium" name="[B][COLOR skyblue]REBELLIUM[/COLOR][/B]" version="1.0" provider-name="[B][COLOR skyblue]REBELLIUM[/COLOR][/B]">
+<requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+</requires>
+
+<extension point="xbmc.python.pluginsource" library="main.py">
+	<provides>video</provides>
+</extension>
+
+<extension point="xbmc.addon.repository" name="Team Mega Fã TV">
+	<info compressed="false"></info>
+	<checksum></checksum>
+    <datadir zip="true"></datadir>
+</extension>
+
+<extension point="xbmc.addon.metadata">
+    <summary>[COLOR white][B]REBELLIUM - Os Melhores canais de TV, Filmes e Series, você vai encontrar aqui, então entre e fique a vontade, Versão 1.0[/B][/COLOR]</summary>
+    <description lang="en">][COLOR skyblue][B]ATUALIZAÇÕES DIARIAS[/B][/COLOR]</description>
+    <disclaimer lang="en">[COLOR yellow][B]Duvidas ou Sugestões nos chame no WhatsApp (71) 9619-1556 - (47) 8874-1610 - (11) 95202-7986[/B][/COLOR]</disclaimer>
+	<platform>all</platform>
+    <assets>
+	<icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources/screenshots/01.jpg</screenshot>
+    <screenshot>resources/screenshots/02.jpg</screenshot>
+    <screenshot>resources/screenshots/03.jpg</screenshot>
+	</assets>
+</extension>
+
+</addon>

@@ -1,0 +1,152 @@
+		 cast:{ },
+		 
+         primary: "html5",
+
+		 autostart: "false",
+
+         width: "100%",
+
+         height: "100%",
+
+         abouttext: "|| Player RedeCanais - www.redecanais.com ||", 
+
+         aboutlink: "http://www.redecanais.com/"
+
+		});
+
+	player.addButton(
+
+	  "http://www.redecanais.com/player3/baixar.png",
+
+	  "Baixar video",
+
+	  function() {
+
+		window.location.href = 'http://v1.ec.cx/RedeCanais/RedeCanais/RCServer07/ondemand/.mp4'; //player.getPlaylistItem()['file'];
+
+	  },
+
+	  "download"
+
+	);
+
+</script>
+</center>
+<SCRIPT LANGUAGE="JavaScript">   
+<!-- Disable   
+function disableselect(e){   
+return false   
+}   
+
+function reEnable(){   
+return true   
+}   
+
+//if IE4+   
+document.onselectstart=new Function ("return false")   
+document.oncontextmenu=new Function ("return false")   
+//if NS6   
+if (window.sidebar){   
+document.onmousedown=disableselect   
+document.onclick=reEnable   
+}   
+//-->   
+</script>
+<iframe src="http://redecanais.tv/contador.php" frameborder="0" scrolling="no" width="0" height="0"></iframe>
+<h5 class="bg-success" id="fuck-adb-not-enabled" style="display: none;"></h5>
+<div id="fuck-adb-enabled" style="display: none;">
+<style>
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 5%;
+	left: 25%;
+	width: 50%;
+	height: 80%;
+	padding: 16px;
+	border: 16px solid orange;
+	background-color: #121212  ;
+	z-index:1002;
+	overflow: auto;
+}
+.white_content p {
+	color: #FFFF  ;
+	font-family: verdana;
+}
+</style>
+<center>
+<div class="white_content" id="light" style="background-color: #121212; border: 16px solid orange; box-sizing: border-box; display: block; height: 99.9%; left: 1px; overflow: auto; padding: 16px; position: absolute; top: 0.1px; width: 99.9%; z-index: 1002;">
+<div style="text-align: center;"><span style="background-color: rgb(255, 255, 255);"><span style="font-family: 'Courier New';"><span style="font-size: large;"><strong>Apos desativar o Plugin/Exten&ccedil;&atilde;o, Por favor atualize a pagina!</strong></span></span></span></div>
+<table width="200" border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td>
+<div style="text-align: center;"><img src="http://redecanais.com/player3/logo2.png" alt="" /></div>
+<div style="text-align: center;">
+<h3 style="box-sizing: border-box; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(45, 45, 45); margin-top: 20px; margin-bottom: 10px; font-size: 24px; background-color: rgb(18, 18, 18);">Ooops!</h3>
+<span style="color: rgb(255, 255, 255); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(18, 18, 18);">Foi detectado um(a) plugin/extens&atilde;o de bloqueio de an&uacute;ncios em seu navegador. Para manter nosso site, precisamos exibir an&uacute;ncios. Seu acesso continuar&aacute; negado em quanto esse(a) plugin/extens&atilde;o estiver ativado(a).&nbsp;</span></div>
+<div style="text-align: center;">&nbsp;</div>
+<h3 style="box-sizing: border-box; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(45, 45, 45); margin-top: 20px; margin-bottom: 10px; font-size: 24px; text-align: center; background-color: rgb(18, 18, 18);">Porque evitamos Adblock?</h3>
+<div style="text-align: center;"><span style="color: rgb(255, 255, 255); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; text-align: center; background-color: rgb(18, 18, 18);">Este site &eacute; mantido pela monetiza&ccedil;&atilde;o de an&uacute;ncios exibidos necessitamos que todos an&uacute;ncios sejam exibidos.&nbsp;</span>&nbsp;</div>
+</td>
+<td><img src="http://redecanais.com/player3/adblock1.png" width="284" height="330" alt="" />&nbsp;</td>
+<td>&nbsp;<img src="http://redecanais.com/player3/adblock2.png" alt="" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="./fuckadblock.js?update3"></script>
+<script>
+		function adBlockDetected() {
+			$('#fuck-adb-enabled').show();
+			$('#fuck-adb-not-enabled').hide();
+		}
+		function adBlockNotDetected() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').show();
+		}
+		
+		if(typeof fuckAdBlock === 'undefined') {
+			adBlockDetected();
+		} else {
+			fuckAdBlock.setOption({ debug: true });
+			fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+		}
+		
+		function checkAgain() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').hide();
+			// setTimeout 300ms for the recheck is visible when you click on the button
+			setTimeout(function() {
+				if(typeof fuckAdBlock === 'undefined') {
+					adBlockDetected();
+				} else {
+					fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+					fuckAdBlock.check();
+				}
+			}, 300);
+		}
+	</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>
+		$('pre code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	</script>
+</body>
+</html>
