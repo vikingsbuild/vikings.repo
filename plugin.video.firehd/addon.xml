@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.firehd"
        name="[B][COLOR chocolate]Tv Fogo HD[/COLOR][/B]"
-       version="8.4.1"
+       version="8.4.2"
        provider-name="[B][COLOR yellow]Equipe: TV Fogo[/COLOR][/B]">
 
   <requires>
