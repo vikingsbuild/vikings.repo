@@ -1,2 +1,2 @@
 # vikings.repo
- Repositorio Oficial VIkings Build
+ Repositorio Descontinuado!
