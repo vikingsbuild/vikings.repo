@@ -1,0 +1,6 @@
+<settings>
+	<category label="MENU DE VISUALIZAÇAO">
+     <setting id="menuVisu" type="enum" label="Visualização de Menu" values="Lista|Lista Grande|Miniatura" default="0" />
+     <setting id="filmesVisu" type="enum" label="Visualização de Filmes" values="Lista|Lista Grande|Miniatura|Posters|Fanart|Media Info 1|Media Info 2|Media Info 3" default="2" />
+	</category>
+</settings>

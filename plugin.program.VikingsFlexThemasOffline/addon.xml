@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.VikingsFlexThemasOffline" name="[COLOR gold]Vikings[/COLOR] [COLOR white]Flex Themas[/COLOR]  [COLOR red]OFFLINE[/COLOR]" version="1.00" provider-name="SergioGracas">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR lime]Build Vikings[/COLOR] - [COLOR white]Inscreva-se em nosso canal no Yotube!![/COLOR]</summary>
+    <description lang="en">[B]Melhor Build para o Kodi Crypton[/B] para Android, iPhone, iPad, Windows / Mac / Linux, computadores e outros.[CR][COLOR blue]Verifique atualizacoes em nosso canal do Youtube[CR][COLOR aqua][/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ultraguia" name="UltraGuia" version="1.2.1" provider-name="Gabriel Silva">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Guia de programação para o Kodi.</summary>
+    <description lang="en">Este addon usa as informações fornecidas pelo site [COLOR yellow]meuguia.tv[/COLOR]. Todos os direitos e dados são de propriedade do mesmo.
+
+[COLOR lightblue]Note que estamos em constante desenvolvimento, portanto podem haver pequenos bugs e funções que serão corrigidas gradualmente.[/COLOR]</description>
+    <email>contato@gabrielsilva.tk</email>
+    <website>http://gabrielsilva.tk</website>
+    <news>[B]v1.2.1 [COLOR gray](21/01/2019)[/COLOR][/B]
+      - Mudanças no servidor.
+      - Bugs corrigidos.
+
+[B]v1.2.0 [COLOR gray](05/01/2019)[/COLOR][/B]
+      - Correções de segurança.
+
+[B]v1.1.0b [COLOR gray](16/11/2018)[/COLOR][/B]
+      - Atualização automática aprimorada.
+      - Correção de bugs.
+
+[B]v1.1.0 [COLOR gray](12/11/2018)[/COLOR][/B]
+      - Correções de segurança.
+
+[B]v1.0.0 [COLOR gray](27/06/2018)[/COLOR][/B]
+      - Addon estabilizado.
+      - Adicionada atualização automática.
+      - Adicionada exibição de sinopse e poster.
+      - Correção de bugs.
+
+[B]v0.0.2 [COLOR gray](09/06/2018)[/COLOR][/B]
+      - Adicionada ferramenta de busca por elenco.
+      - Correção de bugs.
+
+[B]v0.0.1 [COLOR gray](08/06/2018)[/COLOR][/B]
+      - Versão inicial do addon (alpha).
+
+[COLOR yellow]As atualizações são baixadas automaticamente![/COLOR]
+[COLOR lightblue]Outras modificações são realizadas diretamente no servidor.[/COLOR]
+    </news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>screen01.jpg</screenshot>
+        <screenshot>screen02.jpg</screenshot>
+        <screenshot>screen03.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>

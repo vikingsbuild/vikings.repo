@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.xvideos"
+version="1.2.0"
+name="Xvideos"
+provider-name="Lord Grey">
+<requires>
+  <import addon="xbmc.python" version="2.19.0"/>
+  <import addon="script.module.beautifulsoup4" version="4.5.3"/>
+  <import addon="script.module.requests" version="2.22.0"/>
+
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">XVIDEOS.com Plugin for Kodi</summary>
+  <description lang="en_GB">A plugin to watch Xvideos Content in Kodi</description>
+  <disclaimer lang="en_GB">
+    Videos are provided by www.xvideos.com.
+  </disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+  </assets>
+  <license>GPL-3.0</license>
+  <website>https://www.xvideos.com</website>
+  <source>https://github.com/Space2Walker/plugin.video.xvideos</source>
+  <news>
+    V1.2
+    Now compatible to Kodi 17.6 and above.
+
+    V1.1
+    Now with "Search By"
+    Next now only shows up is a next site is there
+    and its at the bottom of the list.
+    Categorys are removed for Now.
+  </news>
+</extension>
+</addon>

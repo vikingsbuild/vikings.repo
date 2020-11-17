@@ -1,0 +1,122 @@
+3.4.3
+- update reddit video resolver
+- fix m3u8 check missing urls with parameters
+- add shout: to direct play
+- filter .css
+- remove unused dialog
+
+3.4.2
+- fix executable items
+
+3.4.1
+- update strings path
+- add debug log to failed head requests
+- add reddit resolver
+
+3.4.0
+- Kodi 16 + required
+- use inputstream.adaptive for hls if supported
+- expand check for dash content type
+- fix single source return
+
+3.3.0.6
+- minor refactor of xxx
+
+3.3.0.5
+- add xxx smu resolvers
+
+3.3.0.3
+- remove external resolver plugins
+- resolve requiring to back out of add-on twice
+
+3.3.0.1
+- add external resolvers
+
+3.2.2
+- resolve breaking change from urlresolver
+
+3.2.1
+- jsonrpc now uses POST instead of GET
+
+3.2.0
+- add inputstream.rtmp and inputstream.hls
+- remove twitch from runplugin exceptions
+
+3.1.1
+- add Setting to 'Remote/Send' - 'Resolve/scrape locally'
+- minor progress dialog fixes
+- minor string updates
+
+3.1.0
+- add 'Send to remote PlayThis'
+- add 'Export to .strm'
+- add thumbnail support
+- performance improvement
+- update and improve dash support
+- update context menu layout
+- change cookie handling
+- change settings category 'Cache' -> 'Maintenance', and add 'Clear Cookies'
+- other minor adjusts, bug fixes, refactoring
+
+3.0.0
+- add generalized scraping for sources as fallback if url does not resolve
+- add dash and smil support
+- add basic mimetype detection
+- add content type support (video audio image executable)
+- add attempt to identify and support quicktime atom  ** thanks @tknorris
+- increased history size limits, applies to ALL content types as use cases my still be limited to one type
+- export to M3U exports content specific list
+- delay adding to history until potentially valid source found
+- add labels/rename
+- add function caching, expire time and reset in settings
+- add youtube-dl support
+- add progress dialog
+
+2.2.5
+- export to .m3u now exports PlayThis plugin url instead of resolved url
+    allows resolution at playback, resolves expired session/token/ip issues, m3u only usable in Kodi w/ PlayThis
+
+2.2.3
+- external resolver updates
+	+ ol, use api until updated in urlresolver
+	- twitch, included in urlresolver
+
+2.2.2
+- add 'Add to history on play' to Settings
+- reorganize Settings menu
+
+2.2.1
+- fix error on 'New ...' if no input
+
+2.2.0
+- delete now uses row_id instead of url
+- add Export to M3U
+
+2.1.3
+- add route to add to history without playback
+- ?mode=add&path=http%3A%2F%2Fexample.com%2F
+
+2.1.2
+- twitch resolver updates
+
+2.1.1
+- add URLResolver Settings action to Settings
+- add twitch resolver, resolve twitch urls and play using plugin.video.twitch
+
+2.1.0
+- add directory listing of history
+- add 'Delete from history' context menu for directory listing
+    - enables 'Delete from history', 'Add to favorites', and the rest of the Kodi default context items
+- set directory listing to default
+- add optional &history=true/false to mode=play
+- history=true default, keeps history of items played from plugin url
+
+2.0.2
+- fix playback from strm files
+- changes to url/route for strm files |req'd| &player=false
+
+2.0.1
+- fix improper resolver issue
+
+2.0.0
+- re-write of smokdpi's PlayThis

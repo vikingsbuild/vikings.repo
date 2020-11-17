@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon 	id="brasilfull.repo" name="[B][COLOR white]REPOSITÓRIO[/COLOR][/B] [B][COLOR firebrick]BRASIL[/COLOR][/B] [B][COLOR white]FULL[/COLOR][/B]"
+		version="1.2"
+		provider-name="[B][COLOR gold]TheusZ[/B][/COLOR]">
+
+	<requires>
+            <import addon="xbmc.python" version="2.1.0"/>
+		    <import addon="script.module.addon.common" optional="true" />
+		    <import addon="script.module.t0mm0.common" optional="true" />
+		    <import addon="script.module.urlresolver" optional="true" />
+    </requires>
+	
+	<extension point="xbmc.addon.repository" name="[B][COLOR white]REPOSITÓRIO[/COLOR][/B] [B][COLOR firebrick]BRASIL[/COLOR][/B] [B][COLOR white]FULL[/COLOR][/B]">
+		<info compressed="true">https://repo.brasilfull.gq/addons.xml</info>
+			<checksum>https://repo.brasilfull.gq/addons.xml.md5</checksum>
+			<datadir zip="true">https://repo.brasilfull.gq/repo</datadir>
+	</extension>
+		
+	<extension point="xbmc.addon.metadata">
+	<news>
+	[COLOR white][B]ATUALIZAÇÕES[/B][/COLOR]
+	[COLOR firebrick][B]l[/B][/COLOR] V1.2 - Re-lançamento oficial
+	</news>
+		
+	<description lang="en">[COLOR red]l[/COLOR] GDRIVE [COLOR red]l[/COLOR] F4M TESTER [COLOR red]l[/COLOR] F4M PROXY [COLOR red]l[/COLOR] ELEMENTUM [COLOR red]l[/COLOR]
+
+	[COLOR red]l[/COLOR] Todos os complementos necessários para o bom funcionamento do Brasil Full você encontra aqui![COLOR red]l[/COLOR]
+
+	[COLOR red]l[/COLOR] Brasil Full - Saiu Dublado, Saiu Aqui![COLOR red]l[/COLOR]
+	</description>
+		
+<disclaimer lang="en">Todo o conteúdo aqui encontrado pode ser facilmente encontrado pela internet, nosso trabalho é apenas armazenar todo este conteúdo em um banco de dados próprio e disponibiliza-los de forma mais "confortável" aos interessados nesse tipo de conteúdo. Entretando, qualquer plágio das páginas aqui encontradas estarão sujeitas a represárias.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

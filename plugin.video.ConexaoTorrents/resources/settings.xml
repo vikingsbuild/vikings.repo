@@ -1,0 +1,9 @@
+<settings>
+	<category label="MENU DE VISUALIZAÇAO">	 
+		<setting label="SELECIONE PLAYER TORRENT:" type="lsep" />
+		<setting label="___________________________________________________________________________" type="lsep" />
+		<setting label="PLAYER TORRENT" type="select" id="player_torrent" default="Quasar" values="Quasar|Pulsar|Yatp|Torrenter|XbmcTorrent|Torrentin|Ace Stream(APK)|Elementum|BitX Torrent Video Player(APK)"/>
+		<!--setting id="local_roxplayer" type="file" source="files" label="localize o arquivo 'ROX Player.lnk'" default="" visible="eq(-1,Rox Player)"/-->
+		<setting label="___________________________________________________________________________" type="lsep" />
+	</category>
+</settings>

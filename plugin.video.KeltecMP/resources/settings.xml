@@ -1,0 +1,30 @@
+<settings>
+<category label="Configurações Gerais">	
+<setting label="[COLOR white]Configurações Gerais[/COLOR]" type="lsep"/>    
+<setting id="mensagem1" type="bool" label="Exibir Mensagem de Boas Vindas" default="true" />	
+<setting id="mensagem2" type="bool" label="Exibir Mensagem de Status" default="true" />	
+<setting id="add_playlist" type="bool" label="Adicione ítens com vários links como listas de reprodução" default="true"/>
+<setting id="ask_playlist_items" type="bool" label="Pedir itens da lista de reprodução para escolher" default="true" />
+<setting id="debug" type="bool" label="Ativar depuração de complemento" default="false"/>
+<setting id="Updatecommonresolvers" type="bool" label="Atualizar Resolvedores Comuns" default="true"/>
+<setting id="1080pquality" label="Reproduz vídeo 1080p sob demanda, se disponível (Não ao Vivo)" type="bool" default="true"/>
+<setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Reproduza IMDBid com:" default="Genesis"/>
+</category>
+<category label="VIP">	
+<setting label="[COLOR white]Configurações da área[/COLOR] [COLOR gold](TOP VIP)[/COLOR]" type="lsep"/>	
+<setting id="username" type="text" label="Usuário" default="" enable="!eq(-1,false)"/>	
+<setting id="password" type="text" label="Senha" default="" enable="!eq(-2,false)" option="hidden"/>	
+<setting id="saida" type="labelenum" label="Saida de Transmissão" default="m3u8" values="ts|m3u8"/>
+<setting id="exibirvip" type="bool" label="Exibir Menu VIP" default="false" />
+<setting id="suporte" type="bool" label="Exibir Suporte Top (VIP)" default="true" />
+<!--/category>
+<category label="VIP2">
+<setting label="[COLOR white]Configurações da área[/COLOR] [COLOR gold](TOP VIP2)[/COLOR]" type="lsep"/>	
+<setting id="servidor2" type="labelenum" label="Selecione o Servidor" default="Desativado" values="TOP VIP2|Desativado"/>	
+<setting id="username2" type="text" label="Usuário" default="" enable="!eq(-1,false)"/>	
+<setting id="password2" type="text" label="Senha" default="" enable="!eq(-2,false)" option="hidden"/>	
+<setting id="saida2" type="labelenum" label="Saida de Transmissão" default="m3u8" values="ts|m3u8"/>	
+<setting id="exibirvip2" type="bool" label="Exibir Menu VIP2" default="false" /-->
+
+</category>
+</settings>

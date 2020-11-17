@@ -1,0 +1,18 @@
+<settings>
+    <category label="Geral">
+        <setting id="blacklist" type="text" label="Filtro Blacklist (separado por ',')" default=""/>
+        <setting id="showInfo" type="bool" label="Mostrar informação 'Tocando Agora'" default="true"/>
+        <setting id="infoType" type="enum" label="Tipo" enable="eq(-1,true)" values="InfoView|Notificação" default="1"/>
+        <setting id="infoDelay"    type="number" label="Delay (em segundos)" enable="eq(-2,true)" default="10"/>
+        <setting id="infoDuration" type="number" label="Duração (em segundos)" enable="eq(-3,true)" default="5"/>
+        <setting id="youtubeAddon" type="enum" label="Addon do Youtube" values="Versão Oficial|Versão Bromix" default="0"/>
+    </category>
+		
+    <category label="Visualizações">
+        <setting id="forceVisu" type="bool" label="Forçar Visualização Automática" default="false"/>
+        <setting id="menuVisu" enable="eq(-1,true)" type="enum" label="Visualização de Menu"      values="Lista|Lista Grande|Miniatura" default="0" />
+        <setting id="gensVisu" enable="eq(-1,true)" type="enum" label="Visualização de Gêneros"   values="Lista|Lista Grande|Miniatura" default="2" />
+        <setting id="plstVisu" enable="eq(-2,true)" type="enum" label="Visualização de Playlists" values="Lista|Lista Grande|Miniatura" default="2" />
+    </category>
+</settings>
+

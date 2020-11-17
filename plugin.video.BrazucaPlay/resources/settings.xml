@@ -1,0 +1,18 @@
+<settings>
+<category label="CONTROLE DOS PAIS">
+<setting label="[COLOR lightblue]CONTROLE DOS PAIS: SENHA PADRÃO [COLOR gold]0000[/COLOR][/COLOR]" type="lsep"/>
+<setting label="[B]MOSTRAR CANAIS +18[/B]" id="canais_extra" type="bool" default="false" />
+<setting label="[B]ALTERAR SENHA?[/B]" type="action" action="RunScript(plugin.video.BrazucaPlay, SetPass)"/>
+</category>
+<category label="GUIA DE PROGRAMAÇÃO">
+<setting label="[COLOR lightblue]EPG:[/COLOR]" type="lsep"/>
+<setting label="[B]ATIVAR EPG[/B]" type="bool" id="epg" default="false"/>
+<setting label="[B]LIMPAR GUIA DE PROGRAMAÇÃO[/B]" type="action" action="RunScript(plugin.video.BrazucaPlay, removerEPG)"/>
+<setting label="[B]REPRODUZIR COM[/B]" id="player_f4m" type="enum" values="[B][COLOR gold]F4MTESTER[/COLOR] (MAIOR DELAY)[/B]|[B][COLOR gold]PADRÃO[/COLOR] (MENOR DELAY)[/B]" default="0"/>
+<setting label="Baixar EPG a cada" id="epg_days" type="enum" values="1 dia|2 dias|3 dias|4 dias|5 dias|6 dias|7 dias" visible="false" default="2" />
+<setting label="Última atualização" id="epg_last" type="text" visible="false" enable="false" default=""/>
+<setting id="donotshowbychannels" label="" visible="false" type="bool" default="false"/>
+<setting id="add_playlist" type="bool" visible="false" label="Adicionar items com múltiplos links como playlists" default="true"/>
+<setting id="ask_playlist_items" type="bool" visible="false" label="Escolher items do Menu de Contexto" default="true" />
+</category>
+</settings>

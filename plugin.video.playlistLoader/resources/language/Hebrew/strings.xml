@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<string id="30001">הוספת רשימה חדשה</string>
+	<string id="30002">בחירת מקור קובץ הרשימה</string>
+	<string id="30003">מועדפים</string>
+	<string id="30004">שם הרשימה</string>
+	<string id="30005">כתובת הרשימה</string>
+	<string id="30006">בחירת רשימה</string>
+	<string id="30007">מפנה לאותה הכתובת</string>
+	<string id="30008">מחיקה מ- Playlist Loader</string>
+	<string id="30009">הוספה למועדפי Playlist Loader</string>
+	<string id="30010">הסרה ממועדפי Playlist Loader</string>
+	<string id="30011">נמצא כבר ברשימת המועדפים</string>
+	<string id="30012">נוסף למועדפים</string>
+	<string id="30013">הוספת ערוץ חדש</string>
+	<string id="30014">שם הערוץ</string>
+	<string id="30015">כתובת הערוץ</string>
+	<string id="30016">רשימה מכתובת</string>
+	<string id="30017">רשימה מקובץ</string>
+	<string id="30018">בחירת מקור סמלי הערוצים</string>
+	<string id="30019">כתובת בסיס לסמלי ערוצים</string>
+	<string id="30020">תיקיית סמלי ערוצים</string>
+	<string id="30021">ללא</string>
+	<string id="30022">בחירת סמל הרשימה</string>
+	<string id="30023">בחירת סמל הערוץ</string>
+	<string id="30024">סמל מכתובת</string>
+	<string id="30025">סמל מקובץ</string>
+	<string id="30026">שינוי שם</string>
+	<string id="30027">שינוי מקור</string>
+	<string id="30028">שינוי סמל</string>
+	<string id="30029">שינוי מקור סמלי ערוצים</string>
+	<string id="30030">הזזה למעלה</string>
+	<string id="30031">הזזה למטה</string>
+	<string id="30032">הזזה למיקום</string>
+	<string id="30033">בחירת מיקום חדש</string>
+	<string id="30034">בחירת כמות דקות לשמירת הרשימה בזיכרון</string>
+	<string id="30035">שינוי משך שמירת הרשימה בזיכרון</string>
+	<string id="30036">הצגת קבוצות ברשימות ערוצים</string>
+	<string id="30037">כן</string>
+	<string id="30038">לא</string>
+	<string id="30039">לחץ לשינוי</string>
+	<string id="30101">מחיקת קובץ הרשימות</string>
+	<string id="30102">מחיקת קובץ המועדפים</string>
+</strings>

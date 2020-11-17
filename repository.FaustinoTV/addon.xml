@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="2.2" provider-name="Equipe FaustinoTV">
+    <extension point="xbmc.addon.repository" name="Repositório FaustinoTV">
+        <info>https://github.com/faustinotv/repo.faustinotv/raw/master/addons.xml</info>
+        <checksum>https://github.com/faustinotv/repo.faustinotv/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/faustinotv/repo.faustinotv/raw/master/Addons</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositório FaustinoTV</summary>
+        <description>Este é o repositório oficial com todos os addons e atualizações do FaustinoTV. Aqui você também encontra as dependências necessárias para que tudo funcione corretamente</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>

@@ -1,0 +1,8 @@
+[B]Last Update:[/B] 18 October, 2019
+
+-kratosreborn - 1.0.0 (formerly Kratos)-Has been ported to the Open Scrappers Community Module-Added a personal scrapper which has been submitted to Open Scrappers Team For Their use if they choose.-Added New Kratos Artwowrk, Thanks To The Maze Team!!!!-New TMDB and Trakt API Keys...-Hopefully more people get involved in this project, take some pressure off the Universal Scrappers Team!!!!!!!
+
+
+
+
+

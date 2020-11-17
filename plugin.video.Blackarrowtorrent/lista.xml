@@ -1,0 +1,32 @@
+
+ <channels>
+ <channel>
+ <name>Top 100 Music</name>
+ <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/The_Pirate_Bay_logo.svg/2000px-The_Pirate_Bay_logo.svg.png</thumbnail>
+ <externallink>https://thepiratebay.org/rss/top100/100</externallink>
+ <fanart></fanart>
+ <info></info>
+ </channel>
+ </channels>
+
+
+ <channels>
+ <channel>
+ <name>Top 100 Movies</name>
+ <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/The_Pirate_Bay_logo.svg/2000px-The_Pirate_Bay_logo.svg.png</thumbnail>
+ <externallink>https://thepiratebay.org/rss/top100/201</externallink>
+ <fanart></fanart>
+ <info></info>
+ </channel>
+ </channels>
+
+
+ <channels>
+ <channel>
+ <name>Lista de Radios</name>
+ <thumbnail></thumbnail>
+ <externallink>https://raw.githubusercontent.com/kodishmediacenter/Canga-o-IPTV/master/radios</externallink>
+ <fanart>http://www.seriados.tv.br/wp-content/uploads/2012/08/fdp_23082012_.jpg</fanart>
+ <info></info>
+ </channel>
+ </channels>
