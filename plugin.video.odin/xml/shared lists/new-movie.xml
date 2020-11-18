@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?> 
-<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>
-<layoutype>Odin</layoutype>
-<dir>
-<title>New Movies</title>
-<tmdb>movies/now_playing</tmdb>
-<thumbnail>http://www.ezzer-mac.com/frank/artghost/movies.png</thumbnail>
-<fanart>http://www.ezzer-mac.com/frank/artghost/movies.jpg</fanart>
-</dir>
